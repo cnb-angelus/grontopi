@@ -50,7 +50,7 @@ class SPARQLAccess(GraphAccess):
         self.query_client = SPARQLWrapper(self.query_endpoint)
         self.query_client.setReturnFormat(JSON)
         self.query_client.setMethod("POST")
-        if query_credentials is not None:
+        if query_credentials is not None and len(query_credentials) == 2:
             self.query_client.setCredentials(query_credentials[0],
                                              query_credentials[1])
         super().__init__()

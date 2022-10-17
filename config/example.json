@@ -1,0 +1,21 @@
+{
+  "ontology_path": "/config/myontology.owl",
+  "sparql_endpoint": "https://query.wikidata.org/sparql",
+  "sparql_credentials": [],
+  "ontonamespace": "https://www.wikidata.org/wiki/",
+  "ontology_config": {
+    "reified_object_property": "MaterializedObjectProperty",
+    "reified_data_property": "MaterializedDataProperty",
+    "materialized_property_types": "PropertyType",
+    "rangeOf": "isRangeOf",
+    "domainOf": "isDomainOf",
+    "study_domain_class": "https://www.wikidata.org/wiki/Q35120",
+    "reality_class": "ThingsReality",
+    "sameness_predicate": "http://www.w3.org/2002/07/owl#sameAs",
+    "label_uris": [
+      "hasName",
+      "http://www.w3.org/2000/01/rdf-schema#label",
+      "http://www.w3.org/2004/02/skos/core#prefLabel"
+    ]
+  }
+}
