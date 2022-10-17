@@ -1,0 +1,17 @@
+version: '3.5'
+
+services:
+  grontopi:
+    container_name: grontopi
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./config:/config
+      - ./grontopi:/app
+    ports:
+      - 8000:80
+    environment:
+      - LOG_LEVEL=debug
+      - MAX_WORKERS=1
+    entrypoint: /start-reload.sh

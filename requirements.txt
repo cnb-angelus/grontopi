@@ -1,0 +1,9 @@
+fastapi
+requests
+pydantic
+rdflib
+rdflib-jsonld
+SPARQLWrapper
+pyfiglet==0.7
+python-jose
+cachetools
