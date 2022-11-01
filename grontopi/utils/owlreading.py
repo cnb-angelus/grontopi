@@ -1,15 +1,15 @@
 import math
 import os
-from typing import Dict, Union
+from typing import Dict, Union, List
 
 import rdflib
+from rdflib.paths import OneOrMore
 from pydantic import parse_obj_as
 
 from config import conf as cfg
 from config import GrOntoPIConfig
 from models.ontology_models import ClassDescription, ClassURI
 from utils.rdfutils import URI, get_local_name
-
 
 datadir = cfg.owl_directory
 
@@ -44,11 +44,10 @@ def _union2list(r1):
 
 class OntologyReader:
 
-    def __init__(self, ontologypath : str,
+    def __init__(self, ontologypath: str,
                  config_object: GrOntoPIConfig):
         # print("\nOntology Reader init: -------")
 
-        # ToDo make these configurable
         # Ontology Specific
         self.reified_object_property = cfg.reified_object_property
         self.reified_data_property = cfg.reified_data_property
@@ -75,9 +74,16 @@ class OntologyReader:
         print("\t", len(self.graph), "triples in full ontology")
 
         self.rdfs_ns = rdflib.namespace.RDFS
+        self.rdf_ns = rdflib.namespace.RDF
         # print("\n-------- :Ontology Reader init finished\n\n")
 
-
+        # These are shortcuts to not re-compute the whole ontology often
+        self.allrelations = self.get_relations().keys()
+        self.allproperties = self.get_properties().keys()
+        self.all_study_domain_classes = self.get_study_domain_classes().keys()
+        self.class_hierarchy = dict()
+        self.shoulders = dict()
+        self._populate_shoulders()
 
     def add_rdfs_labels(self):
         self.graph.add((rdf_ns["type"], rdfs_ns["label"],
@@ -242,7 +248,7 @@ class OntologyReader:
         all_classes = self.get_classes()
         res = dict()
         inspected = set()
-        sdcls = parse_obj_as(ClassURI,self.study_domain_class.n3())
+        sdcls = parse_obj_as(ClassURI, self.study_domain_class.n3())
         to_inspect = set(
             all_classes[sdcls].subclasses + [sdcls])
         while len(to_inspect) > 0:
@@ -464,3 +470,51 @@ class OntologyReader:
                     "items": this_tree,
                     "default_label": self.clean_n3_label(this_tree_names[0])}
         return None
+
+    def _discover_shoulder(self, class_uri_str):
+        if "<" == class_uri_str[0]:
+            class_uri_str = class_uri_str[1:-1]
+        class_uri = URI(class_uri_str)
+        if class_uri in self.shoulders.keys():
+            return self.shoulders[class_uri]
+
+        splitter = "#" if "#" in class_uri_str else "/"
+        class_local_name = str(class_uri_str.split(splitter)[-1])
+        plural_suffix: str = "es"
+        if class_local_name[-1] in ["a", "e", "i", "o", "u"]:
+            plural_suffix = "s"
+
+        return class_local_name.lower() + plural_suffix
+
+    def _populate_shoulders(self):
+        for bc in self.base_classes:
+            self.class_hierarchy[bc.n3()] = 0
+            for sc, _, _ in self.graph.triples(
+                    (None, rdfs_ns["subClassOf"], bc)):
+                self.class_hierarchy[sc.n3()] = 1
+                shoulder = self._discover_shoulder(sc.n3())
+                for ssc, _, _ in self.graph.triples(
+                        (None, rdfs_ns["subClassOf"] * OneOrMore, sc)):
+                    self.class_hierarchy[ssc.n3()] = 2
+                    k = ssc.n3()[1:-1]
+                    self.shoulders[k] = shoulder
+
+    def get_maximal_class(self, classlist: List[ClassURI]):
+        """
+        For a given set of classes, returns the narrowest of them.
+        It is useful, e.g., to present to the user the most specific class
+        isntead of something very general like Things
+        :param classlist:
+        :return:
+        """
+        classlevels = {cl: self.class_hierarchy[cl]
+                       for cl in classlist if
+                       cl in self.class_hierarchy.keys()}
+        if len(classlevels) == 0:
+            # print("-->\nno levels found for ",classlist,"\n<--!")
+            return URI(self.study_domain_class).n3()
+
+        maxl = max(list(classlevels.values()))
+        maxi = [x for x, v in classlevels.items() if v == maxl][0]
+
+        return maxi

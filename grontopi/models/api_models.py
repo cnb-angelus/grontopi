@@ -1,4 +1,4 @@
-from typing import List, Optional
+from typing import List, Optional, Dict
 
 from pydantic import BaseModel
 
@@ -24,16 +24,18 @@ class EntityDescription(BaseModel):
     inverse_properties: List[PredicateObjectTuple]
 
 
-class EntityNeighbourhoodDescription(BaseModel):
+
+
+class EntityNeighbourDescription(BaseModel):
     link_type: RelationURI
     entity: EntityURI
     entity_class: ClassURI
     labels: List[LabelWithLang]
     central_entity_role: RoleURI
-    provenance: AbbreviatedProvenance
-    relation_properties: AbbreviatedProvenance
-    reification_uri: ReificationURI
+    provenance: Optional[AbbreviatedProvenance]
+    relation_properties: Optional[AbbreviatedProvenance]
+    reification_uri: Optional[ReificationURI]
 
-
-
-
+class EntityNeighbourhoodSummary(BaseModel):
+    linked_entities : List[EntityNeighbourDescription]
+    link_count : Dict[ClassURI,Dict[RelationURI, int]]

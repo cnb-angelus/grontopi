@@ -27,6 +27,14 @@ class GrOntoPIConfig:
         self.sparql_credentials = None
         self.ontology_path = "/config/ontology.owl"
 
+        # OpenAPI examples
+        self.openAPIExamples = {
+            "entities": ["https://www.wikidata.org/wiki/Q161531",
+                         "https://www.wikidata.org/wiki/Q7243"],
+            "classes" : ["https://www.wikidata.org/wiki/Q5"],
+            "default_language": "en"
+        }
+
         # Ontology configuration
         ontons = rdflib.namespace.Namespace(self.ontonamespace)
         self.reified_object_property = ontons["MaterializedObjectProperty"]
@@ -43,9 +51,9 @@ class GrOntoPIConfig:
                            skos_ns["prefLabel"],
                            ]
 
-    def load_json_config(self, configpath):
-        if os.path.isfile(configpath):
-            with open(configpath) as fin:
+    def load_json_config(self, config_path):
+        if os.path.isfile(config_path):
+            with open(config_path) as fin:
                 cj = json.loads(fin.read())
                 if "ontonamespace" in cj.keys():
                     self.ontonamespace = cj["ontonamespace"]
@@ -62,8 +70,6 @@ class GrOntoPIConfig:
 
         else:
             logging.warning("Loading default configuration")
-
-
 
     def _uri(self, v: str):
         if "://" in v:

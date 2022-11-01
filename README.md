@@ -5,10 +5,10 @@ GrOntoPI is a simple web API for querying ontology-based graphs. It converts
  that can help frontend present the graph. These objects contain a
  combination of the data plus the ontology behind the graph.
 
- In theory, one would only need to configure this with the ontology if
+ In theory, one would only need to configure this with the ontology of
  interest and select from it a couple of properties (e.g. what properties
- denote labels). Then, one can just point it to a SPARQL endpoint contained
- data that abides to the ontology, and everything should work.GrOntoPI
+ denote labels). Then, one can just point it to a SPARQL endpoint containing
+ data that abides to the ontology, and everything should work.
 
 ## Running
 
@@ -37,7 +37,7 @@ We will develop a docker-compose file with an example UI and triplestore.
 
 ## Contributors:
 This project was developed as part of Project Angelus. Funded by CONACYT
-(Mexican Ministry of Science) under grant X.
+(Mexican Ministry of Science) under grant 321368.
 
 Main contributors are:
 * Victor Mireles

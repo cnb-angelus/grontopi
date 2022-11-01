@@ -7,3 +7,4 @@ SPARQLWrapper
 pyfiglet==0.7
 python-jose
 cachetools
+unidecode
