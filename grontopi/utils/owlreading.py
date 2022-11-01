@@ -487,7 +487,8 @@ class OntologyReader:
         return class_local_name.lower() + plural_suffix
 
     def _populate_shoulders(self):
-        for bc in self.base_classes:
+        for bc_ in self.base_classes:
+            bc = URI(bc_)
             self.class_hierarchy[bc.n3()] = 0
             for sc, _, _ in self.graph.triples(
                     (None, rdfs_ns["subClassOf"], bc)):

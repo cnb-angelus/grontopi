@@ -68,6 +68,7 @@ class GrOntoPIConfig:
                     cj.pop("ontology_config")
                 self.__dict__.update(cj)
 
+            self.base_classes = [self.study_domain_class, self.reality_class]
         else:
             logging.warning("Loading default configuration")
 
