@@ -13,8 +13,10 @@
 #################################################################
 
 ###  http://www.semanticweb.org/mireleschavezv/ontologies/2022/10/untitled-ontology-19#P17
-:P17 rdf:type owl:ObjectProperty ;
-     rdfs:label "has Country" .
+<http://www.wikidata.org/prop/direct/P17> rdf:type owl:ObjectProperty ;
+     rdfs:label "has Country" ;
+     rdfs:domain <https://www.wikidata.org/entity/Q207694> ;
+     rdfs:range <https://www.wikidata.org/entity/Q6256> .
 
 
 ###  http://www.wikidata.org/prop/direct/P27
@@ -43,12 +45,18 @@
 #################################################################
 
 ###  http://www.w3.org/2000/01/rdf-schema#label
-rdfs:label rdf:type owl:DatatypeProperty .
+rdfs:label rdf:type owl:DatatypeProperty ;
+           rdfs:domain owl:Class ;
+           rdfs:range owl:Class .
 
 
 #################################################################
 #    Classes
 #################################################################
+
+### The base class
+<https://www.wikidata.org/wiki/ThingsDomain> rdf:type owl:Class ;
+                                             rdfs:label "Real World Entities" .
 
 ###  http://www.wikidata.org/entity/Q1028181
 <http://www.wikidata.org/entity/Q1028181> rdf:type owl:Class ;
@@ -64,11 +72,13 @@ rdfs:label rdf:type owl:DatatypeProperty .
 
 ###  http://www.wikidata.org/entity/Q5
 <http://www.wikidata.org/entity/Q5> rdf:type owl:Class ;
+                                    rdfs:subClassOf <https://www.wikidata.org/wiki/ThingsDomain> ;
                                     rdfs:label "Human" .
 
 
 ###  https://www.wikidata.org/entity/Q207694
 <https://www.wikidata.org/entity/Q207694> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://www.wikidata.org/wiki/ThingsDomain> ;
                                           rdfs:label "Art Museum" .
 
 
@@ -80,6 +90,7 @@ rdfs:label rdf:type owl:DatatypeProperty .
 
 ###  https://www.wikidata.org/entity/Q6256
 <https://www.wikidata.org/entity/Q6256> rdf:type owl:Class ;
+                                        rdfs:subClassOf <https://www.wikidata.org/wiki/ThingsDomain> ;
                                         rdfs:label "Country" .
 
 
@@ -91,6 +102,7 @@ rdfs:label rdf:type owl:DatatypeProperty .
 
 ###  https://www.wikidata.org/entity/Q838948
 <https://www.wikidata.org/entity/Q838948> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://www.wikidata.org/wiki/ThingsDomain> ;
                                           rdfs:label "Work of Art" .
 
 
