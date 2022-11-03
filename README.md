@@ -17,7 +17,7 @@ GrOntoPI is a simple web API for querying ontology-based graphs. It converts
 1. First build the docker continer using `docker build -t grontopi .`
 2. Then put your config file and ontology (an owl file) in `./config`
 3. Finally launch the container with 
-   `docker run --rm --name grafo -e  LOG_LEVEL=info -p 8000:80 -v $(pwd)/config:/config -it grontopi`
+   `docker run --rm --name grafo -e  LOG_LEVEL=info -p 8000:80 -v "$(pwd)/config:/config" -it grontopi`
 4. You can then find the API documentation at http://localhost:8000/api/docs
 
 
