@@ -17,7 +17,8 @@ router = APIRouter()
 onto = OntologyReader(ontologypath=cfg.ontology_path,
                       config_object=cfg)
 graph = SPARQLAccess(query_endpoint=cfg.sparql_endpoint,
-                     query_credentials=cfg.sparql_credentials)
+                     query_credentials=cfg.sparql_credentials,
+                     typepred=cfg.type_predicate)
 
 exent = cfg.openAPIExamples["entities"][0]
 exents = cfg.openAPIExamples["entities"]

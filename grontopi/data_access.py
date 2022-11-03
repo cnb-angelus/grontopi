@@ -4,6 +4,7 @@ import time
 from abc import ABC, abstractmethod
 from typing import List, Dict, Set, Tuple
 
+import rdflib
 import unidecode
 from SPARQLWrapper import SPARQLWrapper, JSON
 from pydantic import parse_obj_as
@@ -54,7 +55,8 @@ class GraphAccess(ABC):
 
 class SPARQLAccess(GraphAccess):
     def __init__(self, query_endpoint,
-                 query_credentials=None):
+                 query_credentials=None,
+                 typepred=rdflib.namespace.RDF["type"]):
         self.query_endpoint = query_endpoint
         self.query_client = SPARQLWrapper(self.query_endpoint)
         self.query_client.setReturnFormat(JSON)
@@ -62,6 +64,7 @@ class SPARQLAccess(GraphAccess):
         if query_credentials is not None and len(query_credentials) == 2:
             self.query_client.setCredentials(query_credentials[0],
                                              query_credentials[1])
+        self.typepred = URI(typepred)
         super().__init__()
 
     async def fetch_entities_from_list_of_ids(self,
@@ -121,7 +124,8 @@ class SPARQLAccess(GraphAccess):
                                   per_page: int = 1000,
                                   lang: str = "en"
                                   ) -> EntityListWithLabels:
-        query = self._query_entities_of_class(class_id, start, per_page, lang)
+        query = self._query_entities_of_class(class_id, start, per_page,
+                                              lang, typepred=self.typepred)
         self.query_client.setQuery(query)
         rj = self.query_client.queryAndConvert()
         ent2labels = self._group_labels_by_entity(rj)
@@ -198,7 +202,8 @@ class SPARQLAccess(GraphAccess):
                              lang: str) -> Tuple[Dict, Set]:
         eid = ewl["uri"]
         query_links = self._query_entity_links(entity_id=eid,
-                                               onto_cfg=onto)
+                                               onto_cfg=onto,
+                                               typepred=self.typepred)
         self.query_client.setQuery(query_links)
         rjlinks = self.query_client.queryAndConvert()["results"]["bindings"]
         dps, ops, ips = [], [], []
@@ -249,7 +254,8 @@ class SPARQLAccess(GraphAccess):
                                         entitylist: List[EntityURI],
                                         onto_config: OntologyReader):
         query_classes = self._query_many_entity_classes(entity_ids=entitylist,
-                                                        onto_cfg=onto_config)
+                                                        onto_cfg=onto_config,
+                                                        typepred=self.typepred)
         self.query_client.setQuery(query_classes)
         rjcls = self.query_client.queryAndConvert()
         ent2classes = self._group_classes_by_entity(rjcls)
@@ -265,6 +271,7 @@ class SPARQLAccess(GraphAccess):
             longname += unidecode.unidecode(lwl.label_value.lower()) + " "
         return longname
 
+    # ToDo get all labels in a single binding, using OPTIONAL
     @staticmethod
     def _query_many_entity_labels(entity_ids: List[EntityURI],
                                   lang: str = "en"):
@@ -295,7 +302,8 @@ class SPARQLAccess(GraphAccess):
 
     @staticmethod
     def _query_entity_links(entity_id: EntityURI,
-                            onto_cfg: OntologyReader):
+                            onto_cfg: OntologyReader,
+                            typepred = rdflib.namespace.RDF["type"]):
         allowed_classes = onto_cfg.all_study_domain_classes
         allowed_classes = ", ".join([URI(clsuri).n3() for clsuri in
                                      allowed_classes])
@@ -316,7 +324,7 @@ class SPARQLAccess(GraphAccess):
                          UNION
                          {{
                             ?s ?p {euri} .
-                            ?s a ?cls
+                            ?s {typepred.n3()} ?cls
                             BIND ({euri} AS ?o)
                          }}
                         }}
@@ -327,7 +335,8 @@ class SPARQLAccess(GraphAccess):
 
     @staticmethod
     def _query_many_entity_classes(entity_ids: List[EntityURI],
-                                   onto_cfg: OntologyReader):
+                                   onto_cfg: OntologyReader,
+                                   typepred = rdflib.namespace.RDF["type"]):
         allowed_classes = onto_cfg.all_study_domain_classes
         allowed_classes = ", ".join([URI(clsuri).n3() for clsuri in
                                      allowed_classes])
@@ -337,18 +346,20 @@ class SPARQLAccess(GraphAccess):
                  WHERE {{
                      GRAPH ?g {{
                          VALUES ?s {{ {subjvalues} }}
-                         ?s a ?cls .
+                         ?s {typepred.n3()} ?cls .
                         }}
                      FILTER(?cls in ( {allowed_classes} ) )
                  }}        
                  """
         return query
 
+    # ToDo get all labels in a single binding, using OPTIONAL
     @staticmethod
     def _query_entities_of_class(class_id: ClassURI,
                                  start: int = 0,
                                  per_page: int = 1000,
-                                 lang: str = "en"
+                                 lang: str = "en",
+                                 typepred = rdflib.namespace.RDF["type"]
                                  ):
         """
         Creates a query with variables ?s ?label_pred ?label_val
@@ -373,7 +384,7 @@ class SPARQLAccess(GraphAccess):
                 SELECT ?s ?label_pred ?label_val
                 WHERE {{
                     GRAPH ?g {{
-                        ?s a {class_id} .
+                        ?s {typepred.n3()} {class_id} .
                     {"UNION".join(uniontermns)}
                     }} 
                     FILTER(LANG(?label_val) = '' 
@@ -395,6 +406,7 @@ class SPARQLAccess(GraphAccess):
             ent2classes[entity] = current_classes
         return ent2classes
 
+    # ToDo process all labels from single binding
     @staticmethod
     def _group_labels_by_entity(response_json: List[Dict]) -> Dict:
         # First we group labels by entities
