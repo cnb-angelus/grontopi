@@ -1,15 +1,17 @@
 {
   "ontology_path": "/config/myontology.owl",
-  "sparql_endpoint": "https://query.wikidata.org/sparql",
+  "sparql_endpoint": "https://query.wikidata.org/bigdata/namespace/wdq/sparql",
   "sparql_credentials": [],
-  "ontonamespace": "https://www.wikidata.org/wiki/",
+  "ontonamespace": "http://www.wikidata.org/wiki/",
+  "type_predicate": ["http://www.wikidata.org/prop/direct/P31",
+                               "https://www.wikidata.org/wiki/Property:P106"],
   "ontology_config": {
     "reified_object_property": "MaterializedObjectProperty",
     "reified_data_property": "MaterializedDataProperty",
     "materialized_property_types": "PropertyType",
     "rangeOf": "isRangeOf",
     "domainOf": "isDomainOf",
-    "study_domain_class": "https://www.wikidata.org/wiki/Q35120",
+    "study_domain_class": "ThingsDomain",
     "reality_class": "ThingsReality",
     "sameness_predicate": "http://www.w3.org/2002/07/owl#sameAs",
     "label_uris": [

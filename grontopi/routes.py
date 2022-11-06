@@ -11,6 +11,7 @@ from models.ontology_models import EntityURI, ClassURI
 from utils.OAuth2_serverside import user_invalidator
 from data_access import SPARQLAccess
 from utils.owlreading import OntologyReader
+from utils.rdfutils import URI
 from config import conf as cfg
 
 router = APIRouter()
@@ -18,11 +19,13 @@ onto = OntologyReader(ontologypath=cfg.ontology_path,
                       config_object=cfg)
 graph = SPARQLAccess(query_endpoint=cfg.sparql_endpoint,
                      query_credentials=cfg.sparql_credentials,
-                     typepred=cfg.type_predicate)
+                     typepred=cfg.type_predicate,
+                     different_graphs=cfg.different_graphs
+                     )
 
-exent = cfg.openAPIExamples["entities"][0]
-exents = cfg.openAPIExamples["entities"]
-excls = cfg.openAPIExamples["classes"][0]
+exent = URI(cfg.openAPIExamples["entities"][0]).n3()
+exents = [URI(x).n3() for x in cfg.openAPIExamples["entities"]]
+excls = URI(cfg.openAPIExamples["classes"][0]).n3()
 deflang = cfg.openAPIExamples["default_language"]
 
 @router.get(

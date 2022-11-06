@@ -15,30 +15,35 @@
 ###  http://www.semanticweb.org/mireleschavezv/ontologies/2022/10/untitled-ontology-19#P17
 <http://www.wikidata.org/prop/direct/P17> rdf:type owl:ObjectProperty ;
      rdfs:label "has Country" ;
-     rdfs:domain <https://www.wikidata.org/entity/Q207694> ;
-     rdfs:range <https://www.wikidata.org/entity/Q6256> .
+     rdfs:domain <http://www.wikidata.org/entity/Q207694> ;
+     rdfs:range <http://www.wikidata.org/entity/Q6256> .
 
 
 ###  http://www.wikidata.org/prop/direct/P27
 <http://www.wikidata.org/prop/direct/P27> rdf:type owl:ObjectProperty ;
                                           rdfs:domain <http://www.wikidata.org/entity/Q5> ;
-                                          rdfs:range <https://www.wikidata.org/entity/Q6256> ;
+                                          rdfs:range <http://www.wikidata.org/entity/Q6256> ;
                                           rdfs:label "country of citizenship" .
 
 
 ###  http://www.wikidata.org/prop/direct/P6379
 <http://www.wikidata.org/prop/direct/P6379> rdf:type owl:ObjectProperty ;
                                             rdfs:domain <http://www.wikidata.org/entity/Q5> ;
-                                            rdfs:range <https://www.wikidata.org/entity/Q207694> ;
+                                            rdfs:range <http://www.wikidata.org/entity/Q207694> ;
                                             rdfs:label "has works in the collection" .
 
 
 ###  http://www.wikidata.org/prop/direct/P800
 <http://www.wikidata.org/prop/direct/P800> rdf:type owl:ObjectProperty ;
                                            rdfs:domain <http://www.wikidata.org/entity/Q5> ;
-                                           rdfs:range <https://www.wikidata.org/entity/Q838948> ;
+                                           rdfs:range <http://www.wikidata.org/entity/Q838948> ;
                                            rdfs:label "notable work" .
 
+### http://www.wikidata.org/prop/direct/P106
+<http://www.wikidata.org/prop/direct/P106> rdf:type owl:ObjectProperty ;
+                                           rdfs:domain <http://www.wikidata.org/entity/Q5> ;
+                                           rdfs:range <http://www.wikidata.org/entity/Q5> ;
+                                           rdfs:label "has profession" .
 
 #################################################################
 #    Data properties
@@ -55,12 +60,12 @@ rdfs:label rdf:type owl:DatatypeProperty ;
 #################################################################
 
 ### The base class
-<https://www.wikidata.org/wiki/ThingsDomain> rdf:type owl:Class ;
+<http://www.wikidata.org/wiki/ThingsDomain> rdf:type owl:Class ;
                                              rdfs:label "Real World Entities" .
 
 ###  http://www.wikidata.org/entity/Q1028181
 <http://www.wikidata.org/entity/Q1028181> rdf:type owl:Class ;
-                                          rdfs:subClassOf <http://www.wikidata.org/entity/Q5> ;
+                                          rdfs:subClassOf <http://www.wikidata.org/entity/Q5> ;                                          
                                           rdfs:label "Painter" .
 
 
@@ -72,37 +77,37 @@ rdfs:label rdf:type owl:DatatypeProperty ;
 
 ###  http://www.wikidata.org/entity/Q5
 <http://www.wikidata.org/entity/Q5> rdf:type owl:Class ;
-                                    rdfs:subClassOf <https://www.wikidata.org/wiki/ThingsDomain> ;
+                                    rdfs:subClassOf <http://www.wikidata.org/wiki/ThingsDomain> ;
                                     rdfs:label "Human" .
 
 
-###  https://www.wikidata.org/entity/Q207694
-<https://www.wikidata.org/entity/Q207694> rdf:type owl:Class ;
-                                          rdfs:subClassOf <https://www.wikidata.org/wiki/ThingsDomain> ;
+###  http://www.wikidata.org/entity/Q207694
+<http://www.wikidata.org/entity/Q207694> rdf:type owl:Class ;
+                                          rdfs:subClassOf <http://www.wikidata.org/wiki/ThingsDomain> ;
                                           rdfs:label "Art Museum" .
 
 
-###  https://www.wikidata.org/entity/Q3305213
-<https://www.wikidata.org/entity/Q3305213> rdf:type owl:Class ;
-                                           rdfs:subClassOf <https://www.wikidata.org/entity/Q838948> ;
+###  http://www.wikidata.org/entity/Q3305213
+<http://www.wikidata.org/entity/Q3305213> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://www.wikidata.org/entity/Q838948> ;
                                            rdfs:label "Painting" .
 
 
-###  https://www.wikidata.org/entity/Q6256
-<https://www.wikidata.org/entity/Q6256> rdf:type owl:Class ;
-                                        rdfs:subClassOf <https://www.wikidata.org/wiki/ThingsDomain> ;
+###  http://www.wikidata.org/entity/Q6256
+<http://www.wikidata.org/entity/Q6256> rdf:type owl:Class ;
+                                        rdfs:subClassOf <http://www.wikidata.org/wiki/ThingsDomain> ;
                                         rdfs:label "Country" .
 
 
-###  https://www.wikidata.org/entity/Q7725634
-<https://www.wikidata.org/entity/Q7725634> rdf:type owl:Class ;
-                                           rdfs:subClassOf <https://www.wikidata.org/entity/Q838948> ;
+###  http://www.wikidata.org/entity/Q7725634
+<http://www.wikidata.org/entity/Q7725634> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://www.wikidata.org/entity/Q838948> ;
                                            rdfs:label "Literary Work" .
 
 
-###  https://www.wikidata.org/entity/Q838948
-<https://www.wikidata.org/entity/Q838948> rdf:type owl:Class ;
-                                          rdfs:subClassOf <https://www.wikidata.org/wiki/ThingsDomain> ;
+###  http://www.wikidata.org/entity/Q838948
+<http://www.wikidata.org/entity/Q838948> rdf:type owl:Class ;
+                                          rdfs:subClassOf <http://www.wikidata.org/wiki/ThingsDomain> ;
                                           rdfs:label "Work of Art" .
 
 

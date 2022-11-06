@@ -5,7 +5,6 @@ from os import environ
 from typing import List, Union
 
 import rdflib
-from utils.rdfutils import URI
 
 owl_ns = rdflib.namespace.OWL
 rdf_ns = rdflib.namespace.RDF
@@ -23,17 +22,23 @@ class GrOntoPIConfig:
         self.default_useremail = None
         self.interservices_token = None
         self.owl_directory = None
-        self.ontonamespace = "https://www.wikidata.org/wiki/"
-        self.sparql_endpoint = ""
+        self.ontonamespace = "http://www.wikidata.org/wiki/"
+        self.sparql_endpoint = "https://query.wikidata.org/bigdata/namespace/wdq/sparql"
         self.sparql_credentials = None
         self.ontology_path = "/config/ontology.owl"
-        self.type_predicate = "https://www.wikidata.org/wiki/Property:P31"
+        self.type_predicate = ["http://www.wikidata.org/prop/direct/P31",
+                               # instance of
+                               "http://www.wikidata.org/prop/direct/P106"
+                               # has profession
+                               ]
+        self.different_graphs = False
+
 
         # OpenAPI examples
         self.openAPIExamples = {
-            "entities": ["https://www.wikidata.org/entity/Q161531",
-                         "https://www.wikidata.org/entity/Q7243"],
-            "classes" : ["https://www.wikidata.org/entity/Q5"], # Human
+            "entities": ["http://www.wikidata.org/entity/Q161531",  # Tolstoi
+                         "http://www.wikidata.org/entity/Q7243"],  # War&Peace
+            "classes": ["http://www.wikidata.org/entity/Q36180"],  # Writer
             "default_language": "en"
         }
 

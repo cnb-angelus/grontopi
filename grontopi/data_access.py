@@ -1,6 +1,6 @@
 import json
+import traceback
 import asyncio
-import time
 from abc import ABC, abstractmethod
 from typing import List, Dict, Set, Tuple
 
@@ -13,9 +13,9 @@ from models.api_models import EntityDescription, \
     EntityListWithLabels, EntityNeighbourDescription, \
     EntityNeighbourhoodSummary
 from models.entity_models import EntityWithLabel, LabelWithLang
-from models.ontology_models import EntityURI, ClassURI, WrappedUri
-from models.ontology_models import RelationURI, PropertyURI, RoleURI
-from models.entity_models import PredicateLiteralTuple, PredicateObjectTuple
+from models.ontology_models import EntityURI, ClassURI
+from models.ontology_models import RelationURI, RoleURI
+from models.entity_models import PredicateObjectTuple
 from config import conf as cfg
 from utils.rdfutils import URI, LIT
 from utils.owlreading import OntologyReader
@@ -56,16 +56,48 @@ class GraphAccess(ABC):
 class SPARQLAccess(GraphAccess):
     def __init__(self, query_endpoint,
                  query_credentials=None,
-                 typepred=rdflib.namespace.RDF["type"]):
+                 typepred=rdflib.namespace.RDF["type"],
+                 different_graphs=False):
         self.query_endpoint = query_endpoint
-        self.query_client = SPARQLWrapper(self.query_endpoint)
+        user_agent = 'Grontogopi/0.1 (' \
+                     'https://github.com/cnb-angelus/grontopi; ' \
+                     'grontopi@gmail.com)'
+
+        print(self.query_endpoint, "\t<~~~~~~~ Endpoint")
+        self.query_client = SPARQLWrapper(self.query_endpoint,
+                                          agent=user_agent)
         self.query_client.setReturnFormat(JSON)
         self.query_client.setMethod("POST")
         if query_credentials is not None and len(query_credentials) == 2:
             self.query_client.setCredentials(query_credentials[0],
                                              query_credentials[1])
-        self.typepred = URI(typepred)
+
+        self.typepred_list = [rdflib.namespace.RDF["type"]]
+        if isinstance(typepred, rdflib.URIRef) or isinstance(typepred, str):
+            self.typepred_list = [URI(typepred)]
+        if isinstance(typepred, list):
+            self.typepred_list = [URI(x) for x in typepred]
+
+        self.differentgraphs = different_graphs
         super().__init__()
+
+    def _query(self, query, no_cache=False):
+        """
+        This method just takes care of the SPARQL query, choosing the right
+        HTTP verb as per WikiData recommendation to use GET for small queries
+        :param query:
+        :return:
+        """
+        query_clean = "\n".join([x.strip() for x in query.split("\n")])
+        self.query_client.setQuery(query_clean)
+        self.query_client.setMethod("GET")
+        if no_cache or len(query_clean) > 1000:
+            self.query_client.setMethod("POST")
+        resp = self.query_client.queryAndConvert()
+
+        #print("~~", query)
+
+        return resp
 
     async def fetch_entities_from_list_of_ids(self,
                                               entitylist: List[EntityURI],
@@ -124,10 +156,11 @@ class SPARQLAccess(GraphAccess):
                                   per_page: int = 1000,
                                   lang: str = "en"
                                   ) -> EntityListWithLabels:
-        query = self._query_entities_of_class(class_id, start, per_page,
-                                              lang, typepred=self.typepred)
-        self.query_client.setQuery(query)
-        rj = self.query_client.queryAndConvert()
+        query = self._query_entities_of_class(class_id, start,
+                                              per_page,
+                                              lang, )
+
+        rj = self._query(query)
         ent2labels = self._group_labels_by_entity(rj)
 
         # Now we present them as required by the output model
@@ -167,7 +200,7 @@ class SPARQLAccess(GraphAccess):
         descs = await self.fetch_entities_from_list_of_ids(entitylist=ents,
                                                            lang=lang,
                                                            onto=onto_config,
-                                                           force_full=True)
+                                                           force_full=False)
         descsdict = {URI(de.uri).n3(): de for de in descs}
         linkedents = []
         linkcount = dict()
@@ -202,10 +235,9 @@ class SPARQLAccess(GraphAccess):
                              lang: str) -> Tuple[Dict, Set]:
         eid = ewl["uri"]
         query_links = self._query_entity_links(entity_id=eid,
-                                               onto_cfg=onto,
-                                               typepred=self.typepred)
-        self.query_client.setQuery(query_links)
-        rjlinks = self.query_client.queryAndConvert()["results"]["bindings"]
+                                               onto_cfg=onto)
+        rjlinks = self._query(query_links)["results"]["bindings"]
+
         dps, ops, ips = [], [], []
         ents = set()
 
@@ -245,8 +277,7 @@ class SPARQLAccess(GraphAccess):
         query_labels = self._query_many_entity_labels(entity_ids=entitylist,
                                                       lang=lang)
         # Here we get the set of labels for every entity
-        self.query_client.setQuery(query_labels)
-        rjlabs = self.query_client.queryAndConvert()
+        rjlabs = self._query(query_labels)
         ent2labels = self._group_labels_by_entity(rjlabs)
         return ent2labels
 
@@ -255,9 +286,8 @@ class SPARQLAccess(GraphAccess):
                                         onto_config: OntologyReader):
         query_classes = self._query_many_entity_classes(entity_ids=entitylist,
                                                         onto_cfg=onto_config,
-                                                        typepred=self.typepred)
-        self.query_client.setQuery(query_classes)
-        rjcls = self.query_client.queryAndConvert()
+                                                        )
+        rjcls = self._query(query_classes)
         ent2classes = self._group_classes_by_entity(rjcls)
         ent2class = {ent: onto_config.get_maximal_class(classes)
                      for ent, classes in ent2classes.items()}
@@ -272,9 +302,12 @@ class SPARQLAccess(GraphAccess):
         return longname
 
     # ToDo get all labels in a single binding, using OPTIONAL
-    @staticmethod
-    def _query_many_entity_labels(entity_ids: List[EntityURI],
+    def _query_many_entity_labels(self,
+                                  entity_ids: List[EntityURI],
                                   lang: str = "en"):
+        graphextra_start = "GRAPH ?g {" if self.differentgraphs else "\n"
+        graphextra_end = "}" if self.differentgraphs else "\n"
+
         subjvalues = " ".join([URI(eid).n3() for eid in entity_ids])
         uniontermns = []
         for luri in cfg.label_uris:
@@ -289,10 +322,10 @@ class SPARQLAccess(GraphAccess):
         query = f"""
                  SELECT ?s ?label_pred ?label_val
                  WHERE {{
-                     GRAPH ?g {{
+                     {graphextra_start}
                          VALUES ?s {{ {subjvalues} }}
                      {"UNION".join(uniontermns)}
-                     }} 
+                     {graphextra_end}
                      FILTER(LANG(?label_val) = '' 
                      || LANGMATCHES(LANG( ?label_val), '{lang}'))
                  }}
@@ -300,66 +333,77 @@ class SPARQLAccess(GraphAccess):
                  """
         return query
 
-    @staticmethod
-    def _query_entity_links(entity_id: EntityURI,
-                            onto_cfg: OntologyReader,
-                            typepred = rdflib.namespace.RDF["type"]):
+    def _query_entity_links(self,
+                            entity_id: EntityURI,
+                            onto_cfg: OntologyReader):
+
+        graphextra_start = "GRAPH ?g {" if self.differentgraphs else "\n"
+        graphextra_end = "}" if self.differentgraphs else "\n"
+
         allowed_classes = onto_cfg.all_study_domain_classes
         allowed_classes = ", ".join([URI(clsuri).n3() for clsuri in
                                      allowed_classes])
         predvalues = list(onto_cfg.allrelations) + list(onto_cfg.allproperties)
         predvalues = " ".join([URI(puri).n3() for puri in predvalues])
 
+        typepreds = " ".join([URI(x).n3() for x in self.typepred_list])
+
         euri = URI(entity_id).n3()
         query = f"""
                  SELECT DISTINCT ?s ?p ?o
                  WHERE {{
-                     GRAPH ?g {{
+                     {graphextra_start}
                          VALUES ?p {{ {predvalues} }}
+                         VALUES ?typepred {{ {typepreds}  }}
                          {{ 
                             {euri} ?p ?o .
                             BIND ({euri} AS ?s) . 
-                            OPTIONAL {{ ?o a ?cls }}
+                            OPTIONAL {{ ?o ?typepred ?cls }}
                           }}
                          UNION
                          {{
                             ?s ?p {euri} .
-                            ?s {typepred.n3()} ?cls
+                            ?s  ?typepred ?cls
                             BIND ({euri} AS ?o)
                          }}
-                        }}
+                        {graphextra_end}
                      FILTER( isLiteral(?o) || ?cls in ( {allowed_classes} )  ) 
                  }}        
                  """
         return query
 
-    @staticmethod
-    def _query_many_entity_classes(entity_ids: List[EntityURI],
-                                   onto_cfg: OntologyReader,
-                                   typepred = rdflib.namespace.RDF["type"]):
+    def _query_many_entity_classes(self,
+                                   entity_ids: List[EntityURI],
+                                   onto_cfg: OntologyReader):
+
+        graphextra_start = "GRAPH ?g {" if self.differentgraphs else "\n"
+        graphextra_end = "}" if self.differentgraphs else "\n"
+
         allowed_classes = onto_cfg.all_study_domain_classes
         allowed_classes = ", ".join([URI(clsuri).n3() for clsuri in
                                      allowed_classes])
         subjvalues = " ".join([URI(eid).n3() for eid in entity_ids])
+        typepreds = " ".join([URI(x).n3() for x in self.typepred_list])
         query = f"""
                  SELECT ?s ?cls
                  WHERE {{
-                     GRAPH ?g {{
-                         VALUES ?s {{ {subjvalues} }}
-                         ?s {typepred.n3()} ?cls .
-                        }}
+                     {graphextra_start}
+                         VALUES ?s {{ {subjvalues} }}                         
+                         ?s ?typepred ?cls .
+                         VALUES ?typepred {{ {typepreds}  }}
+                     {graphextra_end}
                      FILTER(?cls in ( {allowed_classes} ) )
                  }}        
                  """
         return query
 
     # ToDo get all labels in a single binding, using OPTIONAL
-    @staticmethod
-    def _query_entities_of_class(class_id: ClassURI,
+
+    def _query_entities_of_class(self,
+                                 class_id: ClassURI,
                                  start: int = 0,
                                  per_page: int = 1000,
                                  lang: str = "en",
-                                 typepred = rdflib.namespace.RDF["type"]
                                  ):
         """
         Creates a query with variables ?s ?label_pred ?label_val
@@ -380,13 +424,19 @@ class SPARQLAccess(GraphAccess):
                     """
             uniontermns.append(uterm)
 
+        graphextra_start = "GRAPH ?g {" if self.differentgraphs else "\n"
+        graphextra_end = "}" if self.differentgraphs else "\n"
+
+        typepreds = " ".join([URI(x).n3() for x in self.typepred_list])
+
         query = f"""
                 SELECT ?s ?label_pred ?label_val
                 WHERE {{
-                    GRAPH ?g {{
-                        ?s {typepred.n3()} {class_id} .
+                    {graphextra_start}
+                    VALUES ?typepred {{ {typepreds}  }}
+                        ?s  ?typepred {class_id} .
                     {"UNION".join(uniontermns)}
-                    }} 
+                    {graphextra_end}
                     FILTER(LANG(?label_val) = '' 
                     || LANGMATCHES(LANG( ?label_val), '{lang}'))
                 }}
