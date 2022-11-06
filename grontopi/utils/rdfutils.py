@@ -25,7 +25,7 @@ def URI(uri_str) -> rdflib.URIRef:
 
 
 def LIT(litstr: Union[rdflib.Literal, str]) -> rdflib.Literal:
-    if len(litstr)==0:
+    if len(litstr) == 0:
         return rdflib.Literal("")
     if litstr[0] == '\"':
         litstr = litstr[1:]

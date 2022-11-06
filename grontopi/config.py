@@ -12,6 +12,8 @@ a = rdf_ns["type"]
 rdfs_ns = rdflib.namespace.RDFS
 skos_ns = rdflib.namespace.SKOS
 
+overrideable_sections = ["ontology_config", "oauth2_config"]
+
 
 class GrOntoPIConfig:
     def __init__(self):
@@ -19,9 +21,7 @@ class GrOntoPIConfig:
         self.use_OAuth2 = False
         self.auth_server_kid = None
         self.auth_server_n = None
-        self.default_useremail = None
         self.interservices_token = None
-        self.owl_directory = None
         self.ontonamespace = "http://www.wikidata.org/wiki/"
         self.sparql_endpoint = "https://query.wikidata.org/bigdata/namespace/wdq/sparql"
         self.sparql_credentials = None
@@ -36,8 +36,9 @@ class GrOntoPIConfig:
 
         # OpenAPI examples
         self.openAPIExamples = {
-            "entities": ["http://www.wikidata.org/entity/Q161531",  # Tolstoi
-                         "http://www.wikidata.org/entity/Q7243"],  # War&Peace
+            "entities": ["http://www.wikidata.org/entity/Q7243",  # Tolstoi
+                         "http://www.wikidata.org/entity/Q161531", # War&Peace
+                         ],
             "classes": ["http://www.wikidata.org/entity/Q36180"],  # Writer
             "default_language": "en"
         }
@@ -65,21 +66,24 @@ class GrOntoPIConfig:
                 if "ontonamespace" in cj.keys():
                     self.ontonamespace = cj["ontonamespace"]
                     self._reset_defaults_with_new_ns()
-                if "ontology_config" in cj.keys():
-                    for k, v in cj["ontology_config"].items():
-                        if isinstance(v, list):
-                            vuri = [self._uri(ite) for ite in v]
-                        else:
-                            vuri = self._uri(v)
-                        self.__dict__[k] = vuri
-                    cj.pop("ontology_config")
+                for section in overrideable_sections:
+                    if section in cj.keys():
+                        for k, v in cj[section].items():
+                            if isinstance(v, list):
+                                vuri = [self._uri(ite, section)
+                                        for ite in v]
+                            else:
+                                vuri = self._uri(v, section)
+                            self.__dict__[k] = vuri
+                        cj.pop(section)
                 self.__dict__.update(cj)
-
             self.base_classes = [self.study_domain_class, self.reality_class]
         else:
             logging.warning("Loading default configuration")
 
-    def _uri(self, v: str):
+    def _uri(self, v: str, sectionname: str):
+        if not sectionname == "ontology_config":
+            return str
         if "://" in v:
             return rdflib.URIRef(v)
         else:

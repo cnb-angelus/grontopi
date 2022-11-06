@@ -44,7 +44,7 @@ def decode_token(token):
             "static_token": True,
             "resource_access": [],
             "roles": [],
-            "email": conf.default_useremail
+            "email": "user@domain.grontopi"
         }
     return jwt.decode(token, RSA_KEY, options=JWT_OPTIONS)
 
@@ -56,26 +56,14 @@ def found_access(search, info):
     return False
 
 
-def apply_roles_rules(read, write, payload, request):
-    if not read and not write:
-        raise CREDENTIALS_EXCEPTION
-    if (
-            read and not found_access("lectura", payload["resource_access"])
-    ):
-        raise CREDENTIALS_EXCEPTION
-    if write and not found_access("escritura", payload["resource_access"]):
-        raise CREDENTIALS_EXCEPTION
-
-
-def user_invalidator(read: bool = True, write: bool = False):
-    async def verify_jwt_in_request(request: Request, read=read, write=write):
+def user_invalidator():
+    async def verify_jwt_in_request(request: Request):
         if request.method in {"OPTIONS"} or not conf.use_OAuth2:
             return
         try:
             token = request.headers.get("Authorization", "")[7:]
             payload = decode_token(token)
             if not payload.get('static_token', False):
-                apply_roles_rules(read, write, payload, request)
                 return {
                     "static_token": False,
                     "resource_access": payload["resource_access"],

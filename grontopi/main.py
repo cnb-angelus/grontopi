@@ -7,9 +7,9 @@ from pyfiglet import Figlet
 
 from routes import router
 
-version = "0.0.1"
+version = "0.0.2"
 figlet = Figlet(font='slant')
-print(figlet.renderText('GrOntoPI') +"  " + str(version))
+print(figlet.renderText('GrOntoPI') + "  " + str(version))
 
 
 app = FastAPI(
@@ -30,4 +30,3 @@ app.add_middleware(
 app.add_middleware(GZipMiddleware, minimum_size=1000)
 
 app.include_router(router)
-

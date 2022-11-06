@@ -94,9 +94,6 @@ class SPARQLAccess(GraphAccess):
         if no_cache or len(query_clean) > 1000:
             self.query_client.setMethod("POST")
         resp = self.query_client.queryAndConvert()
-
-        #print("~~", query)
-
         return resp
 
     async def fetch_entities_from_list_of_ids(self,

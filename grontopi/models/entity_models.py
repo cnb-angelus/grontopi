@@ -24,17 +24,7 @@ class SpecificProvenanceInfo(BaseModel):
     metodo_inferencia: Optional[MetodoInferencia]
     validity_period: Optional[UndeterminedTimeInterval]
 
-    class Config:
-        schema_extra = {
-            "example": {
-                "observaciones": "Observaciones sobre relación entre Don "
-                                 "Fulanito y La Organización X",
-                "confianza": "<https://vocabs.graph/v1.0/Confianza/Alta>",
-                "metodo_inferencia": "<https://vocabs.graph/Inf/Autómático>"
-            },
-        }
-        description = "Provenance info about a statement or entity"
-        title = "Specific Proveance Info"
+
 
 
 class AbbreviatedProvenance(BaseModel):
@@ -49,23 +39,7 @@ class GeneralProvenanceInfo(BaseModel):
     is_valid: Optional[bool]
     reification_uri: Optional[ReificationURI]
 
-    class Config:
-        schema_extra = {
-            "example": {
-                "soporte_documental": "<https://docs.graph/documentos/doc1>",
-                "annotation_date": "2020-09-16",
-                "polygon": {
-                    "upper_left_x": 1000,
-                    "upper_left_y": 1000,
-                    "lower_right_x": 1012,
-                    "lower_right_y": 1016,
-                    "hex_color": "#00FF00"
-                }
-            }
-        }
-        description = """Provenance info linking an annotation to the real
-                      world document containing it"""
-        title = "General Proveance Info"
+
 
 
 class LabelWithLang(BaseModel):

@@ -1,7 +1,7 @@
 import cachetools
 import datetime
 
-CACHE_SIZE = 32 * 1024 # Number of Items to save
+CACHE_SIZE = 32 * 1024  # Number of Items to save
 CACHE_LIFETIME = 300  # Number of seconds after which cache is invalid
 
 
@@ -16,7 +16,7 @@ class TimeLimitedCache:
         self.cache = cachetools.TTLCache(maxsize=cache_size, ttl=ttl)
         self.lastread = datetime.datetime.now()
         # Cache won't last more than a day, no matter what
-        #print("Started Cache ")
+        # print("Started Cache ")
 
     def seconds_since_last_read(self):
         dt = datetime.datetime.now() - self.lastread

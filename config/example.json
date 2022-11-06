@@ -1,10 +1,9 @@
 {
-  "ontology_path": "/config/myontology.owl",
   "sparql_endpoint": "https://query.wikidata.org/bigdata/namespace/wdq/sparql",
   "sparql_credentials": [],
+  "different_graphs": false,
+  "ontology_path": "/config/ontology.owl",
   "ontonamespace": "http://www.wikidata.org/wiki/",
-  "type_predicate": ["http://www.wikidata.org/prop/direct/P31",
-                               "https://www.wikidata.org/wiki/Property:P106"],
   "ontology_config": {
     "reified_object_property": "MaterializedObjectProperty",
     "reified_data_property": "MaterializedDataProperty",
@@ -15,9 +14,28 @@
     "reality_class": "ThingsReality",
     "sameness_predicate": "http://www.w3.org/2002/07/owl#sameAs",
     "label_uris": [
-      "hasName",
       "http://www.w3.org/2000/01/rdf-schema#label",
       "http://www.w3.org/2004/02/skos/core#prefLabel"
+    ],
+    "type_predicate": [
+      "http://www.wikidata.org/prop/direct/P31",
+      "https://www.wikidata.org/wiki/Property:P106"
     ]
+  },
+  "oauth2_config": {
+    "use_OAuth2": false,
+    "auth_server_kid": null,
+    "auth_server_n": null,
+    "interservices_token": null
+  },
+  "openAPIExamples": {
+    "entities": [
+      "http://www.wikidata.org/entity/Q161531",
+      "http://www.wikidata.org/entity/Q7243"
+    ],
+    "classes": [
+      "http://www.wikidata.org/entity/Q36180"
+    ],
+    "default_language": "en"
   }
 }

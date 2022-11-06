@@ -11,7 +11,6 @@ from config import GrOntoPIConfig
 from models.ontology_models import ClassDescription, ClassURI
 from utils.rdfutils import URI, get_local_name
 
-datadir = cfg.owl_directory
 
 ontons = rdflib.namespace.Namespace(cfg.ontonamespace)
 owl_ns = rdflib.namespace.OWL
@@ -44,8 +43,7 @@ def _union2list(r1):
 
 class OntologyReader:
 
-    def __init__(self, ontologypath: str,
-                 config_object: GrOntoPIConfig):
+    def __init__(self, ontologypath: str):
         # print("\nOntology Reader init: -------")
 
         # Ontology Specific
