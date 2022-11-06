@@ -83,7 +83,7 @@ class GrOntoPIConfig:
 
     def _uri(self, v: str, sectionname: str):
         if not sectionname == "ontology_config":
-            return str
+            return v
         if "://" in v:
             return rdflib.URIRef(v)
         else:
@@ -115,3 +115,4 @@ if environ.get("CONFIG_PATH") is not None:
 
 # If the config file exists, we use it to overide configs
 conf.load_json_config(configpath)
+print(conf.__dict__.items())

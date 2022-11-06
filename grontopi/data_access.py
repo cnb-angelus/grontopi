@@ -102,7 +102,7 @@ class SPARQLAccess(GraphAccess):
                                               lang: str = "en",
                                               force_full=False,
                                               ) -> List[EntityDescription]:
-
+        print(self.query_endpoint,"<--- Different graphs\n\n")
         classgetter = self._get_classes_for_entities(
             entitylist=entitylist,
             onto_config=onto)
