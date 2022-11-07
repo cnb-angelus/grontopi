@@ -1,5 +1,6 @@
 import math
 import os
+import re
 from typing import Dict, Union, List
 
 import rdflib
@@ -335,10 +336,8 @@ class OntologyReader:
         if len(deflab) > 3:
             if deflab[-3] == "@" and deflab[-2:].isalpha():
                 deflab = deflab[:-3]
-            if deflab[0] == '"':
-                deflab = deflab[1:]
-            if deflab[-1] == '"':
-                deflab = deflab[:-1]
+            if re.search('\".+\"', deflab):
+                deflab = deflab[1:-1]
         return deflab
 
     def get_elements_with_hierarchies(self, s=None,
