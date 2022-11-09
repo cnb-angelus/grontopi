@@ -8,7 +8,7 @@ from utils.OAuth2_serverside import user_invalidator
 from models.api_models import EntityDescription
 from models.api_models import EntityListWithLabels
 from models.ontology_models import EntityURI, ClassURI
-from data_access import SPARQLAccess
+from data_access.sparql_data_access import SPARQLAccess
 from utils.owlreading import OntologyReader
 from utils.rdfutils import URI
 from config import conf as cfg
@@ -95,15 +95,20 @@ async def entities_by_ids(entity_ids: List[EntityURI] = exents,
 
 @router.get(
     "/entities/by_class_with_labels", tags=["Statements"],
+    description="Gets entities of a given class. Optionally can set a prefix"
+                "so that only entities whose label matches this prefix is "
+                "returned. Prefix is ignored if it is length smaller than 3",
     response_model=EntityListWithLabels)
 async def entities_labels(class_id: ClassURI = excls,
                           start: int = 0, per_page: int = 100,
                           lang: str = deflang,
+                          prefix : str = "",
                           user_info: str = Depends(user_invalidator())
                           ):
     res = graph.fetch_entities_of_classes(class_id=class_id,
                                           start=start, per_page=per_page,
-                                          lang=lang)
+                                          lang=lang,
+                                          prefix=prefix)
     return res
 
 
