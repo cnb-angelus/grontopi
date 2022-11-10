@@ -9,7 +9,7 @@ from routes import router
 from config import conf as cfg
 
 
-version = "0.0.2"
+version = "0.0.3"
 figlet = Figlet(font='slant')
 print(figlet.renderText('GrOntoPI') + "  " + str(version))
 
