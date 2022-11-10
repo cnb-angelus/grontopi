@@ -59,6 +59,9 @@ class GrOntoPIConfig:
                            skos_ns["prefLabel"],
                            ]
 
+        self.redis_cache_url = "redis_cache"
+        self.redis_cache_port = "6379"
+
     def load_json_config(self, config_path):
         if os.path.isfile(config_path):
             with open(config_path) as fin:

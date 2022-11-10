@@ -3,6 +3,8 @@ version: '3.5'
 services:
   grontopi:
     container_name: grontopi
+    depends_on:
+      - redis_cache
     build:
       context: .
       dockerfile: Dockerfile
@@ -15,3 +17,7 @@ services:
       - LOG_LEVEL=debug
       - MAX_WORKERS=1
     entrypoint: /start-reload.sh
+
+  redis_cache:
+    image: redis:5.0.5
+    container_name: redis_cache

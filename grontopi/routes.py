@@ -5,6 +5,7 @@ from fastapi import APIRouter, Depends
 from fastapi import HTTPException
 from utils.OAuth2_serverside import user_invalidator
 
+
 from models.api_models import EntityDescription
 from models.api_models import EntityListWithLabels
 from models.ontology_models import EntityURI, ClassURI
@@ -105,7 +106,7 @@ async def entities_labels(class_id: ClassURI = excls,
                           prefix : str = "",
                           user_info: str = Depends(user_invalidator())
                           ):
-    res = graph.fetch_entities_of_classes(class_id=class_id,
+    res = await graph.fetch_entities_of_classes(class_id=class_id,
                                           start=start, per_page=per_page,
                                           lang=lang,
                                           prefix=prefix)

@@ -1,3 +1,4 @@
+import json
 import asyncio
 from typing import List, Dict, Set, Tuple
 
@@ -5,6 +6,7 @@ import rdflib
 import unidecode
 from SPARQLWrapper import SPARQLWrapper, JSON
 from pydantic import parse_obj_as
+from aiocache import Cache
 
 from models.api_models import EntityDescription, \
     EntityListWithLabels, EntityNeighbourhoodSummary
@@ -17,6 +19,15 @@ from config import conf as cfg
 from utils.rdfutils import URI, LIT
 from utils.owlreading import OntologyReader
 from data_access.abstract_data_access import GraphAccess
+
+cache = Cache(cache_class=Cache.REDIS,
+              namespace="main",
+              endpoint=cfg.redis_cache_url,
+              port=int(cfg.redis_cache_port))
+
+print("Trying redis at",
+      cfg.redis_cache_url,
+      cfg.redis_cache_port, "\n\n")
 
 
 class SPARQLAccess(GraphAccess):
@@ -49,7 +60,7 @@ class SPARQLAccess(GraphAccess):
                                    for i, lu in enumerate(cfg.label_uris)}
         super().__init__()
 
-    def _query(self, query, no_cache=False):
+    async def _query(self, query, no_cache=False):
         """
         This method just takes care of the SPARQL query, choosing the right
         HTTP verb as per WikiData recommendation to use GET for small queries
@@ -57,11 +68,17 @@ class SPARQLAccess(GraphAccess):
         :return:
         """
         query_clean = "\n".join([x.strip() for x in query.split("\n")])
+        cached_value = await cache.get(query_clean, default=None)
+        if cached_value is not None:
+            print("Cache hit")
+            return cached_value
         self.query_client.setQuery(query_clean)
         self.query_client.setMethod("GET")
         if no_cache or len(query_clean) > 1000:
             self.query_client.setMethod("POST")
         resp = self.query_client.queryAndConvert()
+        await cache.set(query_clean, resp)
+        print("Cache miss")
         return resp
 
     async def fetch_entities_from_list_of_ids(self,
@@ -93,9 +110,9 @@ class SPARQLAccess(GraphAccess):
                 "inverse_properties": [],
             }
             if force_full or len(entitylist) == 1:
-                ewl, _missinglabs = self._add_links_to_entity(ewl=ewl,
-                                                              onto=onto,
-                                                              lang=lang)
+                ewl, _missinglabs = await self._add_links_to_entity(ewl=ewl,
+                                                                    onto=onto,
+                                                                    lang=lang)
                 _missinglabs: Set[EntityURI]
                 allmissinglabels.update(_missinglabs)
 
@@ -115,18 +132,18 @@ class SPARQLAccess(GraphAccess):
                 op.object_labels = nl
         return entity_descriptions
 
-    def fetch_entities_of_classes(self,
-                                  class_id: ClassURI,
-                                  start: int = 0,
-                                  per_page: int = 1000,
-                                  lang: str = "en",
-                                  prefix: str = "",
-                                  ) -> EntityListWithLabels:
+    async def fetch_entities_of_classes(self,
+                                        class_id: ClassURI,
+                                        start: int = 0,
+                                        per_page: int = 1000,
+                                        lang: str = "en",
+                                        prefix: str = "",
+                                        ) -> EntityListWithLabels:
         query = self._query_entities_of_class(class_id, start,
                                               per_page,
                                               lang, prefix)
 
-        rj = self._query(query)
+        rj = await self._query(query)
         ent2labels = self._collect_labels_for_entities(rj)
 
         # Now we present them as required by the output model
@@ -161,7 +178,8 @@ class SPARQLAccess(GraphAccess):
                                     lang: str = "en",
                                     ) -> EntityNeighbourhoodSummary:
         ewl = {"uri": URI(entity_id).n3()}
-        ewl, ents = self._add_links_to_entity(ewl, onto=onto_config, lang=lang)
+        ewl, ents = await self._add_links_to_entity(ewl, onto=onto_config,
+                                                    lang=lang)
         ents = [parse_obj_as(EntityURI, x) for x in ents]
         descs = await self.fetch_entities_from_list_of_ids(entitylist=ents,
                                                            lang=lang,
@@ -195,14 +213,15 @@ class SPARQLAccess(GraphAccess):
         return parse_obj_as(EntityNeighbourhoodSummary, result)
 
     # ToDo make this work for a list of entities, to make a single query
-    def _add_links_to_entity(self,
-                             ewl: Dict,
-                             onto: OntologyReader,
-                             lang: str) -> Tuple[Dict, Set]:
+    async def _add_links_to_entity(self,
+                                   ewl: Dict,
+                                   onto: OntologyReader,
+                                   lang: str) -> Tuple[Dict, Set]:
         eid = ewl["uri"]
         query_links = self._query_entity_links(entity_id=eid,
                                                onto_cfg=onto)
-        rjlinks = self._query(query_links)["results"]["bindings"]
+        rjlinks_ = await self._query(query_links)
+        rjlinks = rjlinks_["results"]["bindings"]
 
         dps, ops, ips = [], [], []
         ents = set()
@@ -243,7 +262,7 @@ class SPARQLAccess(GraphAccess):
         query_labels = self._query_many_entity_labels(entity_ids=entitylist,
                                                       lang=lang)
         # Here we get the set of labels for every entity
-        rjlabs = self._query(query_labels)
+        rjlabs = await self._query(query_labels)
         ent2labels = self._collect_labels_for_entities(rjlabs)
         return ent2labels
 
@@ -253,7 +272,7 @@ class SPARQLAccess(GraphAccess):
         query_classes = self._query_many_entity_classes(entity_ids=entitylist,
                                                         onto_cfg=onto_config,
                                                         )
-        rjcls = self._query(query_classes)
+        rjcls = await self._query(query_classes)
         ent2classes = self._group_classes_by_entity(rjcls)
         ent2class = {ent: onto_config.get_maximal_class(classes)
                      for ent, classes in ent2classes.items()}

@@ -1,11 +1,13 @@
 import random as ran
 
-from fastapi import FastAPI
+from fastapi import FastAPI, Request, Response
 from fastapi.middleware.gzip import GZipMiddleware
 from fastapi.middleware.cors import CORSMiddleware
 from pyfiglet import Figlet
 
 from routes import router
+from config import conf as cfg
+
 
 version = "0.0.2"
 figlet = Figlet(font='slant')
@@ -18,6 +20,7 @@ app = FastAPI(
         "A simple API to access reified graphs using SPARQL"),
     version=version,
 )
+
 
 app.add_middleware(
     CORSMiddleware,
