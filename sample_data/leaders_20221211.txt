@@ -1,0 +1,2459 @@
+
+==List==
+{| class="wikitable sortable"
+!Target
+!Title
+!Date
+!Place
+!Country
+!Assassin or other entity
+!class=unsortable|Ref
+|-
+|[[Rimush]]
+|[[King of Akkad]]
+|{{dts|-2270}}
+|
+|[[Akkadian Empire]]
+|His courtiers
+|<ref>{{ cite book | title = Babylonian Liver Omens: The Chapters Manzazu, Padanu, and Pan Takalti of the Babylonian Extispicy Series Mainly from Assurbanipal's Library | author = Ulla Koch-Westenholz | publisher = Museum Tusculanum | year = 2000 | page = 394 }}</ref>
+|-
+|[[Ashur-nadin-apli]]
+|[[King of Assyria]]
+|{{dts|-1194}}
+|
+|[[Middle Assyrian Empire]]
+|[[Ashur-nirari III]]
+|<ref>''[[Chronicle P]]'', column 4, lines 10 to 11.</ref>
+|-
+|[[Simbar-shipak]]
+| rowspan="3" |[[King of Babylon]]
+|{{dts|-1008}}
+|
+| rowspan="3" |[[Babylonia]]
+|[[Ea-mukin-zeri]]
+|<ref>GIŠ.TUKUL.TA BA.AN.SÌG.GI.IN, “by the sword.”</ref>
+|-
+|[[Ea-mukin-zeri]]
+|{{dts|-1008}}
+|
+|[[Kashshu-nadin-ahi]]
+|<ref>''Dynastic Chronicle'' v 5-6: <sup>md</sup>É''-a-mu-kin-''NUMUN LUGAL IM.GI [[DUMU (son Sumerogram)|DUMU]] <sup>m</sup>''Ḫaš-mar iti'' 3 ''in.ak, ina raq-qa-ti šá'' É-<sup>m</sup>''Ḫaš-mar qí-bir''.</ref>
+|-
+|[[Kashshu-nadin-ahi]]
+|{{dts|-1005}}
+|
+|[[Eulmash-shakin-shumi]]
+|<ref name=brinkman>{{ cite book | title = The Cambridge Ancient History (Volume 3, Part 1) | chapter = Babylonia, c. 1000 – 748 B.C. | author = J. A. Brinkman |editor1=John Boardman |editor2=I. E. S. Edwards |editor3=N. G. L. Hammond |editor4=E. Sollberger | publisher = Cambridge University Press | year = 1982 | pages = 296–297 }}</ref>
+|-
+|[[Titus Tatius]]
+|[[Sabines#Romans of Sabine ancestry|King of the Sabines]]
+|{{dts|-748}}
+|[[Rome]]
+|  [[Roman Kingdom]]
+|[[Romulus]]
+|<ref name="DoH II-51">{{cite journal|author=Dionysius of Halicarnassus|access-date=13 November 2016|title=Roman Antiquities vol II ch 51-52|year=1937|url=https://www.loebclassics.com/view/dionysius_halicarnassus-roman_antiquities/1937/pb_LCL319.429.xml|doi=10.4159/DLCL.dionysius_halicarnassus-roman_antiquities.1937}} {{Subscription needed|via=[[Loeb Classical Library|digital Loeb Classical Library]]}}</ref>
+|-
+|[[Ashur-nirari V]]
+|[[King of Assyria]]
+|{{dts|-745}}
+|
+|[[Neo-Assyrian Empire]]
+|[[Tiglath-Pileser III]]
+|<ref>{{cite book |last=Healy |first=Mark |year=1991 |title=The Ancient Assyrians |url=https://books.google.com/books?id=Hodh6fgx-DMC  |publisher=Osprey |location=London |isbn=1-85532-163-7 |oclc=26351868 |pages=17}}</ref>
+|-
+|[[Nabu-nadin-zeri]]
+| rowspan="3" |[[King of Babylon]]
+|{{dts|-732}}
+|
+| rowspan="3" |[[Babylonia]]
+|Killed in an insurrection by [[Nabu-suma-ukin II]].
+|<ref>{{ cite book | title = Reallexikon der Assyriologie und vorderasiatischen Archäologie: Nab-Nuzi | chapter = Nabû-nādin-zēri | author = J. A. Brinkman |editor1=Erich Ebeling |editor2=Bruno Meissner |editor3=Dietz Otto Edzard | publisher = Walter de Gruyter | year = 2001 | pages = 29–30 }}</ref>
+|-
+|[[Nabu-suma-ukin II]]
+|{{dts|-732}}
+|
+|[[Nabu-mukin-zeri]]
+|<ref>{{ cite book | title = Prelude to Empire: Babylonian Society and Politics, 747-626 B.C. | author = J. A. Brinkman | publisher = Occasional Publications of the Babylonian Fund | volume = 7 | location = Philadelphia | year = 1984 | page = 23 }}</ref>
+|-
+|[[Nabu-mukin-zeri]]
+|{{dts|-729}}
+|[[Babylon]]
+|Killed during the [[Neo-Assyrian Empire|Assyrian]] conquest of Babylon by [[Tiglath-Pileser III]].
+|<ref>{{ cite book | title = Prelude to Empire: Babylonian Society and Politics, 747-626 B.C. | author = J. A. Brinkman | publisher = Occasional Publications of the Babylonian Fund | volume = 7 | location = Philadelphia | year = 1984 | pages = 42–43 }}</ref>
+|-
+|[[Shalmaneser V]]
+|[[King of Assyria]]
+|{{dts|-722}}
+|
+| rowspan="3" |[[Neo-Assyrian Empire]]
+|[[Sargon II]]
+|<ref>{{Cite web|url=https://www.worldhistory.org/Sargon_II/|title=Sargon II|last=Mark|first=Joshua J.|date=2014|website=[[World History Encyclopedia]]|access-date=9 February 2020|ref=CITEREFMark2014b}}</ref>
+|-
+|[[Mushezib-Marduk]]
+|King of Babylon
+|{{dts|-689}}
+|[[Babylon]]
+|Murdered during [[Sennacherib]]'s sack of Babylon.
+|-
+|[[Sennacherib]]
+|[[King of Assyria]]
+|{{dts|-681}}
+|[[Nineveh]]
+|[[Arda-Mulissu]]
+|<ref name=Simo>{{cite web |url=http://www.gatewaystobabylon.com/introduction/murderersennacherib.htm |work=Gateways to Babylon |title=The Murderer of Sennacherib |author=Simo Parpola|year=1980}}</ref>
+|-
+|{{sortname|Lucius|Tarquinius Priscus}}
+|[[King of Rome]]
+|{{dts|-579}}
+|[[Rome]]
+|  [[Roman Kingdom]]
+|The sons of [[Ancus Marcius]]
+|
+|-
+|[[Labashi-Marduk]]
+|[[King of Babylon]]
+|{{dts|-556}}
+|
+|[[Neo-Babylonian Empire]]
+|[[Nabonidus]] and [[Belshazzar]], in concert with the nobles of the court.
+|<ref>Albertz, R.; Israel in exile: The history and literature of the sixth century BC; Society of Biblical Literature, Atlanta 2003, p.63 {{ISBN|1-58983-055-5}}.</ref>
+|-
+|[[Phalaris]]
+|[[List of ancient Greek tyrants#Agrigentum (Acragas)|Tyrant of Agrigento]]
+|{{dts|-554}}
+|[[Agrigento]]
+|[[Agrigento|Acragas]]
+|[[Telemachus (Acragas)|Telemachus]]
+|
+|-
+|{{sortname|Servius|Tullius}}
+|[[King of Rome]]
+|{{dts|-535}}
+|[[Rome]]
+|  [[Roman Kingdom]]
+|[[Lucius Tarquinius Superbus]]
+|<ref>Livy, Ab urbe condita, [[s:From the Founding of the City/Book 1#42|1.42]], [[s:From the Founding of the City/Book 1#46|1.46]], [[s:From the Founding of the City/Book 1#47|1.47]].</ref>
+|-
+|[[Hipparchus (son of Peisistratos)|Hipparchus]]
+|[[Tyrant of Athens]]
+|{{dts|-514}}
+|[[Athens]]
+|[[File:Owl_of_Minerva.png|20px]] [[Athenian tyranny|Athens]]
+|[[Harmodius and Aristogeiton]]
+|<ref name=Herodotus-Book-v-55>{{Harvnb|Herodotus|1920|loc=[https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0126%3Abook%3D5%3Achapter%3D55 Book V. 55]}}</ref>
+|-
+|[[Xerxes I]]
+| rowspan="3" |[[List of monarchs of Persia#Achaemenid Empire (559–334/327 BC)|Achaemenid King of Kings]]
+|{{dts|-465|August}}
+|[[Persia]]
+| rowspan="3" |{{Flag|Achaemenid Empire|name=Achaemenid Persia}}
+|[[Artabanus of Persia|Artabanus]], commander of the royal bodyguard
+|<ref>[[#refkhshayayrsha|Iran-e-Bastan/Pirnia book 1 p. 873]]</ref>
+|-
+|[[Xerxes II]]
+|{{dts|-424}}
+| rowspan="2" |[[Persepolis]]
+|[[Sogdianus of Persia|Sogdianus]], Xerxes' half-brother
+|<ref name=S>S. Zawadzki, "The Circumstances of Darius II's Accession" in Jaarbericht Ex Oriente Lux 34 (1995-1996) 45-49</ref>
+|-
+|[[Sogdianus]]
+|{{dts|-423}}
+|[[Darius II of Persia|Darius II]], Sogdianus's half-brother
+|<ref name=S/>
+|-
+|[[Dion of Syracuse|Dion]]
+| rowspan="2" |[[List of tyrants of Syracuse|Tyrant of Syracuse]]
+|{{dts|-354}}
+| rowspan="2" |[[Syracuse, Sicily]]
+| rowspan="2" |[[List of tyrants of Syracuse|Syracuse]]
+|[[Calippus of Syracuse|Calippus]]
+|<ref name="dion">[[Plutarch]], ''Lives: Life of Dion''. ([http://ancienthistory.about.com/library/bl/bl_text_plutarch_dion.htm?terms=dion About]/[[s:Lives/Dion|Wikisource]])</ref>
+|-
+|[[Callippus of Syracuse|Callippus]]
+|352 BC
+|[[Leptines II]]
+|<ref name="Plut. Dion. 28-58">Plut. Dion. 28-58</ref>
+|-
+|[[Philip II of Macedon|Philip II]]
+|[[King of Macedon]]
+|{{dts|-336|October|30}}
+|[[Aigai, Macedonia|Aigai]]
+|[[File:Vergina Sun - Golden Larnax.png|20px]] [[Macedonia (ancient kingdom)|Macedonia]]
+|[[Pausanias of Orestis]] (personal bodyguard)
+|<ref>{{cite web |url=http://www.holoka.com/diodorus%20on%20philip.htm |author=Diodorus Siculus |title=The Library of History |id=16.91-95 |archive-url=https://web.archive.org/web/20100304065912/http://www.holoka.com/diodorus%20on%20philip.htm |archive-date=2010-03-04 |df=dmy-all}}</ref>
+|-
+|[[Arses of Persia|Arses]]
+|[[List of monarchs of Persia#Achaemenid Empire (559–334/327 BC)|Achaemenid King of Kings]]
+|{{dts|-336}}
+|
+|{{Flag|Achaemenid Empire|name=Achaemenid Persia}}
+|[[Bagoas]]
+|<ref>{{cite encyclopedia | title = Arses | last = LeCoq | first = P. | url = http://www.iranicaonline.org/articles/arses-greek-rendering-of-an-old-persian-name-used-as-a-hypocoristic | encyclopedia  = Encyclopaedia Iranica, Vol. II, Fasc. 5 | pages = 548 | year = 1986 }}</ref>
+|-
+|[[Seleucus I Nicator]]
+|[[List of Seleucid rulers|Seleucid Basileus]]
+|{{dts|-281|September}}
+|[[Lysimachia]], [[Thrace]]
+| rowspan="2" |[[File:SeleucosCoin.jpg|20px]] [[Seleucid Empire]]
+|[[Ptolemy Ceraunus]]
+|<ref>{{cite web|url=https://www.livius.org/articles/person/seleucus-i-nicator/|title=Seleucus I Nicator|work=Livius}}</ref>
+|-
+|[[Antiochus II Theos]]
+|[[List of Seleucid rulers|Seleucid Basileus]]
+|{{dts|-246|July}}
+|[[Anatolia]]
+|[[Laodice I]]
+|<ref>[https://www.livius.org/be-bm/belevi/belevi.html The Mausoleum of Antiochus II Theos]</ref>
+|-
+|[[Lord Chunshen]]
+|[[Prime Minister]] of [[Chu (state)|Chu]]
+|{{dts|-238}}
+|[[Shouchun]]
+|[[Chu (state)|Chu]]
+|Li Yuan ([[:zh:李园|李園]])
+|{{sfn|Han|2010|pp=5132-5137}}
+|-
+|[[Seleucus III Ceraunus]]
+|[[List of Seleucid rulers|Seleucid Basileus]]
+|{{dts|-223|June}}
+|[[Anatolia]]
+|[[File:SeleucosCoin.jpg|20px]] [[Seleucid Empire]]
+|Members of his army
+|<ref name="livius">{{cite web|url=https://www.livius.org/articles/person/seleucus-iii-keraunos/?|title=Seleucus III Keraunos|work=Livius.org}}</ref>
+|-
+|[[Nabis]]
+|[[List of kings of Sparta|King of Sparta]]
+|{{dts|-192}}
+|[[Sparta]]
+| [[Sparta]]
+|[[Aetolian League]]
+|<ref name="Livy35.35">[[#Livy|Livy]], [[s:From the Founding of the City/Book 35#35|35.35]]</ref>
+|-
+|[[Brihadratha Maurya]]
+|[[List of Indian monarchs|Mauryan Emperor]]
+|{{dts|-180}}
+|[[Pataliputra]]
+|{{Flagicon image|Flag of Maurya Empire.png}} [[Maurya Empire]]
+|[[Pushyamitra Shunga]]
+|<ref>Lahiri, B. (1974). ''Indigenous States of Northern India (Circa 200 B.C. to 320 A.D.) '', Calcutta: University of Calcutta, pp.24-5</ref>
+|-
+|[[Seleucus IV Philopator]]
+| rowspan="3" |[[List of Seleucid rulers|Seleucid Basileus]]
+|{{dts|-175|September|3}}
+|[[Coele-Syria]]
+| rowspan="3" |[[File:SeleucosCoin.jpg|20px]] [[Seleucid Empire]]
+|[[Heliodorus (minister)|Heliodorus]]
+|<ref>{{cite web|url=https://www.livius.org/articles/person/seleucus-iv-philopator/?|title=Seleucus IV Philopator|work=Livius.org}}</ref>
+|-
+|[[Alexander Balas]]
+|{{dts|-145|August}}
+|[[Afrin River]]
+|Zabdiel
+|<ref>Diodorus 32.9d & 10.1; Zabdiel: I Maccabees 11.17; Josephus ''AJ'' 13.118.</ref>
+|-
+|[[Antiochus VI Dionysus]]
+|{{dts|-142}}
+|[[Coele-Syria]]
+|[[Diodotus Tryphon]]
+|<ref>Makk. 13.31; Diod. Sic. 33.28; App. Syr. 68. 357; Iust. 36.1.7.; Oros. 5.4.18.</ref>
+|-
+|[[Hiempsal I]]
+|[[King of Numidia]]
+|{{dts|-117}}
+|[[Cirta]]
+|[[Numidia]]
+|[[Jugurtha]]
+|<ref>[[Sallust]], ''Bellum Jugurthinum'' 5, 9, 11, 12</ref><ref>Diod. ''Exc. Vales.'' xxxv. p. 605</ref>
+|-
+|[[Julius Caesar]]
+|[[Dictator of Rome]]
+|{{dts|-44|March|15}}
+| rowspan="10" |[[Rome]]
+|[[Roman Republic]]
+|[[Liberatores]]
+|<ref>Suetonius, ''Julius'', {{circa}} 82.</ref>
+|-
+|[[Caligula]]
+| rowspan="10" |[[Emperor of Rome]]
+|{{dts|41|January|24}}
+| rowspan="23" | [[Roman Empire]]
+|[[Praetorian Guard]]
+|<ref>Josephus, ''Antiquities of the Jews'' [[s:The Antiquities of the Jews/Book XIX#Chapter 1|XIX.1.3]].</ref>
+|-
+|[[Claudius]]
+|{{dts|54|October|13|format=mdy}}
+|[[Agrippina the Younger]]
+|<ref>cf. Tac. ''Ann.'' XII 66–67.</ref><ref>Suet. ''Claud.'' 43</ref>
+|-
+|[[Galba]]
+|{{dts|69|January|15|format=mdy}}
+|[[Praetorian Guard]] under orders from [[Otho]]
+|{{sfn|Greenhalgh|1975|pp=30, 37, 45, 47–54}}
+|-
+|[[Vitellius]]
+|{{dts|69|December|22|format=mdy}}
+|[[Vespasian]]'s troops.
+|<ref>Tacitus, ''Histories'' [[wikisource:The Histories (Tacitus)/Book 3#84|III.84]], [[wikisource:The Histories (Tacitus)/Book 3#85|III.85]]</ref>
+|-
+|[[Domitian]]
+|{{dts|96|September|18|format=mdy}}
+|Stephanus, steward to [[Julia Flavia]]
+|<ref name="suetonius-domitian-14">Suetonius, Life of Domitian [https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Suetonius/12Caesars/Domitian*.html#14 14;16]</ref>
+|-
+|[[Commodus]]
+|{{dts|31 December 192|format=mdy}}
+|[[Narcissus (wrestler)|Narcissus]]
+|<ref name="cassius 117">Cassius Dio, ''Roman History'', Book LXXII, pg. 117.</ref><ref name="lampridius 306">Lampridius, ''Historia Augusta.'' "Life of Commodus," pg. 306.</ref>
+|-
+|[[Pertinax]]
+|{{dts|28 March 193|format=mdy}}
+| rowspan="2" |[[Praetorian Guard]]
+|<ref name="dio 74:10">Dio, 74:10</ref>
+|-
+|[[Didius Julianus]]
+|{{dts|1 June 193|format=mdy}}
+|<ref>Cassius Dio, lxxiv, 17.5; Historia Augusta, ''Didius Julianus'', 8.8.</ref>
+|-
+|[[Geta (emperor)|Geta]]
+|{{dts|26 December 211|format=mdy}}
+|[[Centurion]]s under orders of [[Caracalla]]
+|<ref>Gibbon, Ibid. p. 115</ref>
+|-
+|[[Caracalla]]
+|{{dts|8 April 217|format=mdy}}
+|Near [[Carrhae]]
+|Justin Martialis, at instigation of [[Macrinus]]
+|<ref name=":0">{{Cite book|title=How Rome Fell: death of a superpower|last=Goldsworthy|first=Adrian|publisher=New Haven: Yale University Press|year=2009|isbn=978-0-300-16426-8|pages=[https://archive.org/details/howromefelldeath0000gold/page/74 74]|url=https://archive.org/details/howromefelldeath0000gold/page/74}}</ref>
+|-
+|[[Macrinus]] and [[Diadumenian]]
+|Co-[[Emperors of Rome]]
+|{{dts|8 June 218|format=mdy}}
+|[[Cappadocia]]
+|Forces of [[Elagabalus]]
+|<ref name=":14">{{Cite book|title=The History of the Roman Emperors from Augustus to Constantine, Volume 8|last=Crevier|first=Jean Baptiste Louis|publisher=F. C. & J. Rivington|year=1814|pages=236–237 }}</ref>{{sfn|Vagi|2000|p=290}}{{sfn|Bédoyère|2017|p=236}}
+|-
+|[[Elagabalus]]
+| rowspan="3" |[[Emperor of Rome]]
+|{{dts|11 March 222|format=mdy}}
+|[[Rome]]
+|[[Praetorian Guard]] under orders of [[Julia Maesa]] and [[Julia Mamaea]]
+|<ref name="dio-history-lxxx-20">Cassius Dio, ''Roman History'' [https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Cassius_Dio/80*.html#79-20 LXXX.20]</ref>
+|-
+|[[Severus Alexander]]
+|{{dts|19 March 235|format=mdy}}
+|[[Mainz]], [[Germania Superior]]
+|[[Legio XXII Primigenia]]
+|<ref name="Southern, pg. 63">Southern, Pat. The Roman Empire from Severus to Constantine, Routledge, 2001, p. 63</ref>
+|-
+|[[Maximinus Thrax]]
+|{{dts|May 238|format=my}}
+|[[Aquileia]]
+|Soldiers of the [[Legio II Parthica]]
+||<ref name="Southern, pg. 67">Southern, Pat. The Roman Empire from Severus to Constantine, Routledge, 2001, p. 67</ref>
+|-
+|[[Pupienus]] and [[Balbinus]]
+|Co-[[Emperor of Rome|Emperors of Rome]]
+|{{dts|29 July 238|format=mdy}}
+|[[Rome]]
+|[[Praetorian Guard]]
+|-
+|[[Gordian III]]
+|[[Emperor of Rome]]
+|{{dts|20 February 244|format=mdy}}
+|[[Circesium]]
+|His own army
+|<ref>Potter, David S. The Roman Empire At Bay AD 180-392, Routledge, 2004, {{ISBN|0-203-67387-5}}, pg.234-238.</ref>
+|-
+|[[Philip the Arab|Philip I the Arab]]
+| rowspan="2" |Co-[[Emperor of Rome|Emperors of Rome]]
+| rowspan=2 | {{dts|September 249|format=my}}
+|[[Verona]]
+|Betrayed by [[Decius]] and killed as a result of a [[battle|Battle of Verona]].
+|<ref name=philip>Potter, David S. The Roman Empire At Bay AD 180-392, Routledge, 2004, {{ISBN|0-203-67387-5}}, pg. 241</ref><ref name="Bowman, Alan K. 2005, pg. 38">Bowman, Alan K., The Cambridge Ancient History: The Crisis of Empire, A.D. 193-337, Cambridge University Press, 2005, pg. 38</ref>
+|-
+|[[Philip II (Roman Emperor)|Philip II]]
+|[[Rome]]
+|Murdered by the [[Praetorian Guard]].
+|<ref name="philip"/><ref name="Bowman, Alan K. 2005, pg. 38"/>
+|-
+|[[Volusianus]]
+| rowspan="2" |Co-[[Emperor of Rome|Emperors of Rome]]
+|rowspan=2|{{dts|August 253|format=my}}
+|rowspan=2|[[Terni]]
+|rowspan=2|Assassinated by their own [[centurion]]s, in favour of [[Aemilian]].
+|rowspan=2|<ref name=Potter-252>Potter, David S. The Roman Empire At Bay AD 180-392, Routledge, 2004, {{ISBN|0-203-67387-5}}, pg. 252</ref>
+|-
+|{{sortname|Trebonianus|Gallus}}
+|-
+|[[Aemilianus]]
+| rowspan="3" |[[Emperor of Rome]]
+|{{dts|September 253|format=my}}
+|[[Spoleto]]
+|Assassinated by his own troops.
+|<ref name=Potter-252/>
+|-
+|[[Saloninus]]
+|{{dts|260}}
+|[[Colonia Claudia Ara Agrippinensium]]
+|Revolting troops, led by [[Postumus]]
+|-
+|[[Gallienus]]
+|{{dts|September 268|format=my}}
+|[[Mediolanum]]
+|[[Aurelius Heraclianus]]
+|<ref>''Historia Augusta, The two Gallieni'', XIV.4–11</ref>
+|-
+|[[Postumus]]
+| rowspan="3" |[[Roman Emperor|Emperor]] of [[Gallic Empire|Gaul]]
+|{{dts|269}}
+|[[Mainz]]
+| rowspan="3" |[[Gallic Empire]]
+|His own troops
+|<ref name="Polfer">Polfer, Michel (2000), "Postumus (A.D. 260-269)", De Imperatoribus Romanis</ref><ref>Aurelius Victor 33.8; Eutropius 9.9.1</ref>
+|-
+|{{sortname|Marcus Aurelius|Marius}}
+|{{dts|July 269|format=hide}}Mid 269
+|[[Trier]]
+|[[Victorinus]]
+|<ref>Potter, David Stone, The Roman Empire at Bay, AD 180-395, Routledge, 2004, pg. 266</ref>
+|-
+|[[Victorinus]]
+|{{dts|January 271|format=hide}}Early 271
+|[[Colonia Claudia Ara Agrippinensium]]
+|[[Attitianus]], one of his soldiers.
+|<ref name=Southern119>Southern, Pat (2001). The Roman Empire from Severus to Constantine. Routledge. p. 119</ref>
+|-
+|[[Aurelian]]
+| rowspan="5" |[[Emperor of Rome]]
+|{{dts|25 September 275|format=mdy}}
+|[[Çorlu]]
+| rowspan="5" |[[Roman Empire]]
+|Mucapor and members of the [[Praetorian Guard]]
+|
+|-
+|[[Florianus]]
+|{{dts|September 276|format=my}}
+|[[Tarsus, Mersin|Tarsus]]
+|[[Centurion]]s
+|{{sfn|Meijer|2004|p=103}}{{sfn|Syvanne|2015|p=172}}
+|-
+|[[Probus (emperor)|Probus]]
+|{{dts|September 282|format=mdy}}
+|[[Sirmium]]
+|His own soldiers
+|<ref>[[Aurelius Victor]], Epitome de Caesaribus, 37:4</ref>
+|-
+|[[Numerian]]
+|{{dts|20 November 284|format=mdy}}
+|[[Homs]]
+|[[Lucius Flavius Aper]]
+|<ref name=":Patricia">{{Cite book|url=https://books.google.com/books?id=2p9hCQAAQBAJ&q=%22Arrius+Aper%22+%22Lucius+Aper%22&pg=PA193|title=The Roman Empire from Severus to Constantine|last=Southern|first=Patricia|date=May 15, 2015|publisher=[[Routledge]]|isbn=9781317496946|pages=193|language=en|author-link=Pat Southern}}</ref>
+|-
+|[[Carinus]]
+|{{dts|July 285|format=mdy}}
+|[[River Margus]], [[Moesia]]
+|[[Titus Claudius Aurelius Aristobulus]]
+|<ref name ="leadbetter">{{cite book |title=Carinus (283–285 A.D.) |last= Leadbetter|first= William |url=http://www.roman-emperors.org/carinus.htm }}</ref>
+|-
+|[[Carausius]]
+|[[Roman Emperor|Emperor]] of [[Roman Britain|Britannia]]
+|{{dts|293}}
+|
+|[[Roman Britain|Britannia]]
+|[[Allectus]]
+|<ref>''Panegyrici Latini'' 8:12; Aurelius Victor, ''Book of Caesars'' [http://www.thelatinlibrary.com/victor.caes.html#39 39.40]; Eutropius, ''Abridgement of Roman History'' [http://www.forumromanum.org/literature/eutropius/trans9.html#22 22]; Orosius, ''Seven Books of History Against the Pagans'' [http://www.attalus.org/latin/orosius7A.html#25 7:25.6]</ref>
+|-
+|[[Bunseo of Baekje|Bunseo]]
+|[[List of monarchs of Korea|King of Baekje]]
+|{{dts|304}}
+|[[Lelang Commandery]]
+|[[Baekje]]
+|Hwang-Chang-Lang
+|
+|-
+|[[Constans]]
+| rowspan="5" |[[Emperor of Rome]]
+|{{dts|February 350|format=mdy}}
+|[[Elne]], [[Gaul]]
+| rowspan="5" |[[Roman Empire]]
+|[[Magnentius]]
+|<ref>[[Aurelius Victor]], Epitome de Caesaribus, 41:21:23</ref>
+|-
+|[[Gratian]]
+|{{dts|25 August 383|format=mdy}}
+|[[Lyon]]
+|[[Andragathius]]
+|<ref>''An Encyclopedia of World History'', Ibid</ref><ref>Gibbon, p. 960</ref>
+|-
+|{{sortname|Magnus|Maximus}}
+| rowspan="2" |{{dts|28 August 388|format=mdy}}
+|[[Aquileia]]
+|[[Theodosius I]]
+|<ref>[[Ambrose]], Patrologia Latina, Ep. 40.32</ref><ref>Susan Wise Bauer, "The History of the Medieval World: From the Conversion of Constantine to the First Crusade", W. W. Norton & Company, 22 Feb 2010 (p.68)</ref>
+|-
+|[[Victor (emperor)|Victor]]
+|[[Trier]]
+| rowspan="2" |[[Arbogast (magister militum)|Arbogast]]
+|
+|-
+|[[Valentinian II]]
+|{{dts|15 May 392|format=mdy}}
+|[[Vienne, Isère|Vienne]]
+|<ref>''Historia nova'', IV. 53 which relies heavily on the history by the pagan [[Eunapius]]</ref>
+|-
+|[[Eugenius]]
+|[[Western Roman Emperor]]
+|{{dts|6 September 394|format=mdy}}
+|[[Battle of the Frigidus|Frigidus River]]
+| rowspan="5" |[[File:Simple_Labarum.svg|20px]] [[Western Roman Empire]]
+|[[Theodosius I]]
+|<ref>{{cite book|last1=Carr|first1=John|title=Fighting Emperors of Byzantium|date=2015|publisher=Pen & Sword|isbn=978-1783831166|pages=40–43}}</ref>
+|-
+|[[Constantine III (Western Roman Emperor)|Constantine III]]
+|rowspan=2|Co-[[Western Roman Emperor]]s
+|rowspan=2|{{dts|18 September 411|format=hide}}c. September 18, 411
+|[[Ravenna]]
+|[[Constantius III]]
+|<ref name="Jones, Arnold Hugh Martin 1992">Jones, Arnold Hugh Martin, John Robert Martindale, John Morris, The Prosopography of the Later Roman Empire, volume 2, Cambridge University Press, 1992, {{ISBN|0-521-20159-4}}, pg. 316</ref><ref name="Birley, Anthony 2005">Birley, Anthony (2005), The Roman Government in Britain, Oxford University Press, {{ISBN|978-0-19-925237-4}} pg. 460</ref>
+|-
+|[[Constans II (son of Constantine III)|Constans II]]
+|[[Vienne, Isère|Vienne]]
+|[[Gerontius (magister militum)|Gerontius]]
+|<ref name="Jones, Arnold Hugh Martin 1992"/><ref name="Birley, Anthony 2005"/>
+|-
+|[[Joannes]]
+| rowspan="2" |[[Western Roman Emperor]]
+|{{dts|June 425|format=mdy}}
+|[[Aquileia]]
+|[[Ardabur (consul 427)|Ardabur]]
+|<ref>Procopius, III.3.9; translated by Dewing, pp. 75ff</ref>
+|-
+|[[Valentinian III]]
+|{{dts|16 March 455|format=mdy}}
+|[[Rome]]
+|Followers of [[Flavius Aetius]]
+|{{sfn|Priscus of Panium|2015|p=129}}
+|-
+|[[Emperor Ankō|Ankō]]
+|[[Emperor of Japan]]
+|{{dts|456}}
+|
+|[[File:Imperial_Seal_of_Japan.svg|20px]] [[Kofun period|Kofun Japan]]
+|Mayowa no Ōkimi
+|<ref>Aston, William. (1998). ''Nihongi,'' Vol. 1, pp. 328–333.</ref>
+|-
+|[[Majorian]]
+| rowspan="4" |[[Western Roman Emperor]]
+|{{dts|7 August 461|format=mdy}}
+|[[Tortona]]
+| rowspan="4" |[[File:Simple_Labarum.svg|20px]] [[Western Roman Empire]]
+| rowspan="3" |[[Ricimer]]
+|<ref>John of Antioch, fragment 203; Marcellinus, ''sa'' 461; ''[[Fasti vindobonenses priores]]'', No 588. [[Procopius]] (VII.14–15) does not mention the Emperor's return from Hispania and said that Majorian died of [[dysentery]]: it is possible that the news has been put about by [[Ricimer]] (Fik Meijer, ''Emperors Do not Die in Bed'', Routledge, 2004, {{ISBN|0-415-31201-9}}, p. 155). [[Victor of Tonnena]] erroneously claims that Majorian reached Rome and was killed there, and puts this event in 463 (''Chronica'', ''s.a.'' 463).</ref>
+|-
+|[[Libius Severus]]
+|{{dts|15 August 465|format=mdy}}
+| rowspan="2" |[[Rome]]
+|<ref>Cassiodorus, ''Chronicles'', ''s.a.'' 465.</ref>
+|-
+|[[Anthemius]]
+|{{dts|11 July 472|format=mdy}}
+|<ref>Cassiodorus, ''Chronicle'', 1293; [[Marcellinus Comes]], ''Chronicon'', ''s.a.472''; [[Procopius of Caesarea]], ''Bellum Vandalicum'', vii.1–3. ''Chronica gallica anno 511'' (n. 650, ''s.a.'' 472) records both versions.</ref><ref>''[[Fasti vindobonenses priores]]'', n. 606, ''s.a.'' 472.</ref>
+|-
+|[[Julius Nepos]]
+|{{dts|22 June 480|format=mdy}}
+|[[Salona]]
+|Two retainers at the instigation of [[Glycerius]]
+|<ref name=":7">{{Cite book|title=Barbarian migrations and the Roman West, 376-568|last=Halsall|first=Guy|publisher=Cambridge University Press|year=2007|location=Cambridge|pages=282}}</ref>
+|-
+|[[Odoacer]]
+|[[King of Italy]]
+|{{dts|15 March 493|format=mdy}}
+|[[Ravenna]]
+|[[File:Odovacar_Ravenna_477.jpg|20px]] [[Odoacer#King of Italy|Kingdom of Italy]]
+|[[Theodoric the Great|Theodoric]]
+|<ref>Amory, Patrick (1997). People and Identity in Ostrogothic Italy, 489–554. Cambridge; New York: Cambridge University Press. {{ISBN|978-0-51152-306-9}}. pg. 69</ref><ref>Wolfram, Herwig (1988). History of the Goths. Berkeley and Los Angeles: University of California Press. {{ISBN|0-520-05259-5}}. pg. 283</ref>
+|-
+|[[Bahram Chobin]]
+|[[List of shahanshahs of the Sasanian Empire|Sasanian Shahanshah]]
+|{{dts|591}}
+|[[Fergana]]
+|[[Western Turkic Khaganate]]
+|Murdered under order of [[Khosrow II]].
+|<ref>{{cite encyclopedia | article = Bahrām VI Čōbīn | last = Shahbazi | first = A. Sh. | url = http://www.iranicaonline.org/articles/bahram-06 | encyclopedia  = Encyclopaedia Iranica, Vol. III, Fasc. 5 | pages = 514–522 | location = London et al. | year = 1988 }}</ref>
+|-
+|[[Emperor Sushun|Sushun]]
+|[[Emperor of Japan]]
+|{{dts|592}}
+|
+|[[File:Imperial_Seal_of_Japan.svg|20px]] [[Asuka period|Asuka Japan]]
+|Yamato no Aya no Ataikoma, under the orders of [[Soga no Umako]]
+|-
+|[[Maurice (emperor)|Maurice]]
+| rowspan="2" |[[List of Byzantine emperors|Emperor of the Romans]]
+|{{dts|November 22, 602|format=mdy}}
+|[[Chalcedon]]
+| rowspan="2" |{{Flagicon|Byzantine Empire}} [[Byzantine Empire]]
+|Overthrown and Executed by [[Phocas]]
+|-
+|[[Phocas]]
+|{{dts|October 4, 610|format=mdy}}
+|[[Constantinople]]
+|Overthrown and executed by [[Heraclius]]
+|-
+|[[Emperor Yang of Sui]]
+|[[Emperor of China]]
+|{{dts|April 11, 618}}
+|[[Danyang, Jiangsu]]
+| [[Sui dynasty|Sui China]]
+|[[Yuwen Huaji]] and other officials in a coup d'etat
+|-
+|[[Umar]]
+| rowspan="3" |[[Caliph]] of the [[Rashidun Caliphate]]
+|{{dts|November 3, 644}}
+| rowspan="2" |[[Medina]], [[Arabia]]
+| rowspan="3" |{{flagicon image|Black_flag.svg}} [[Rashidun Caliphate]]
+|[[Piruz Nahavandi|Abu Lulu]]
+|-
+|[[Uthman]]
+|{{dts|June 17, 656}}
+|[[First Fitna|Egyptian rebels]]
+|-
+|[[Ali|Ali ibn Abi Talib]]
+|{{dts|January 29, 661}}
+|[[Kufa]]
+|[[Abd-al-Rahman ibn Muljam]]
+|-
+|[[Constans II]]
+| rowspan="3" |[[List of Byzantine emperors|Emperor of the Romans]]
+|{{dts|September 15, 668}}
+|[[Syracuse, Sicily|Syracuse]]
+| rowspan="3" |{{Flagicon|Byzantine Empire}} [[Byzantine Empire]]
+|By an attendant while in the bath
+|<ref>{{Cite journal|last=Ostrogorsky|first=G|date=March 1958|title=G. Ostrogorsky: History of the Byzantine State.|url=http://dx.doi.org/10.1017/s0009840x00164169|journal=The Classical Review|volume=8|issue=1|pages=93–94|doi=10.1017/s0009840x00164169|s2cid=162401925|issn=0009-840X}}</ref>
+|-
+|[[Tiberius III|Tiberios III Apsimar]]
+|{{dts|February 706|format=mdy}}
+| rowspan="2" |[[Constantinople]]
+|Executed by [[Justinian II]]
+|
+|-
+|[[Justinian II]]
+|{{dts|December 711|format=mdy}}
+|Overthrown and executed in a military revolt led by [[Philippikos Bardanes|Phillipikos]]
+|
+|-
+|[[Wu Yuanheng]]
+|[[Chancellor of the Tang dynasty]]
+|{{dts|July 13, 815}}
+|[[Chang'an]]
+| [[Tang dynasty|Tang China]]
+|Assassins sent by [[Li Shidao]]
+|-
+|[[Leo V the Armenian|Leo V "The Armenian"]]
+| rowspan="2" |[[List of Byzantine emperors|Emperor of the Romans]]
+|{{dts|December 24, 820}}
+| rowspan="2" |[[Constantinople]]
+| rowspan="2" |{{Flagicon|Byzantine Empire}} [[Byzantine Empire]]
+|Assassinated as part of a conspiracy in support of the imprisoned [[Michael II|Michael the Amorian]]
+|<ref>{{Cite journal|title=Theophanes Continuatus|url=http://dx.doi.org/10.1163/9789004184640_emc_sim_02417|access-date=2020-11-28|website=Encyclopedia of the Medieval Chronicle|doi=10.1163/9789004184640_emc_sim_02417}}</ref>
+|-
+|[[Michael III]]
+|{{dts|September 23, 867}}
+|[[Basil I|Basil the Macedonian]]
+|
+|-
+|[[Pope John VIII|John VIII]]
+|[[Pope]]
+|{{dts|December 16, 882}}
+|[[Rome]]
+|{{flag|Papal States}}
+|[[Priesthood in the Catholic Church|Clerics]]
+|<ref>{{Cite encyclopedia|year=2010|title=John VIII|encyclopedia=A Dictionary of Popes|publisher=Oxford University Press|location=Oxford|last1=Kelly|first1=J.N.D.|doi=10.1093/acref/9780199295814.001.0001|isbn=9780199295814|last2=Walsh|first2=Michael J.}} (Note: This source disputes the claim John was assassinated).</ref>
+|-
+|[[Emperor Zhaozong of Tang]]
+|[[Emperor of China]]
+|{{dts|September 22, 904}}
+|[[Luoyang]]
+|[[Tang Dynasty]]
+|[[Zhu Wen]]
+|-
+|[[Wenceslaus I, Duke of Bohemia|Wenceslaus I]]
+|[[Duke of Bohemia]]
+|{{dts|September 28, 935}}
+|[[Brandýs nad Labem-Stará Boleslav]]
+|{{flag|Duchy of Bohemia}}
+|[[Boleslaus I, Duke of Bohemia|Boleslaus I]]
+|-
+|[[Edmund I]]
+|[[King of the English]]
+|{{dts|May 26, 946}}
+|[[Pucklechurch]]
+|{{Flagicon image|Royal Banner of England.svg}} [[Kingdom of England|England]]
+|Leofa, a convicted outlaw
+|-
+|[[Nikephoros II Phokas]]
+|[[List of Byzantine emperors|Emperor of the Romans]]
+|{{dts|December 11, 969}}
+|[[Constantinople]]
+|{{Flagicon|Byzantine Empire}} [[Byzantine Empire]]
+|[[John I Tzimiskes]]
+|
+|-
+|[[Edward the Martyr]]
+|[[King of the English]]
+|{{dts|March 18, 978}}
+|[[Wareham, Dorset]]
+|{{Flagicon image|Royal Banner of England.svg}} [[Kingdom of England|England]]
+|[[Ælfthryth, wife of Edgar|Ælfthryth]]
+|-
+|[[Kenneth II of Scotland|Kenneth II]]
+|[[King of Alba]]
+|{{dts|995||}}
+|[[Fettercairn]]
+|{{Flagicon image|Royal Banner of Scotland.svg}} [[Kingdom of Scotland|Scotland]]
+|[[Lady Finella|Finella]]
+|-
+|[[Brian Boru]]
+|[[High King of Ireland]]
+|{{dts|April 23, 1014}}
+|[[Clontarf, Dublin]]
+|[[File:MacCarthy.png|20px]] [[Gaelic Ireland|Ireland]]
+|[[Brodir and Ospak of Man]]
+|-
+|[[Boniface III, Margrave of Tuscany|Boniface III]]
+|[[Margrave of Tuscany]]
+|{{dts|May 6, 1052}}
+|[[Oglio]]
+|[[March of Tuscany]]
+|Scarpetta Carnevari
+|-
+|{{sortname|Alp|Arslan}}
+|[[List of sultans of the Seljuq Empire|Sultan]] of the [[Seljuk Empire]]
+|{{dts|November 25, 1072}}
+|[[Khwarazm]]
+|{{Flagicon image|Flag of the Seljuk.png}} [[Seljuk Empire]]
+|Yussuf al-Kharezmi
+|-
+|[[Nizam al-Mulk]]
+|[[Vizier]] of the [[Seljuk Empire]]
+|{{dts|October 14, 1092}}
+|[[Nahavand]]
+|{{Flagicon image|Flag of the Seljuk.png}} [[Seljuk Empire]]
+|[[Order of Assassins]]
+|-
+|[[Conrad (bishop of Utrecht)|Conrad]]
+|[[Bishop of Utrecht]]
+|{{dts|April 14, 1099}}
+|[[Utrecht]]
+|{{Flagicon image|Flag of the prince-bishopric of Utrecht.svg}} [[Prince-Bishopric of Utrecht|Utrecht]]
+|A [[Frisians|Frisian]]
+|-
+|[[William II of England|William II]]
+|[[King of England]]
+|{{dts|August 2, 1100}}
+|The [[New Forest]]
+|{{Flag|Kingdom of England|name=England}}
+|[[Henry I of England|Henry I]]
+|-
+|{{sort|Afdal Shahanshah|[[Al-Afdal Shahanshah]]}}
+|[[Vizier (Fatimid Caliphate)|Vizier]] of the [[Fatimid Caliphate]]
+|{{dts|December 11, 1121}}
+|
+|{{flagicon image|White_flag_3_to_2.svg}} [[Fatimid Caliphate]]
+|[[Order of Assassins]]
+|-
+|[[Charles I, Count of Flanders|Charles I]]
+|[[Count of Flanders]]
+|{{dts|March 2, 1127}}
+|[[Bruges]]
+|{{flag|Flanders}}
+|A group of knights answering to the Erembald family
+|-
+|{{sort|Amir bi-Akham Allah|[[Al-Amir bi-Ahkam Allah]]}}
+|[[Caliph]] of the [[Fatimid Caliphate]]
+|{{dts|October 7, 1130}}
+|[[Cairo]]
+|{{flagicon image|White_flag_3_to_2.svg}} [[Fatimid Caliphate]]
+|[[Order of Assassins]]
+|-
+|{{sort|Mustarshid|[[Al-Mustarshid]]}}
+|[[Caliph]] of the [[Abbasid Caliphate]]
+|{{dts|August 29, 1135}}
+|[[Hamadan]]
+|{{flagicon image|Black_flag.svg}} [[Abbasid Caliphate]]
+|[[Order of Assassins]]
+|-
+|{{sort|Harald 04|[[Harald Gille]]}}
+|[[King of Norway]]
+|{{Date table sorting|December 14, 1136}}
+|[[Bergen]]
+|{{flag|Norway}}
+|[[Sigurd Slembe]]
+|-
+|{{sort|Eric 02|[[Eric II of Denmark|Eric II]]}}
+|[[King of Denmark]]
+|{{Date table sorting|September 18, 1137}}
+|Urnohoved
+|{{Flag|Denmark}}
+|Murdered by Sorte Plov during a [[Thing (assembly)|Ting]]
+|<ref>{{cite web|url=http://denstoredanske.dk/Danmarks_geografi_og_historie/Danmarks_historie/Danmark_før_Reformationen/Erik_2._Emune|website=Den Store Danske|title=Erik 2. Emune|language=Da|access-date=18 May 2021}}</ref>
+|-
+|{{sort|Rashid|[[Al-Rashid Billah|Al-Rashid]]}}
+|[[Caliph]] of the [[Abbasid Caliphate]]
+|{{dts|June 6, 1138}}
+|[[Isfahan]]
+|{{flagicon image|Black_flag.svg}} [[Abbasid Caliphate]]
+|[[Order of Assassins]]
+|-
+|[[Imad al-Din Zengi]]
+|[[Emir]] of the [[Zengid dynasty]]
+|{{dts|September 14, 1146}}
+|[[Qal'at Ja'bar]]
+|{{Flagicon image|Flag of the Seljuk.png}} [[Seljuk Empire]]
+|[[Yarankash]]
+|-
+|[[Raymond II, Count of Tripoli|Raymond II]]
+|[[Count of Tripoli]]
+|{{dts|1152}}
+|[[Tripoli, Lebanon|Tripoli]]
+|[[File:Armoiries_Tripoli.svg|20px]] [[County of Tripoli]]
+|[[Order of Assassins]]
+|-
+|[[Sverker I of Sweden|Sverker I]]
+|[[King of Sweden]]
+|{{dts|December 25, 1156}}
+|[[Alvastra]]
+|{{flag|Sweden}}
+|By a trusted servant
+|-
+|[[Canute V of Denmark|Canute V]]
+|[[Triumvirate|Triachial King of Denmark]]
+|{{dts|August 9, 1157}}
+|[[Roskilde]]
+|{{Flag|Denmark}}
+|Killed under the Roskilde Bloodbath
+|<ref>{{Cite web|title=Blodgildet i Roskilde|url=http://www.roskildehistorie.dk/1100/billeder/krige/blodgilde/blodgilde.htm|access-date=2021-05-18|website=www.roskildehistorie.dk}}</ref>
+|-
+|{{sort|Eric 09|[[Eric IX of Sweden|Eric IX]]}}
+| rowspan="2" |[[King of Sweden]]
+|{{dts|May 18, 1160}}
+|[[Uppsala]]
+| rowspan="2" |{{Flag|Sweden}}
+|[[Magnus II of Sweden|Magnus II]]
+|-
+|[[Charles VII of Sweden|Charles VII]]
+|{{dts|April 12, 1167}}
+|[[Visingsö]]
+|Supporters of [[Knut Eriksson]]
+|-
+|[[Alaungsithu]]
+|[[King of Pagan]]
+|{{dts|1167}}
+|[[Shwegugyi Temple]]
+|[[Pagan Kingdom]]
+|[[Narathu]], his son
+|-
+|[[Andronikos I Komnenos]]
+|[[List of Byzantine emperors|Emperor of the Romans]]
+|{{dts|September 11, 1185}}
+|[[Constantinople]]
+|{{Flagicon|Byzantine Empire}} [[Byzantine Empire]]
+|Lynched by a popular uprising instigated by [[Isaac II Angelos|Isaac Angelos]]
+|-
+|{{sortname|Conchobar Maenmaige|Ua Conchobair}}
+|[[King of Connacht]]
+|{{dts|1189}}
+|Clanconway
+|[[File:O'Conor.png|20px]] [[Kingdom of Connacht]]
+|Assassins instigated by [[Conchobar ua nDiarmata]]
+|-
+|[[Conrad of Montferrat]]
+|[[King of Jerusalem]]
+|{{dts|April 28, 1192}}
+|[[Acre, Israel|Acre]]
+|{{Flag|Kingdom of Jerusalem}}
+|[[Order of Assassins]]
+|-
+|[[Ivan Asen I of Bulgaria|Ivan Asen I]]
+| rowspan="2" |[[Tsar of Bulgaria]]
+|{{dts|1196}}
+|[[Veliko Tarnovo|Tarnovo]]
+| rowspan="2" |{{Flagicon image|Flag_of_the_Second_Bulgarian_Empire.svg}} [[Second Bulgarian Empire|Bulgarian Empire]]
+|[[Ivanko of Bulgaria|Ivanko]]
+|-
+|[[Peter II of Bulgaria|Peter II]]
+|{{dts|1197}}
+|[[Veliki Preslav|Preslav]]
+|''Unknown, possibly in a riot or as the result of a conspiracy.''
+|-
+|{{sort|Alexios 04 Angelos|[[Alexios IV Angelos]]}}
+| rowspan="2" |[[List of Byzantine emperors|Emperor of the Romans]]
+|{{dts|February 8, 1204}}
+| rowspan="2" |[[Constantinople]]
+| rowspan="2" |{{Flagicon|Byzantine Empire}}[[Byzantine Empire]]
+|Deposed and executed by [[Alexios V Doukas|Alexios Doukas]]
+|-
+|{{sort|Alexios 05 Doukas|[[Alexios V Doukas]]}}
+|{{dts|December 1204}}
+|Executed by the participants of the [[Fourth Crusade]]
+|-
+|[[Baldwin I, Latin Emperor|Baldwin I]]
+|[[Latin Emperor|Emperor of the Romans]]
+|{{dts|1205}}
+|[[Veliko Tarnovo|Tarnovo]]
+|{{Flagicon image|Arms_of_Courtenay-Constantinople.svg}} [[Latin Empire]]
+|[[Kaloyan of Bulgaria|Kaloyan]], [[List of Bulgarian monarchs|Tsar of Bulgaria]]
+|-
+|[[Boniface I, Marquis of Montferrat|Boniface of Montferrat]]
+|[[King of Thessalonica]] and [[Marquis of Montferrat]]
+|{{dts|September 4, 1207}}
+|[[Thrace]]
+|{{Flagicon image|Flag_of_Montferrat.svg}} [[March of Montferrat|Montferrat]] &<br/>{{Flagicon image|Kingdom_of_Thessalonica_arms.png}}  [[Kingdom of Thessalonica|Thessalonica]]
+|Murdered by Bulgarian Peasants, ''believed to be acting on the orders of [[Kaloyan of Bulgaria|Kaloyan]]''
+|-
+|[[Kaloyan of Bulgaria|Kaloyan]]
+|[[Tsar of Bulgaria]]
+|{{dts|October 1207}}
+|[[Thessaloniki]]
+|{{Flagicon image|Flag_of_the_Second_Bulgarian_Empire.svg}} [[Second Bulgarian Empire|Bulgarian Empire]]
+|''Unknown, believed to be Manastras, the Captain of his Mercenaries''
+|-
+|[[Han Tuozhou]]
+|[[Grand chancellor (China)#Southern Song|Grand Chancellor of the Song Dynasty]]
+|{{dts|1207}}
+|[[Hangzhou]]
+|[[Song dynasty|Song Dynasty]]
+|[[Shi Miyuan]]
+|-
+|[[Philip of Swabia]]
+|[[King of Germany]]
+|{{dts|June 21, 1208}}
+|[[Bamburg]], [[Duchy of Franconia|Franconia]]
+|[[File:Arms_of_Swabia.svg|20px]] [[Kingdom of Germany]]
+|[[Otto VIII, Count Palatine of Bavaria]]
+|-
+|{{sortname|Csépán|Győr}}
+|[[Palatine of Hungary]]
+|{{dts|1209}}
+|
+|{{Flagicon image|Flag of Hungary (13th century).svg}} [[Kingdom of Hungary (1000–1301)|Hungary]]
+|[[Tiba Tomaj]]
+|-
+|[[Minamoto no Sanetomo]]
+|[[Shōgun]]
+|{{dts|February 13, 1219}}
+|[[Tsurugaoka Hachimangū]]
+|[[File:Sasa_Rindo.svg|20px]] [[Kamakura shogunate]]
+|[[Kugyō (priest)|Kugyō]]
+|-
+|{{sort|Eric 04|[[Eric IV of Denmark|Eric IV]]}}
+|[[King of Denmark]]
+|{{dts|August 10, 1250}}
+|[[Gottorf Castle]]
+|{{Flag|Denmark}}
+|[[Abel of Denmark]]
+|-
+|[[Michael II Asen]]
+| rowspan="2" |[[Tsar of Bulgaria]]
+| rowspan="2" |{{dts|1256}}
+| rowspan="2" |[[Veliko Tarnovo|Tarnovo]]
+| rowspan="2" |{{Flagicon image|Flag_of_the_Second_Bulgarian_Empire.svg}} [[Second Bulgarian Empire|Bulgarian Empire]]
+|[[Kaliman Asen II of Bulgaria|Kaliman II Asen]]
+|-
+|[[Kaliman Asen II of Bulgaria|Kaliman II Asen]]
+|His co-conspirators from the assassination of Michael II
+|-
+|[[Qutuz]]
+|[[List of Mamluk sultans|Sultan of Egypt]]
+|{{dts|October 24, 1260}}
+|{{ill|Salihiyah, Sharqia|lt=Salihiyah|ar|الصالحية (الشرقية)}}
+|{{Flagicon image|Mameluke Flag.svg}} [[Mamluk Sultanate (Cairo)|Mamluk Sultanate]]
+|[[Baibars]]
+|-
+|[[Eric V of Denmark|Eric V]]
+|[[King of Denmark]]
+|{{dts|November 22, 1286}}
+|Finderup, [[Viborg, Denmark|Viborg]]
+|{{Flag|Denmark}}
+|''Unknown, believed to be a conspiracy by Danish nobles''
+|-
+|[[Ladislaus IV of Hungary|Ladislaus IV]]
+|[[King of Hungary]]
+|{{dts|July 10, 1290}}
+|[[Körösszeg]]
+|{{Flagicon image|Flag of Hungary (13th century).svg}} [[Kingdom of Hungary (1000–1301)|Hungary]]
+|Three [[Cumans]], named Árbóc, Törtel, and Kemence
+|-
+|[[Przemysł II]]
+|[[List of Polish monarchs|King of Poland]]
+|{{dts|February 8, 1296}}
+|[[Rogoźno]]
+|{{Flagicon image|Kingdom of Poland-flag.svg}} [[Kingdom of Poland (1025–1385)|Kingdom of Poland]]
+|Brandenburg assassins
+|-
+|[[Floris V, Count of Holland|Floris V]]
+|[[Count of Holland]]
+|{{dts|June 27, 1296}}
+|[[Muiderberg]]
+|{{Flagicon image|Vlag Graafschap Holland.svg}} [[County of Holland|Holland]]
+|[[Gerard van Velsen]]
+|-
+|[[Chaka of Bulgaria|Chaka]]
+|[[Tsar of Bulgaria]]
+|{{dts|1300}}
+|[[Veliko Tarnovo|Tarnovo]]
+|{{Flagicon image|Flag_of_the_Second_Bulgarian_Empire.svg}} [[Second Bulgarian Empire|Bulgarian Empire]]
+|[[Theodore Svetoslav of Bulgaria|Theodore Svetoslav]]
+|-
+|[[Wenceslaus III of Bohemia|Wenceslaus III]]
+|[[King of Bohemia]]
+|{{dts|August 4, 1306}}
+|[[Olomouc]]
+|{{flag|Bohemia}}
+|Unidentified assassin
+|-
+|[[Albert I of Germany|Albert I]]
+|[[King of Germany]]
+|{{dts|May 1, 1308}}
+|[[Windisch, Switzerland|Windisch]]
+|[[File:CoA_Albert_II_of_Habsburg.svg|20px]] [[Further Austria]]
+|[[John Parricida]]
+|-
+|[[Gegeen Khan]]
+|[[Emperor of the Yuan Dynasty]]
+|{{dts|September 4, 1323}}
+|Nanpo
+|[[Yuan dynasty]]
+|[[Tegshi]]
+|-
+|[[Yagi Basti]]
+|[[Shiraz#Rulers and political figures|Ruler of Shiraz]]
+|{{dts|1344}}
+|[[Tabriz]]
+|[[Chobanids|Chobanid realm]]
+|[[Malek Ashraf]]
+|-
+|[[Haidar Qassāb]]
+|[[Sarbadars|Head of the Sarbadars]]
+|{{dts|1356}}
+|
+|[[Sarbadars|Sarbadar state]]
+|By a Turkish slave
+|-
+|[[Peter of Castile|Peter the Cruel]]
+|[[List of Castilian monarchs|King of Castile]]
+|{{dts|March 23, 1369}}
+|[[Montiel]]
+|{{Flagicon image|Banner of the Kingdom of Toledo.svg}} [[Castilian Kingdom of Toledo|Toledo]]
+|[[Henry II of Castile|Henry II]]
+|-
+|[[Murad I]]
+|[[List of sultans of the Ottoman Empire|Sultan of The Ottoman Empire]]
+|{{dts|June 28, 1389}}
+|[[Kosovo field (Kosovo)|Kosovo Field]]
+|{{flag|Serbian Empire}}<br/>({{Flagicon image|Royal banner of Branković family.svg}} [[District of Branković|Branković]])
+|[[Lazar of Serbia|Lazar Hrebeljanović]]
+|-
+|[[Louis I, Duke of Orléans|Louis I]]
+|[[Duke of Orléans]]
+|{{dts|November 23, 1407}}
+|[[Le Marais]]
+|{{flag|Orléans}}
+|15 masked assassins under the orders of [[John the Fearless]]
+|-
+|{{sortname|Gian Maria|Visconti}}
+|[[Duke of Milan]]
+|{{dts|May 16, 1412}}
+|[[Milan]]
+|{{Flagicon image|Flag of Milan.svg}} [[Duchy of Milan|Milan]]
+|[[Guelphs and Ghibellines]]
+|-
+|[[John the Fearless]]
+|[[Duke of Burgundy]]
+|{{dts|September 10, 1419}}
+|[[Montereau-Fault-Yonne]]
+|{{flag|Duchy of Burgundy|name=Burgundy}}
+|[[Tanneguy du Chastel]]
+|-
+|[[Ashikaga Yoshinori]]
+|[[Shōgun]]
+|{{dts|July 12, 1441}}
+|[[Muromachi period|Muromachi Japan]]
+|[[File:Ashikaga_mon.svg|20px]] [[Ashikaga shogunate]]
+|[[Akamatsu Mitsusuke]]
+|-
+|[[Henry VI of England|Henry VI]]
+|[[King of England]]
+|{{dts|May 21, 1471}}
+|[[Tower of London]]
+|{{Flag|Kingdom of England|name=England}}
+|[[Edward IV]]
+|-
+|{{sortname|Giuliano de'|Medici}}
+|[[Republic of Florence#The Medicis|Lord of Florence]]
+|{{dts|April 26, 1478}}
+|[[Florence Cathedral]]
+|{{Flag|Republic of Florence|name=Florence}}
+|[[Francesco de' Pazzi]]
+|-
+|[[James III of Scotland|James III]]
+|[[King of Scotland]]
+|{{dts|June 11, 1488}}
+|[[Battle of Sauchieburn|Sauchieburn]]
+|{{Flagicon image|Royal Banner of Scotland.svg}} [[Kingdom of Scotland|Scotland]]
+|Rebels, led by [[James IV of Scotland|James IV]]
+|-
+|[[Ahmad Shah of Malacca]]
+|[[Malacca Sultanate|Sultan of Malacca]]
+|{{dts|1513}}
+|[[Riau Islands]]
+|[[Malacca Sultanate]]
+|[[Mahmud Shah of Malacca]]
+|-
+|{{sortname|Allesandro de'|Medici|Alessandro de' Medici, Duke of Florence|Medici, Allesandro de}}
+|[[Republic of Florence#The Medicis|Lord of Florence]]
+|{{dts|January 6, 1537}}
+|[[Florence]]
+|{{Flag|Republic of Florence|name=Florence}}
+|[[Lorenzino de' Medici]]
+|-
+|{{sortname|Francisco|Pizarro}}
+|[[List of viceroys of Peru|Governor of New Castile]]
+|{{dts|June 26, 1541}}
+|[[Lima]]
+|{{Flagicon image|Flag of Cross of Burgundy.svg}} [[Governorate of New Castile|Spanish New Castile]]
+|[[Diego de Almagro II]]
+|-
+|[[Worawongsathirat]]
+|[[King of Siam]]
+|{{dts|November 11, 1548}}
+|[[Lopburi]]
+|[[File:Flag_of_Thailand_(Ayutthaya_period).svg|20px]] [[Ayutthaya Kingdom]]
+|[[Maha Thammaracha (king of Ayutthaya)|Maha Thammaracha]]
+|-
+|[[Tabinshwehti]]
+|[[King of Burma]]
+|{{dts|April 30, 1550}}
+|[[Pantanaw]]
+|[[Toungoo dynasty]]
+|[[Smim Sawhtut]]
+|-
+|[[Ashikaga Yoshiteru]]
+|[[Shōgun]]
+|{{dts|June 17, 1565}}
+|[[Nijō Castle]]
+|[[File:Ashikaga_mon.svg|20px]] [[Ashikaga shogunate]]
+|[[Miyoshi Yoshitsugu]]
+|-
+|[[Eric XIV of Sweden|Eric XIV]]
+|[[King of Sweden]]
+|{{dts|February 26, 1577}}
+|[[Örbyhus Castle]]
+|{{flag|Sweden}}
+|Guards poisoned him on the orders of [[John III of Sweden|John III]]
+|-
+|[[Sokollu Mehmed Pasha]]
+|[[Grand Vizier]] of the [[Ottoman Empire]]
+|{{dts|October 11, 1579}}
+|[[Istanbul]]
+|{{flag|Ottoman Empire}}
+|[[Order of Assassins]]
+|-
+|[[William the Silent]]
+|[[Stadtholder|Stadtholder of Holland, Zeeland, Utrecht and Friesland]]
+|{{Date table sorting|July 10, 1584}}
+|[[Delft]]
+|{{flag|Dutch Republic}}
+|[[Balthasar Gérard]]
+|-
+|[[Henry III of France|Henry III]]
+|[[List of French monarchs|King of France]]
+|{{dts|August 1, 1589}}
+|[[Saint-Cloud]]
+|{{Flagicon image|Flag of France (XII-XIII).svg}} [[Early modern France|France]]
+|[[Jacques Clément]]
+|-
+|[[Michael the Brave]]
+|[[Prince of Wallachia]]
+|{{dts|August 9, 1601}}
+|[[Turda]]
+|{{flag|Wallachia}}
+|[[Giorgio Basta]]
+|-
+|[[Abu'l-Fazl ibn Mubarak]]
+|[[Grand Vizier]] of the [[Mughal empire]]
+|{{dts|August 12, 1602}}
+|[[Deccan Plateau|Deccan]]
+|{{Flagicon image|Flag Mughal Empire by bot.png}} [[Mughal Empire]]
+|[[Vir Singh Deo]]
+|-
+|[[Henry IV of France|Henry IV]]
+|[[List of French monarchs|King of France]]
+|{{dts|May 14, 1610}}
+| rowspan="2" |[[Paris]]
+| rowspan="2" |{{Flagicon image|Flag of France (XII-XIII).svg}} [[Early modern France|France]]
+|[[François Ravaillac]]
+|-
+|{{sortname|Concino|Concini}}
+|[[Chief minister of France]]
+|{{dts|April 24, 1617}}
+|Guards under orders of [[Louis XIII of France|Louis XIII]]
+|-
+|[[Osman II]]
+|[[Sultan]] of the [[Ottoman Empire]]
+|{{dts|May 20, 1622}}
+|[[Yedikule Fortress]], [[Istanbul]]
+|{{flag|Ottoman Empire}}
+|[[Janissaries]]
+|-
+|[[Anaukpetlun]]
+|[[King of Burma]]
+|{{dts|July 9, 1628}}
+|[[Bago, Myanmar]]
+|[[Toungoo dynasty]]
+|[[Minyedeippa]], his son
+|-
+|[[Charles I of England|Charles I]]
+|[[List of monarchs of England|King of England]], [[List of monarchs of Scotland|Scotland]] and [[List of Irish monarchs|Ireland]]
+|{{dts|January 30, 1649}}
+|[[London]]
+|{{Flag|Kingdom of England|name=England}}, {{Flag|Kingdom of Scotland|1542|name=Scotland}}, {{Flag|Kingdom of Ireland|name=Ireland}}
+|[[Rump Parliament]]
+|-
+|[[Mahmud II of Johor]]
+|[[Sultan of Johor]]
+|{{dts|September 3, 1699}}
+|[[Kota Tinggi]], [[Johor]]
+|[[Johor Sultanate]]
+|Megat Sri Rama
+|-
+|{{sortname|Daniel|Parke}}
+|[[List of Governors of the Leeward Islands|Governor of the Leeward Islands]]
+|{{dts|December 7, 1710}}
+|[[Antigua]]
+|{{flag|British Leeward Islands|1710}}
+|By an angry mob
+|-
+|{{sortname|Fernando Manuel de|Bustillo Bustamante y Rueda}}
+|[[Governor-General of the Philippines]]
+|{{dts|October 11, 1719}}
+|[[Palacio del Gobernador]], [[Manila]]
+|{{Flagicon image|Flag of Cross of Burgundy.svg}}  [[Captaincy General of the Philippines|Spanish Philippines]]
+|[[Francisco de la Cuesta]]
+|-
+|[[Nader Shah]]
+|[[List of monarchs of Persia|Shah of Iran]]
+|{{dts|June 20, 1747}}
+|[[Quchan]]
+|{{Flagicon image|Nader Shah Flag.svg}} [[Afsharid Iran|Persia]]
+|Salah Bey
+|-
+|[[Peter III of Russia|Peter III]]
+|[[List of Russian rulers|Emperor of Russia]]
+|{{dts|July 17, 1762}}
+|[[Ropsha]]
+|{{flag|Russian Empire}}
+|[[Alexei Grigoryevich Orlov]]
+|-
+|[[Gustav III of Sweden|Gustav III]]
+|[[List of Swedish monarchs|King of Sweden]]
+|{{dts|March 16, 1792}} <br> (d. March 29, 1792)
+|[[Stockholm]]
+|{{flag|Sweden}}
+|[[Jacob Johan Anckarström]]
+|-
+|{{sortname|Agha Mohammad Khan|Qajar||Qajar, Mohammad Khan}}
+|[[List of monarchs of Persia#Qajar Empire (1794–1925)|Shahanshah of Iran]]
+|{{dts|June 17, 1797}}
+|[[Shusha]]
+|{{Flagicon image|Flag of Agha Mohammad Khan.svg}} [[Qajar Empire]]
+|A [[Georgians|Georgian]] servant named Sadeq and a valet called Khodadad-e Esfahani, both of whom were due to be executed.
+|-
+|[[Paul I of Russia|Paul I]]
+|[[List of Russian rulers|Emperor of Russia]]
+|{{dts|March 23, 1801}}
+|[[St Petersburg|St. Petersburg]]
+|{{flag|Russian Empire|name=Russia}}
+|[[Peter Ludwig von der Pahlen]], [[Nikita Petrovich Panin]], [[José de Ribas]], [[Vladimir Mikhailovich Yashvil]] and [[Nikolay Alexandrovich Zubov|Nikolay Zubov]]
+|-
+|{{sortname|Kirtiman Singh|Basnyat}}
+| [[Mulkaji|Mulkaji of Nepal]]
+|{{dts|September 28, 1801}}
+|[[Kathmandu]]
+|{{Flag|Kingdom of Nepal|1768}}
+|Supporters of [[Raj Rajeshwari Devi]]
+|{{sfn|Acharya|2012|p=34}}
+|-
+|{{sortname|Jean-Jacques|Dessalines}}
+|[[Empire of Haiti (1804-1806)|Emperor of Haiti]]
+|{{dts|October 17, 1806}}
+|[[Pont-Rouge|Pont Rouge]]
+|{{flag|Haiti|1964}}
+|''Unknown''
+|<ref>{{Cite book|last=Popkin|first=Jeremy D.|title=A Concise History of the Haitian Revolution|publisher=John Wiley & Sons|year=2011|isbn=9781405198219|series=Viewpoints: Themes and Interpretations in Latin American History|location=Chichester|pages=142}}</ref>
+|-
+|{{sortname|Spencer|Perceval}}
+|[[Prime Minister of the United Kingdom]]
+|{{dts|May 11, 1812}}
+|[[Westminster]]
+|{{flagcountry|United Kingdom of Great Britain and Ireland}}
+|[[John Bellingham]] {{further|Assassination of Spencer Perceval}}
+|<ref>{{Cite journal|last=Pentland|first=Gordon|date=2012|title="Now the great Man in the Parliament House is dead, we shall have a big Loaf!" Responses to the Assassination of Spencer Perceval|url=https://www.jstor.org/stable/23265479|journal=Journal of British Studies|volume=51|issue=2|pages=343|doi=10.1086/663838|jstor=23265479|hdl=20.500.11820/f4af4290-0ec0-4721-b568-dc1790b6a6d4|s2cid=159663176|via=JSTOR}}</ref>
+|-
+|[[Shaka]]
+|[[List of Zulu kings|King of the Zulus]]
+|{{dts|September 22, 1828}}
+|[[KwaDukuza]]
+|{{Flagicon image|Conjectural flag of Zululand (1884-1897) by Roberto Breschi taken from The South African Flag Book by A.P.Burgers.png}} [[Zulu Kingdom]]
+|[[Dingane]] and [[Mhlangana]], Shaka's younger brothers
+|-
+|{{sortname|Pedro|Blanco Soto}}
+|[[President of Bolivia]]
+|{{dts|January 1, 1829}}
+|[[Sucre]]
+|{{flag| Bolivia}}
+|''Unknown''
+|-
+|{{sortname|Ioannis|Kapodistrias}}
+|[[List of heads of state of Greece|Governor of the Hellenic State]]
+|{{dts|October 9, 1831}}
+|[[Nafplion]]
+|{{flag| Greece}}
+|[[Konstantinos Mavromichalis|Konstantis]] and [[Georgios Mavromichalis]]
+|-
+|{{sortname|Felipe Santiago|Salaverry}}
+|[[President of Peru]]
+|{{dts|February 18, 1836}}
+|[[Arequipa]]
+|{{Flag|Peru|1825}}
+|[[Andrés de Santa Cruz]]
+|-
+|{{sortname|Mathabarsingh|Thapa}}
+|[[Prime Minister of Nepal]]
+|{{dts|May 17, 1845}}
+|[[Kathmandu]]
+|{{flag|Kingdom of Nepal|1768}}
+|[[Jung Bahadur Rana|Jung Bahadur Kunwar]]
+|-
+|{{sort|Chautaria, Fatte Jang|[[Fateh Jung Shah]]}}
+|[[Prime Minister of Nepal]]
+|{{dts|September 14, 1846}}
+|[[Hanuman Dhoka]]
+|{{flag|Kingdom of Nepal|1768}}
+|[[Jung Bahadur Rana|Jung Bahadur Kunwar]] and brothers.
+|-
+|{{sortname|João Maria|Ferreira do Amaral}}
+|[[Governor of Macau]]
+|{{dts|August 22, 1849}}
+|[[Macau]]
+|{{Flagicon image|Flag of Portugal (1830).svg}} [[Portuguese Macau]]
+|Seven [[Macau people|Chinese]] men
+|-
+|[[Charles III, Duke of Parma|Charles III]]
+|[[Duke of Parma]]
+|{{dts|March 26, 1854}}
+|[[Parma]]
+|{{Flag|Duchy of Parma|name=Parma}}
+|''Unknown''
+|-
+|[[Danilo I, Prince of Montenegro|Danilo I]]
+|[[Prince of Montenegro]]
+|{{dts|August 13, 1860}}
+|[[Kotor]]
+|{{Flag|Principality of Montenegro|name=Montenegro}}
+|Todor Kadić
+|-
+
+|{{sortname|José Santos|Guardiola}}
+|[[President of Honduras]]
+|{{dts|January 11, 1862}}
+|[[Comayagua]]
+|{{flag|Honduras|1839}}
+|His personal body guard
+|-
+|{{sortname|Barbu|Catargiu}}
+|[[Prime Minister of Romania]]
+|{{dts|June 20, 1862}}
+|[[Bucharest]]
+|{{flag|Romania}}
+|''Unknown''
+|-
+|[[Radama II]]
+|[[King of Madagascar]]
+|{{dts|May 12, 1863}}
+|[[Rova of Antananarivo]]
+|{{Flagicon image|Flag of the Merina Kingdom.svg}} [[Merina Kingdom]]
+|Soldiers under orders of [[Rainivoninahitriniony]]
+|-
+|{{sortname|Abraham|Lincoln}}
+|[[President of the United States]]
+|{{dts|April 14, 1865}}<br/>(d. April 15, 1865)
+|[[Washington, D.C.]]
+|{{flag|United States|1863}}
+|[[John Wilkes Booth]] {{further|Assassination of Abraham Lincoln}}
+|<ref>{{Cite book |last=Foner |first=Eric |title=A Short History of Reconstruction: 1863-1877 |publisher=[[HarperCollins]] |year=2014 |isbn=9780062370860 |edition=Updated |location=New York |pages=33 |author-link=Eric Foner}}</ref>
+|-
+|{{sortname|Venancio|Flores}}
+|[[President of Uruguay]]
+|{{dts|February 19, 1868}}
+|[[Montevideo]]
+|{{Flag|Uruguay}}
+|''Unknown assailants, presumably of [[National Party (Uruguay)|Blanco political faction]]''
+|-
+|{{sortname|Mihailo|Obrenović}}
+|[[List of Serbian monarchs|Prince of Serbia]]
+|{{dts|June 10, 1868}}
+|[[Belgrade]]
+|{{flag|Serbia|civil}}
+|Pavle Radovanović, Kosta Radovanović
+|-
+|{{sortname|Juan|Prim|Juan Prim, 1st Marquis of los Castillejos}}
+|[[Prime Minister of Spain]]
+|{{dts|December 30, 1870}}
+|[[Madrid]]
+|{{flag|Spain|1785}}
+|''Unknown''
+|-
+|{{sortname|Richard|Bourke|Richard Bourke, 6th Earl of Mayo}}
+|[[Governor-General of India]]
+|{{dts|February 8, 1872}}
+|[[Port Blair]], [[Andaman Islands]]
+|{{Flag|British India}}
+|[[Sher Ali Afridi]]
+|-
+|{{sortname|José|Balta}}
+| rowspan="2" |[[List of Presidents of Peru|President of Peru]]
+|{{dts|July 22, 1872}}
+| rowspan="2" |[[Lima]]
+| rowspan="2" |{{flag|Peru|1825}}
+|[[Tomás Gutiérrez]]
+|-
+|{{sortname|Tomás|Gutiérrez}}
+|{{dts|July 26, 1872}}
+|[[Coup d'état|Military coup d'état]]
+|-
+|{{sortname|Gabriel|García Moreno}}
+|[[List of heads of state of Ecuador|President of Ecuador]]
+|{{dts|August 6, 1875}}
+|[[Quito]]
+|{{flag|Ecuador|1860}}
+|[[Faustino Rayo]]
+|-
+|{{sortname|Juan Bautista|Gill}}
+|[[President of Paraguay]]
+|{{dts|April 12, 1877}}
+|[[Villarrica, Paraguay|Villarrica]]
+|{{flag|Paraguay|1842}}
+|Nicanor Silvano Godoi
+|-
+|[[Alexander II of Russia|Alexander II]]
+|[[List of Russian rulers|Emperor of Russia]]
+|{{dts|March 13, 1881}}
+|[[Saint Petersburg|St. Petersburg]]
+|{{flag|Russian Empire|name=Russia}}
+|[[Narodnaya Volya]]
+|<ref>{{Cite book|last=Moss|first=Walter G.|title=Russia in the Age of Alexander II, Tolstoy and Dostoevsky|publisher=Anthem Press|year=2002|isbn=9781898855590|series=Anthem Series on Russian, East European and Eurasian Studies|location=London|pages=237–238}}</ref>
+|-
+|{{sortname|James A.|Garfield}}
+|[[President of the United States]]
+|{{dts|July 2, 1881}}<br>(d. September 19, 1881)
+|[[Washington, D.C.]]
+|{{flag|United States|1877}}
+|[[Charles J. Guiteau]] {{further|Assassination of James A. Garfield}}
+|<ref>{{Cite book|last=Rosen|first=Fred|title=Murdering the President: Alexander Graham Bell and the Race to Save James Garfield|publisher=Potomac Books|year=2016|isbn=9781612347684|location=Lincoln, Neb.|pages=124–125}}</ref>
+|-
+|{{sortname|Ranodip Singh|Kunwar}}
+|[[List of Prime Ministers of Nepal|Prime Minister of Nepal]]
+|{{dts|November 22, 1885}}
+|[[Kathmandu]]
+|{{flag|Kingdom of Nepal|1856}}
+|Khadga Shumsher, [[Chandra Shamsher Jang Bahadur Rana|Chandra Shumsher]], and Dambar Shumsher
+|-
+|{{sortname|Sadi|Carnot|dab=statesman}}
+|[[President of the French Republic|President of France]]
+|{{dts|June 24, 1894}}
+|[[Lyon]]
+|{{flag| France}}
+|[[Sante Geronimo Caserio]]
+|-
+|{{sortname|Naser al-Din Shah|Qajar}}
+|[[Iranian monarchy|Shah of Iran]]
+|{{dts|May 1, 1896}}
+|[[Tehran]]
+|{{flag|Iran|1910}}
+|[[Mirza Reza Kermani]]
+|-
+|{{sortname|Antonio|Cánovas del Castillo}}
+|[[Prime Minister of Spain]]
+|{{dts|August 8, 1897}}
+|[[Mondragón]]
+|{{flag|Spain|1785}}
+|[[Michele Angiolillo]]
+|-
+|{{sortname|Juan|Idiarte Borda}}
+|[[President of Uruguay]]
+|{{dts|August 25, 1897}}
+|[[Montevideo]]
+|{{flag| Uruguay}}
+|[[Avelino Arredondo]]
+|-
+|{{sortname|José María|Reina Barrios}}
+|[[President of Guatemala]]
+|{{dts|February 8, 1898}}
+|[[Ciudad de Guatemala]]
+|{{flag|Guatemala}}
+|Edgar Zollinger
+|-
+|{{sortname|Ulises|Heureaux}}
+|[[List of Presidents of the Dominican Republic|President of the Dominican Republic]]
+|{{dts|July 26, 1899}}
+|[[Moca, Dominican Republic|Moca]]
+|{{flag|Dominican Republic}}
+|[[Ramón Cáceres]]
+|-
+|[[Umberto I of Italy|Umberto I]]
+|[[King of Italy]]
+|{{dts|July 29, 1900}}
+|[[Monza]]
+|{{flag|Kingdom of Italy|civil|name=Italy}}
+|[[Gaetano Bresci]]
+|-
+|{{sortname|William|McKinley}}
+|[[President of the United States]]
+|{{dts|September 6, 1901}}<br>(d. September 14, 1901)
+|[[Buffalo, New York|Buffalo]], [[New York (state)|New York]]
+|{{flag|United States|1896}}
+|[[Leon Czolgosz]] {{further|Assassination of William McKinley}}
+|
+|-
+|[[Alexander I of Serbia|Alexander I]]
+|[[List of Serbian monarchs|King of Serbia]]
+| rowspan="2" |{{dts|June 11, 1903}}
+| rowspan="2" |[[Belgrade]]
+| rowspan="2" |{{flag|Kingdom of Serbia|1882|name=Serbia}}
+| rowspan="2" |[[May Overthrow]]
+|
+|-
+|{{sortname|Dimitrije|Cincar-Marković}}
+|[[Prime Minister of Serbia]]
+|-
+|{{sortname|Nikolay|Bobrikov}}
+|[[Governor-General of Finland]]
+|{{dts|June 16, 1904}}
+|[[Helsinki]]
+|{{Flagicon image|Flag of Russia.svg}} [[Grand Duchy of Finland]]
+|[[Eugen Schauman]]
+|-
+|{{sortname|Xavier|Coppolani}}
+|[[List of colonial governors of Mauritania|Governor of Mauritania]]
+|{{dts|May 12, 1905}}
+|[[Adrar Plateau|Adrar]]
+|{{Flagicon image|Flag of France (1794–1815, 1830–1958).svg}} [[Colonial Mauritania|French Mauritania]]
+|[[Gudfiyya]] brotherhood
+|-
+|{{sortname|Dimitar|Petkov}}
+|[[Prime Minister of Bulgaria]]
+|{{dts|March 11, 1907}}
+|[[Sofia]]
+|{{flag|Bulgaria}}
+|By an unnamed anarchist
+|-
+|[[Carlos I of Portugal|Carlos I]]
+|[[King of Portugal and the Algarves|King of Portugal]]
+|{{dts|February 1, 1908}}
+|[[Lisbon]]
+|{{flag|Kingdom of Portugal|1830|name=Portugal}}
+|[[Alfredo Luís da Costa]] and [[Manuel Buíça]]
+|-
+|[[Guangxu Emperor]]
+|[[Emperor of China]]
+|{{dts|November 14, 1908}}
+|[[Imperial City, Beijing]]
+|{{flag|Qing Dynasty|1889|name=Qing China}}
+|''Unknown''
+|<ref>Mu, Eric. [http://www.danwei.org/front_page_of_the_day/kindergarden.php Reformist Emperor Guangxu was Poisoned, Study Confirms"]. ''Danwei''. 3 November 2008.  Retrieved 2 November 2011.</ref>
+|-
+|[[Itō Hirobumi]]
+|[[Prime Minister of Japan]]
+|{{dts|October 26, 1909}}
+|[[Harbin]]
+|{{flag|Qing dynasty|1889|name=Qing China}}
+|[[An Jung-geun]]
+|-
+|{{sortname|Boutros|Ghali}}
+|[[Prime Minister of Egypt]]
+|{{dts|February 21, 1910}}
+|[[Cairo]]
+|{{flag|Egypt|1882}}
+|[[Watani Party]] member
+|-
+|{{sortname|Pyotr|Stolypin}}
+|[[Prime Minister of Russia]]
+|{{dts|September 18, 1911}}
+|[[Kiev]]
+|{{flag|Russian Empire|name=Russia}}
+|[[Dmitry Bogrov]]
+|-
+|{{sortname|Ramón|Cáceres}}
+|[[List of Presidents of the Dominican Republic|President of the Dominican Republic]]
+|{{dts|November 19, 1911}}
+|[[Santo Domingo]]
+|{{flag|Dominican Republic}}
+|Rebels
+|-
+|{{sortname|José|Canalejas y Méndez}}
+|[[Prime Minister of Spain]]
+|{{dts|November 12, 1912}}
+|[[Madrid]]
+|{{flag|Spain|1785}}
+|[[Manuel Pardiñas]]
+|-
+|{{sortname|Manuel Enrique|Araujo}}
+|[[President of El Salvador]]
+|{{dts|February 9, 1913}}
+|[[San Salvador]]
+|{{flag|El Salvador}}
+|Mulatilo Virgilio, Fermin Perez and Fabian Graciano
+|-
+|{{sortname|Francisco I.|Madero}}
+|[[President of Mexico]]
+|{{dts|February 22, 1913}}
+|[[Mexico City]]
+|{{flag|Mexico|1893}}
+|Francisco Cárdenas
+|<ref>{{Cite book|last1=Martin|first1=Cheryl E.|title=Latin America and Its People|last2=Wasserman|first2=Mark|publisher=[[Prentice Hall]]|year=2012|isbn=9780205054701|edition=3rd|volume=2|location=Boston|pages=322}}</ref>
+|-
+|[[George I of Greece|George I]]
+|[[List of kings of Greece|King of Greece]]
+|{{dts|March 18, 1913}}
+|[[Thessaloniki]]
+|{{flag|Kingdom of Greece|name=Greece}}
+|[[Alexandros Schinas]]
+|-
+|{{sortname|Mahmud|Shevket Pasha}}
+|[[Grand Vizier]] of the [[Ottoman Empire]]
+|{{dts|June 11, 1913}}
+|[[Istanbul]]
+|{{flag|Ottoman Empire}}
+|Relative of [[Nazım Pasha]]
+|-
+|{{sortname|Vilbrun Guillaume|Sam}}
+|[[President of Haiti]]
+|{{dts|July 27, 1915}}
+|[[Port-au-Prince]]
+|{{flag|Haiti}}
+|Numerous assailants
+|-
+|{{sortname|Karl von|Stürgkh}}
+|[[Minister-President of Cisleithania]]
+|{{dts|October 21, 1916}}
+|[[Vienna]]
+|{{flag|Austria-Hungary}}
+|[[Friedrich Adler (politician)|Friedrich Adler]]
+|-
+|{{sortname|Sidónio|Pais}}
+|[[President of Portugal]]
+|{{dts|December 14, 1918}}
+|[[Lisbon]]
+|{{flag|Portugal|1910}}
+|[[José Júlio da Costa]]
+|-
+|{{sortname|Habibullah|Khan}}
+|[[List of heads of state of Afghanistan|Emir of Afghanistan]]
+|{{dts|February 20, 1919}}
+|[[Laghman Province|Laghman]]
+|{{flag|Afghanistan|1901}}
+|Mustafa Seghir
+|-
+|{{sortname|Alexander|Kolchak}}
+|[[Supreme Ruler of Russia]]
+|{{dts|February 7, 1920}}
+|[[Irkutsk]]
+|{{flag|Russia}}
+|[[Communist Party of the Soviet Union|Bolsheviks]]
+|-
+|{{sortname|Saud bin Abdulaziz|Al Rashid}}
+|[[Emirate of Jabal Shammar#Emirs|Emir of Jabal Shammar]]
+|{{dts|March, 1920}}
+|
+|{{flag|Emirate of Jabal Shammar}}
+|Abdullah bin Talal Al Rashid
+|-
+|{{sortname|Venustiano|Carranza}}
+|[[President of Mexico]]
+|{{dts|May 21, 1920}}
+|[[Tlaxcalantongo]]
+|{{flag|Mexico|1916}}
+|[[Rodolfo Herrero]]
+|<ref>{{Cite book|last1=Edmonds-Poli|first1=Emily|title=Contemporary Mexican Politics|last2=Shirk|first2=David A.|publisher=Rowman & Littlefield|year=2016|isbn=9781442220263|edition=3rd|location=Lanham, Md.|pages=35}}</ref>
+|-
+|{{sortname|Eduardo|Dato}}
+|[[Prime Minister of Spain]]
+|{{dts|March 8, 1921}}
+|[[Madrid]]
+|{{flag|Spain|1785}}
+|[[Lluis Nicolau d'Olwer|Lluís Nicolau]], Pere Mateu, Ramon Casanelles
+|-
+|{{sortname|António|Granjo}}
+|[[Prime Minister of Portugal]]
+|{{dts|October 19, 1921}}
+|[[Lisbon]]
+|{{flag|Portugal|1921}}
+|[[Bloody Night (Lisbon, 1921)|Bloody Night]]
+|-
+|[[Hara Takashi]]
+|[[Prime Minister of Japan]]
+|{{dts|November 4, 1921}}
+|[[Tokyo]]
+|{{flag|Empire of Japan|name=Japan}}
+|Nakaoka Kon'ichi
+|-
+|{{sortname|Nikolaos|Stratos}}
+| rowspan="2" |[[Prime Minister of Greece]]
+| rowspan="2" |{{dts|November 15, 1922}}
+| rowspan="2" | [[Athens]]
+| rowspan="2" |{{Flag| Kingdom of Greece|name=Greece}}
+| rowspan="2" |[[11 September 1922 Revolution|Coup d'état]]
+|-
+|{{sortname|Petros|Protopapadakis}}
+|-
+|{{sortname|Gabriel|Narutowicz}}
+|[[List of heads of state of Poland#Republic of Poland .281918.E2.80.931939.29|President of Poland]]
+|{{dts|December 16, 1922}}
+|[[Warsaw]]
+|{{flag|Second Polish Republic|name=Poland}}
+|[[Eligiusz Niewiadomski]]
+|-
+|{{sortname|Aleksandar|Stamboliyski}}
+|[[Prime Minister of Bulgaria]]
+|{{dts|June 14, 1923}}
+|[[Slavovitsa, Pazardzhik Province|Slavovitsa]]
+|{{flag|Kingdom of Bulgaria|name=Bulgaria}}
+|[[Bulgarian coup d'état of 1923|Military coup d'état]]
+|-
+|{{sortname|Lee|Stack}}
+|[[List of governors of pre-independence Sudan|Governor of Sudan]]
+|{{dts|November 19, 1924}}
+|[[Cairo]]
+|{{flag|Egypt|1922}}
+|[[Egyptians|Egyptian]] Students
+|-
+|{{sortname|Symon|Petliura}}
+|[[President of Ukraine]]
+|{{dts|May 25, 1926}}
+|[[Paris]]
+|{{flag|France|1794}}
+|[[Sholom Schwartzbard]]
+|-
+|[[Zhang Zuolin]]
+|[[President of the Republic of China]]
+|{{dts|June 4, 1928}}
+|[[Shenyang]]
+|{{flag|Republic of China (1912-1949)|1912|name=China}}
+|[[Huanggutun incident|Kwantung Army]]
+|-
+|{{sortname|Paul|Doumer}}
+|[[President of the French Republic|President of France]]
+|{{dts|May 7, 1932}}
+|[[Paris]]
+|{{flag|French Third Republic|name=France}}
+|[[Paul Gorguloff]]
+|-
+|[[Inukai Tsuyoshi]]
+|[[Prime Minister of Japan]]
+|{{dts|May 15, 1932}}
+|[[Tokyo]]
+|{{flag|Empire of Japan|name=Japan}}
+|[[May 15 Incident]]
+|-
+|{{sortname|Luis Miguel|Sánchez Cerro}}
+|[[President of Peru]]
+|{{dts| April 30, 1933}}
+|[[Lima]]
+|{{flag|Peru|1825}}
+|Abelardo de Mendoza
+|{{Sfn|Martin|Wasserman|2012|p=343}}
+|-
+|{{sortname|Mohammed|Nadir Shah}}
+|[[King of Afghanistan]]
+|{{dts|November 8, 1933}}
+|[[Kabul]]
+|{{flag|Afghanistan|1930}}
+|[[Abdul Khaliq Hazara (assassin)|Abdul Khaliq Hazara]]
+|-
+|{{sortname|Ion G.|Duca}}
+|[[Prime Minister of Romania]]
+|{{dts|December 30, 1933}}
+|[[Sinaia]]
+|{{flag|Kingdom of Romania|name=Romania}}
+|Nicolae Constantinescu
+|-
+|{{sortname|Engelbert|Dollfuss}}
+|[[Chancellor of Austria]]
+|{{dts|July 25, 1934}}
+|[[Vienna]]
+|{{flag|Federal State of Austria|name=Austria}}
+|[[July Putsch]]
+|-
+|[[Alexander I of Yugoslavia|Alexander I]]
+|[[List of heads of state of Yugoslavia|King of Yugoslavia]]
+| {{dts|October 9, 1934}}
+| [[Marseille]]
+| {{flag|French Third Republic|name=France}}
+|[[Vlado Chernozemski]]
+|-
+|{{sortname|Armand|Călinescu}}
+|[[Prime Minister of Romania]]
+|{{dts|September 21, 1939}}
+|[[Bucharest]]
+|{{flag|Kingdom of Romania|name=Romania}}
+|[[Iron Guard]] members
+|-
+|{{sortname|Ahmad|Maher Pasha}}
+|[[Prime Minister of Egypt]]
+|{{dts|February 24, 1945}}
+|[[Cairo]]
+|{{Flag|Kingdom of Egypt|1945|name=Egypt}}
+|[[Mahmoud El Essawy]]
+|-
+|[[Ananda Mahidol]]
+|[[King of Siam]]
+|{{dts|June 9, 1946}}
+|[[Grand Palace]], [[Bangkok]]
+|{{Flag|Siam}}
+|''Unknown''
+|-
+|{{sortname|Gualberto|Villarroel}}
+|[[President of Bolivia]]
+|{{dts|July 21, 1946}}
+|[[La Paz]]
+|{{flag|Bolivia}}
+|By an organized mob
+|-
+|[[Aung San]]
+|[[Prime Minister of Myanmar|Premier of Burma]]
+|{{dts|July 19, 1947}}
+|[[Rangoon]]
+|{{Flagicon image|Flag of Burma (1939–1941, 1945–1948).svg}} [[British rule in Burma|British Burma]]
+|[[U Saw]]
+|-
+|[[Yahya Muhammad Hamid ed-Din]]
+|[[Imam of Yemen]]
+|{{dts|February 17, 1948}}
+|[[Sanaa]]
+|{{flag|Yemen}}
+|[[Alwaziri coup|Al-Qardaei]]
+|-
+|{{sortname|Mahmoud El|Nokrashy Pasha}}
+|[[Prime Minister of Egypt]]
+|{{dts|December 28, 1948}}
+|[[Cairo]]
+|{{flag|Egypt|1922}}
+|Abdel Meguid Ahmed Hassan
+|-
+|{{sortname|Husni|al-Za'im||Za'im, Husni al-}}
+|[[President of Syria]]
+| rowspan="2" |{{dts|August 14, 1949}}
+| rowspan="2" |[[Damascus]]
+| rowspan="2" |{{Flag|Syria|1932}}
+| rowspan="2" |[[March 1949 Syrian coup d'état|Coup d'état]]
+|-
+|[[Muhsin al-Barazi]]
+|[[List of Prime Ministers of Syria|Prime Minister of Syria]]
+|-
+|{{sortname|Abdolhossein|Hazhir}}
+|[[Prime Minister of Iran]]
+|{{dts|November 5, 1949}}
+|[[Tehran]]
+|{{Flag|Iran|1964}}
+|[[Fada'iyan-e Islam]]
+|-
+|{{sortname|Duncan|Stewart|dab=colonial administrator}}
+|[[Crown Colony of Sarawak#Administration|Governor of Sarawak]]
+|{{dts|December 10, 1949}}
+|[[Sibu]]
+|{{Flagicon image|Flag of Sarawak (1946–1963).svg}} [[Crown Colony of Sarawak|British Sarawak]]
+|[[Rukun 13]]
+|-
+|{{sortname|Sami|al-Hinnawi||Hinnawi, Sami al-}}
+|[[President of Syria]]
+|{{dts|October 31, 1950}}
+|[[Beirut]]
+|{{flag|Lebanon}}
+|Hersho al-Barazi
+|-
+|{{sortname|Carlos|Delgado Chalbaud}}
+|[[President of Venezuela]]
+|{{dts|November 13, 1950}}
+|[[Caracas]]
+|{{flag|Venezuela}}
+|[[Rafael Simón Urbina]] and Domingo Urbina.
+|-
+|{{sortname|Haj Ali|Razmara}}
+|[[Prime Minister of Iran]]
+|{{dts|March 7, 1951}}
+|[[Tehran]]
+|{{Flag|Iran|1964}}
+|[[Fada'iyan-e Islam]]
+|-
+|{{sortname|Riad Al|Solh}}
+|[[Prime Minister of Lebanon]]
+|{{dts|July 17, 1951}}
+|[[Amman]]
+| rowspan="2" |{{flag|Jordan}}
+|By a member of the [[Syrian Social Nationalist Party]]
+|-
+|[[Abdullah I of Jordan|Abdullah I]]
+|[[King of Jordan]]
+|{{dts|July 20, 1951}}
+|[[East Jerusalem]]
+|Mustapha Shukari Usho
+|-
+|{{sortname|Henry|Gurney}}
+|[[High Commissioner for Malaya]]
+|{{dts|October 6, 1951}}
+|[[Fraser's Hill]]
+|{{Flagicon image|Flag of Malaya.svg}} [[Federation of Malaya|Malaya]]
+|[[Malayan Communist Party]] {{further|Assassination of Sir Henry Gurney}}
+|-
+|{{sortname|Liaquat|Ali Khan}}
+|[[Prime Minister of Pakistan]]
+|{{dts|October 16, 1951}}
+|[[Rawalpindi]]
+|{{flag|Pakistan}}
+|[[Saad Akbar Babrak]]
+|-
+|{{sortname|José Antonio|Remón Cantera}}
+|[[President of Panama]]
+|{{dts|January 2, 1955}}
+|[[Panama City]]
+|{{flag|Panama}}
+|''Unknown''
+|-
+|{{sortname|Anastasio|Somoza García}}
+|[[President of Nicaragua]]
+|{{dts|September 21, 1956}}
+|[[León, Nicaragua|León]]
+|{{flag|Nicaragua|1908}}
+|[[Rigoberto López Pérez]]
+|-
+|{{sortname|Carlos|Castillo Armas}}
+|[[President of Guatemala]]
+|{{dts|July 26, 1957}}
+|[[Guatemala City]]
+|{{flag|Guatemala}}
+|Romeo Vásquez Sánchez
+|<ref>{{Cite book|last1=Schlesinger|first1=Stephen|title=Bitter Fruit: The Story of the American Coup in Guatemala|last2=Kinzer|first2=Stephen|publisher=Harvard University Press|year=2005|isbn=067401930X|edition=Revised and Expanded|location=Cambridge, Mass.|pages=235–236}}</ref>
+|-
+|{{sortname|Ibrahim|Hashem}}
+|[[List of Prime Ministers of Jordan|Prime Minister of Jordan]]
+|{{dts|June 14, 1958}}
+|[[Baghdad]]
+|{{Flag|Kingdom of Iraq|name=Iraq}}
+|By revolutionaries
+|-
+|[[Faisal II of Iraq|Faisal II]]
+|[[King of Iraq]]
+|{{dts|July 14, 1958}}
+|[[Baghdad]]
+|{{flag|Arab Federation}}
+|[[1958 Iraqi coup d'état|Military coup d'état]]
+|-
+|{{sortname|Nuri|al-Said}}
+|[[Prime Minister of Iraq]]
+|{{dts|July 15, 1958}}
+|[[Baghdad]]
+|{{Flag|Iraq|1959}}
+|[[14 July Revolution]]
+|-
+|{{sortname|S. W. R. D.|Bandaranaike}}
+|[[Prime Minister of Ceylon]]
+|{{dts|September 26, 1959}}
+|[[Colombo]]
+|{{flag|Ceylon}}
+|[[Talduwe Somarama]]
+|-
+|{{sortname|Hazza'|Majali||Majali, Hazza'}}
+|[[Prime Minister of Jordan]]
+|{{dts|August 29, 1960}}
+|[[Amman]]
+|{{flag|Jordan}}
+|Killed in a bomb explosion
+|-
+|{{sortname|Patrice|Lumumba}}
+|[[Prime Minister of the Democratic Republic of the Congo]]
+|{{dts|September 5, 1960}}
+|[[Lubumbashi|Élisabethville]]
+|{{flag|Democratic Republic of the Congo|1960}}
+|[[Patrice Lumumba#Final days and execution|Executed by firing squad]]
+|-
+|{{sortname|Abebe|Aregai}}
+|[[Prime Minister of Ethiopia]]
+|{{dts|December 17, 1960}}
+|[[Addis Ababa]]
+|{{flag|Ethiopia|1897}}
+|[[1960 Ethiopian coup attempt|Failed military coup d'état]]
+|-
+|{{sortname|Haile|Selassie}}
+|[[Emperor of Ethiopia]]
+|{{dts|August 27, 1975}}
+|[[Addis Ababa]]
+|{{flag|Ethiopia|1897}}
+|[[Derg]]
+|-
+|{{sortname|Rafael|Trujillo}}
+|[[List of Presidents of the Dominican Republic|President of the Dominican Republic]]
+|{{dts|May 30, 1961}}
+|[[Santo Domingo|Ciudad Trujillo]]
+|{{flag|Dominican Republic}}
+|Juan Tomás Díaz, [[Antonio de la Maza]], [[Amado García Guerrero]], [[Antonio Imbert Barrera]]
+|-
+|{{sortname|Louis|Rwagasore}}
+|[[Prime Minister of Burundi]]
+|{{dts|October 13, 1961}}
+|[[Bujumbura]]
+|{{flagicon|Belgium}} [[Ruanda-Urundi]]
+|Jean (Ioannis) Kageorgis
+|-
+|{{sortname|Sylvanus|Olympio}}
+|[[President of Togo]]
+|{{dts|January 13, 1963}}
+|[[Lomé]]
+|{{flag|Togo}}
+|[[1963 Togolese coup d'état|Military coup d'état]]
+|-
+|{{sortname|Abd al-Karim|Qasim}}
+|[[Prime Minister of Iraq]]
+|{{dts|February 9, 1963}}
+|[[Baghdad]]
+|{{flag|Iraq|1959}}
+|[[Ramadan Revolution|Military coup d'état]]
+|-
+|[[Ngo Dinh Diem]]
+|[[President of the Republic of Vietnam]]
+|{{dts|November 2, 1963}}
+|[[Ho Chi Minh City|Saigon]]
+|{{flag|South Vietnam}}
+|[[1963 South Vietnamese coup|Military coup d'état]]
+|-
+|{{sortname|John F.|Kennedy}}
+|[[President of the United States]]
+|{{dts|November 22, 1963}}
+|[[Dallas]]
+|{{flag|United States}}
+|[[Lee Harvey Oswald]] {{further|Assassination of John F. Kennedy}}
+|<ref>{{Cite book|last=Dallek|first=Robert|title=John F. Kennedy|publisher=Oxford University Press|year=2011|isbn=978-0-19-975436-6|edition=Abridged|location=New York|pages=65–66}}</ref>
+|-
+|{{sortname|Jigme Palden|Dorji}}
+|[[List of Prime Ministers of Bhutan|Prime Minister of Bhutan]]
+|{{dts|April 6, 1964}}
+|[[Phuntsholing|Phuntsoling]]
+|{{flag|Bhutan|1956}}
+|[[Royal Bhutan Army]]
+|-
+|{{sortname|Hassan Ali|Mansur}}
+|[[Prime Minister of Iran]]
+|{{dts|January 27, 1965}}
+|[[Tehran]]
+|{{flag|Iran|1964}}
+|[[Fada'iyan-e Islam]]
+|-
+|{{sortname|Abubakar Tafawa|Balewa}}
+|[[Prime Minister of Nigeria]]
+|{{dts|January 15, 1966}}
+|[[Lagos]]
+|{{flag|Nigeria}}
+|[[1966 Nigerian counter-coup|Military coup d'état]]
+|-
+|{{sortname|Hendrik|Verwoerd}}
+|[[Prime Minister of South Africa]]
+|{{dts|September 6, 1966}}
+|[[Cape Town]]
+|{{flag|South Africa|1928}}
+|[[Dimitri Tsafendas]]
+|-
+|{{sortname|Johnson|Aguiyi-Ironsi}}
+|[[Nigerian military juntas of 1966–79 and 1983–98|Head of State of Nigeria]]
+|{{dts|July 29, 1966}}
+|[[Lagelu, Oyo|Lalupon]]
+|{{flag|Nigeria}}
+|[[1966 Nigerian counter-coup|Military coup d'état]]
+|-
+|{{sortname|Abdirashid|Shermarke}}
+|[[President of Somalia]]
+|{{dts|October 15, 1969}}
+|[[Las Anod]]
+|{{flag|Somalia}}
+|His personal bodyguards
+|-
+|{{sortname|Wasfi|Tal||Tal, Wasfi}}
+|[[Prime Minister of Jordan]]
+|{{dts|November 28, 1971}}
+|[[Cairo]]
+|{{flag|Egypt}}
+|[[Black September (group)|Black September]]
+|-
+|{{sortname|Abeid|Karume}}
+|[[President of Zanzibar]]
+|{{dts|April 7, 1972}}
+|[[Zanzibar City]]
+|{{flag|Zanzibar}}
+|Four unnamed gunmen
+|-
+|{{sortname|Luis|Carrero Blanco}}
+|[[Prime Minister of Spain]]
+|{{dts|December 20, 1973}}
+|[[Madrid]]
+|{{flag|Francoist Spain|name=Spain}}
+|[[ETA (separatist group)|ETA]]
+|-
+|{{sortname|Richard|Ratsimandrava}}
+|[[President of Madagascar]]
+|{{dts|February 11, 1975}}
+|[[Antananarivo]]
+|{{flag|Madagascar}}
+|Republican Security Forces
+|-
+|[[Faisal of Saudi Arabia|Faisal I]]
+|[[King of Saudi Arabia]]
+|{{dts|March 25, 1975}}
+|[[Riyadh]]
+|{{flag|Saudi Arabia}}
+|[[Faisal bin Musaid]]
+|-
+|{{sortname|François|Tombalbaye}}
+|[[President of Chad]]
+|{{dts|April 13, 1975}}
+|[[N'Djamena]]
+|{{flag|Chad}}
+|[[1975 Chadian coup d'état|Military coup d'état]]
+|-
+|{{sortname|Sheikh|Mujibur Rahman}}
+|[[President of Bangladesh]]
+|{{dts|August 15, 1975}}
+|[[Dhaka]]
+|{{flag|Bangladesh}}
+|[[15 August 1975 Bangladesh coup d'état|Bangladesh Army]]
+|-
+|[[Long Boret]]
+|[[Prime Minister of Cambodia]]
+|{{dts|April 17, 1975}}
+|[[Phnom Penh]]
+|{{Flag| Cambodia}}
+|[[Execution by shooting]]
+|-
+|{{sortname|Muhammad|Mansur Ali}}
+|[[Prime Minister of Bangladesh]]
+|{{dts|November 3, 1975}}
+|[[Dhaka]]
+|{{flag|Bangladesh}}
+|[[3 November 1975 Bangladesh coup d'état|Bangladesh Army]]
+|-
+|{{sortname|Murtala|Muhammed}}
+|[[Nigerian military juntas of 1966–79 and 1983–98|Head of State of Nigeria]]
+|{{dts|February 13, 1976}}
+|[[Lagos]]
+|{{flag|Nigeria}}
+|[[Buka Suka Dimka]]
+|-
+|{{sortname|Marien|Ngouabi}}
+|[[List of Presidents of the Republic of the Congo|President of the Republic of Congo]]
+|{{dts|March 18, 1977}}
+|[[Brazzaville]]
+|{{flag|People's Republic of the Congo|1970|name=Congo-Brazzaville}}
+|Suicide Commando
+|-
+|{{sortname|Ibrahim|al-Hamdi||Hamadi, Ibrahim al-}}
+|[[President of North Yemen]]
+|{{dts|October 11, 1977}}
+|[[Sana'a]]
+|{{flag|Yemen Arab Republic|name=North Yemen}}
+|''Unknown''
+|-
+|{{sortname|Mohammed Daoud|Khan}}
+|[[President of Afghanistan]]
+|{{dts|April 28, 1978}}
+|[[Kabul]]
+| [[Republic of Afghanistan (1973–1978)|Afghanistan]]
+|[[Saur Revolution]]
+|-
+|{{sortname|Ali|Soilih}}
+|[[President of the Comoros]]
+|{{dts|May 29, 1978 }}
+|[[Moroni, Comoros|Moroni]]
+|{{flag|Comoros}}
+|French Colonel [[Bob Denard]]
+|-
+|{{sortname|Ahmad|al-Ghashmi||Ghashmi, Ahmad al-}}
+|[[President of North Yemen]]
+|{{dts|June 24, 1978}}
+|[[Sana'a]]
+|{{flag|Yemen Arab Republic|name=North Yemen}}
+|[[Coup d'état|Military coup d'état]]
+|-
+|{{sortname|Salim|Rubai Ali}}
+|[[List of leaders of South Yemen|Chairman]] of the [[Presidential Council (South Yemen)|Presidential Council]]
+|{{dts|June 26, 1978}}
+|[[Aden]]
+|{{Flag|South Yemen}}
+|Coup d'état
+|-
+|{{sortname|Francisco|Mendes}}
+|[[Prime Minister of Guinea-Bissau]]
+|{{dts|July 7, 1978}}
+|[[Bissau]]
+|{{flag|Guinea-Bissau}}
+|[[African Party for the Independence of Guinea and Cape Verde|PAIGC]] dissidents
+|-
+|{{sortname|Nur Muhammad|Taraki}}
+|General Secretary of the [[People's Democratic Party of Afghanistan]] and Chairmen of the [[Revolutionary Council (Afghanistan)|Revolutionary Council]]
+|{{dts|September 14, 1979}}
+|[[Kabul]]
+|[[Democratic Republic of Afghanistan|Afghanistan]]
+|[[Military coup d'état]]
+|-
+|[[Park Chung-hee]]
+|[[President of South Korea]]
+|{{dts|October 26, 1979}}
+|[[Seoul]]
+|{{flag|South Korea|1949}}
+|[[Kim Jae-gyu]] (president's security chief)
+|-
+|{{sortname|Hafizullah|Amin}}
+|General Secretary of the [[People's Democratic Party of Afghanistan]] and Chairmen of the [[Revolutionary Council (Afghanistan)|Revolutionary Council]]
+|{{dts|December 27, 1979}}
+|[[Kabul]]
+|[[Democratic Republic of Afghanistan|Afghanistan]]
+|[[Operation Storm-333]]
+|-
+|{{sortname|William|Tolbert}}
+|[[President of Liberia]]
+|{{dts|April 12, 1980}}
+|[[Monrovia]]
+|{{flag|Liberia}}
+|[[Military coup d'état]]
+|-
+|{{sortname|Sultan|Ibraimov}}
+|[[Prime Minister of Kyrgyzstan]]
+|{{dts|December 4, 1980}}
+|[[Cholpon Ata]]
+|{{flag|Kirghiz Soviet Socialist Republic|name=Kirghiz SSR}}
+|[[KGB]] (suspected)
+|-
+|{{sortname|Francisco|Sá Carneiro}}
+|[[Prime Minister of Portugal]]
+||{{dts|December 4, 1980}}
+|[[Camarate]]
+|{{flag|Portugal}}
+|[[CIA]] (allegedly)
+|-
+|{{sortname|Ziaur|Rahman}}
+|[[President of Bangladesh]]
+|{{dts|May 30, 1981}}
+|[[Chittagong]]
+|{{flag|Bangladesh}}
+|A faction of officers of the [[Bangladesh Army]]
+|-
+|{{sortname|Mohammad-Javad|Bahonar}}
+|[[Prime Minister of Iran]]
+| rowspan="2" |{{dts|August 30, 1981}}
+| rowspan="2" |[[Tehran]]
+| rowspan="2" |{{flag|Iran}}
+| rowspan="2" |[[People's Mujahedin of Iran]]
+|-
+|{{sortname|Mohammad-Ali|Rajai}}
+|[[President of Iran]]
+|-
+|{{sortname|Anwar|Sadat}}
+|[[President of Egypt]]
+|{{dts|October 6, 1981}}
+|[[Cairo]]
+|{{flag|Egypt}}
+|[[Khalid Islambouli]] {{further|Assassination of Anwar Sadat}}
+|-
+|{{sortname|Maurice|Bishop}}
+|[[Prime Minister of Grenada]]
+|{{dts|October 19, 1983}}
+|[[St. George's, Grenada|St. George's]]
+|{{flag|Grenada}}
+|Coup d'état
+|-
+|{{sortname|Indira|Gandhi}}
+|[[Prime Minister of India]]
+|{{dts|October 31, 1984}}
+|[[New Delhi]]
+|{{flag|India}}
+|[[Satwant Singh]] and [[Beant Singh (assassin)|Beant Singh]] (personal bodyguards){{Further|Assassination of Indira Gandhi}}
+|-
+|{{sortname|Haruo|Remeliik}}
+|[[President of Palau]]
+|{{dts|June 30, 1985}}
+|[[Koror]]
+|{{flag|Palau}}
+|''Unknown''
+|-
+|{{sortname|Olof|Palme}}
+|[[Prime Minister of Sweden]]
+|{{dts|February 28, 1986}}
+|[[Stockholm]]
+|{{flag|Sweden}}
+|Official suspect: [[Stig Engström (suspected murderer)|Stig Engström]] {{further|Assassination of Olof Palme}}
+|-
+|{{sortname|Rashid|Karami}}
+|[[Prime Minister of Lebanon]]
+|{{dts|June 1, 1987}}
+|[[Beirut]]
+|{{flag|Lebanon}}
+|Killed by a car bomb planted by unidentified militant
+|-
+|{{sortname|Thomas|Sankara}}
+|[[List of heads of state of Burkina Faso|President of Burkina Faso]]
+|{{dts|October 15, 1987}}
+|[[Ouagadougou]]
+|{{flag|Burkina Faso}}
+|[[Blaise Compaoré]]
+|-
+|{{sortname|René|Moawad}}
+|[[President of Lebanon]]
+|{{dts|November 22, 1989}}
+|[[Beirut]]
+|{{flag|Lebanon}}
+|Killed by a car bomb
+|-
+|{{sortname|Ahmed|Abdallah}}
+|[[President of the Comoros]]
+|{{dts|November 26, 1989}}
+|[[Moroni, Comoros|Moroni]]
+|{{flag|Comoros}}
+|Coup d'état
+|-
+|{{sortname|Nicolae|Ceaușescu}}
+|[[President of Romania]]
+|{{dts|December 25, 1989}}
+|[[Bucharest]]
+|{{flag|Romania}}
+|[[Execution by firing squad]] {{further|Trial and execution of Nicolae and Elena Ceaușescu}}
+|-
+|{{sortname|Samuel|Doe}}
+|[[President of Liberia]]
+|{{dts|September 9, 1990}}
+|[[Monrovia]]
+|{{flag|Liberia}}
+|[[Prince Johnson]]
+|-
+|{{sortname|Mohamed|Boudiaf}}
+|[[President of Algeria]]
+|{{dts|June 29, 1992}}
+|[[Annaba (city)|Annaba]]
+|{{flag|Algeria}}
+|[[Lambarek Boumaarafi]]
+|-
+|{{sortname|Ranasinghe|Premadasa}}
+|[[President of Sri Lanka]]
+|{{dts|May 1, 1993}}
+|[[Colombo]]
+|{{flag|Sri Lanka}}
+|[[Liberation Tigers of Tamil Eelam|LTTE]]
+|-
+|{{sortname|Melchior|Ndadaye}}
+|[[President of Burundi]]
+|{{dts|October 21, 1993}}
+|[[Bujumbura]]
+|{{flag|Burundi}}
+|[[Military coup d'état]]
+|-
+|{{sortname|Juvénal|Habyarimana}}
+|[[President of Rwanda]]
+| rowspan="2" |{{dts|April 6, 1994}}
+| rowspan="3" |[[Kigali]]
+| rowspan="3" |{{flag|Rwanda|1962}}
+| rowspan="2" |[[Assassination of Juvénal Habyarimana and Cyprien Ntaryamira|Presidential aircraft shootdown]]
+|-
+|{{sortname|Cyprien|Ntaryamira}}
+|[[President of Burundi]]
+|-
+|{{sortname|Agathe|Uwilingiyimana}}
+|[[Prime Minister of Rwanda]]
+|{{dts|April 7, 1994}}
+|[[Rwandan Defence Forces|Rwandan Armed Forces]]
+|-
+|{{sortname|Yitzhak|Rabin}}
+|[[Prime Minister of Israel]]
+|{{dts|November 4, 1995}}
+|[[Tel Aviv]]
+|{{flag|Israel}}
+|[[Yigal Amir]] {{further|Assassination of Yitzhak Rabin}}
+|-
+|{{sortname|Ibrahim|Baré Maïnassara}}
+|[[President of Niger]]
+|{{dts|April 9, 1999}}
+|[[Niamey]]
+|{{flag|Niger}}
+|[[1999 Nigerien coup d'état|Military coup d'état]]
+|-
+|{{sortname|Vazgen|Sargsyan}}
+|[[Prime Minister of Armenia]]
+|{{dts|October 27, 1999}}
+|[[Yerevan]]
+|{{flag|Armenia}}
+|[[Nairi Hunanyan]]
+|-
+|{{sortname|Laurent-Désiré|Kabila}}
+|[[President of the Democratic Republic of the Congo]]
+|{{dts|January 16, 2001}}
+|[[Kinshasa]]
+|{{flag|Democratic Republic of the Congo|1997}}
+|Rashidi Muzele {{further|Assassination of Laurent-Désiré Kabila}}
+|-
+|[[Birendra of Nepal|Birendra]]
+|[[King of Nepal]]
+|{{dts|June 1, 2001}}
+|[[Narayanhiti Palace]], [[Kathmandu]]
+|{{flag|Kingdom of Nepal|name=Nepal}}
+|[[Dipendra of Nepal|Dipendra]]
+{{further|Nepalese royal massacre}}
+|-
+|{{sortname|Zoran|Đinđić}}
+|[[Prime Minister of Serbia]]
+|{{dts|March 12, 2003}}
+|[[Belgrade]]
+|{{flag|Serbia and Montenegro}}
+|[[Zvezdan Jovanović]] {{further|Assassination of Zoran Đinđić}}
+|-
+|[[Rafic Hariri]]
+|[[Prime Minister of Lebanon]]
+|{{dts|February 14, 2005}}
+|[[Beirut]]
+|{{flag|Lebanon}}
+|The [[Hezbollah]]<ref>(allegedly) {{Cite news | url=https://www.nytimes.com/2020/12/11/world/middleeast/hariri-assassination-sentencing-hague.html | title=Hezbollah Member Sentenced in Absentia over Killing of Ex-Premier in Lebanon | newspaper=The New York Times | date=11 December 2020 | last1=Hubbard | first1=Ben }}</ref>{{Further |Assassination of Rafic Hariri}}
+|-
+|{{sortname|João Bernardo|Vieira}}
+|[[President of Guinea-Bissau]]
+|{{dts|March 2, 2009}}
+|[[Bissau]]
+|{{flag|Guinea-Bissau}}
+|[[Military of Guinea-Bissau|Armed Forces of Guinea-Bissau]]
+|-
+|{{sortname|Muammar|Gaddafi}}
+|[[Brotherly Leader and Guide of the Revolution]]
+|{{dts|October 20, 2011}}
+|[[Libya]]
+|{{flag|Libya|1977}}
+|[[National Transitional Council]] {{further|Death of Muammar Gaddafi}}
+|-
+|{{sortname|Idriss|Déby}}
+|[[President of Chad]]
+|{{dts|April 20, 2021}}
+| [[Chad]]
+|{{flag|Chad}}
+|[[Front for Change and Concord in Chad]]
+|<ref>{{Cite news |last1=Kennedy |first1=Niamh |last2=Busari |first2=Stephanie |last3=Lister |first3=Tim |last4=Halasz |first4=Stephanie |date=April 21, 2021 |title=Chad's President Idriss Deby killed in frontline clashes with rebels, state TV reports |work=CNN |url=https://www.cnn.com/2021/04/20/africa/president-deby-killed-frontline-intl/index.html |access-date=July 8, 2021}}</ref>
+|-
+|{{sortname|Jovenel|Moïse}}
+|[[President of Haiti]]
+|{{dts|July 7, 2021}}
+|[[Port-au-Prince]]
+|{{Flag|Haiti}}
+|''Unknown'' {{further|Assassination of Jovenel Moïse}}
+|<ref>{{Cite news |last1=Hu |first1=Caitlin |last2=Smith-Spark |first2=Laura |date=July 8, 2021 |title=Haiti's leader has been killed. Here's what you need to know |work=CNN |url=https://www.cnn.com/2021/07/07/americas/haiti-explainer-jovenel-moise-assassination-cmd-intl/index.html |access-date=July 8, 2021}}</ref>
+|}
