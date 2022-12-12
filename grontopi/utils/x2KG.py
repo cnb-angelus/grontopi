@@ -99,7 +99,7 @@ class WikimarkupDynamicList:
             res = "[[" + asp[2][5:] + "]]"
         else:
             res = "[[" + asp[1] + "]]"
-        print("FLAG", a, res)
+        #print("FLAG", a, res)
         if a.lower().startswith("dts|"):
             res = res.replace("[","").replace("]","")
         return res
@@ -141,17 +141,17 @@ class WikimarkupDynamicList:
                     currcol += 1
                 self.content.append(self._colvals2dict(colvalues))
                 currcol = 0
-                print("-")
+                #print("-")
                 continue
             colname = self.columns[currcol]
-            print(" row: ", srow)
+            #print(" row: ", srow)
             while colcounters[colname] > 0:
                 colname = self.columns[currcol]
                 colval = colvalues[colname]
                 colcounters[colname] -= 1
                 colvalues[colname] = colval
-                print(" Skipping ", currcol, colname, ":", colval, "count",
-                      colcounters[colname] + 1)
+                #print(" Skipping ", currcol, colname, ":", colval, "count",
+                #      colcounters[colname] + 1)
                 currcol += 1
                 colname = self.columns[currcol]
             if currcol >= len(self.columns):
