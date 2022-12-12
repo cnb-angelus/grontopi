@@ -1,4 +1,5 @@
 import json
+from wikimapper import WikiMapper
 
 import rdflib
 import re
@@ -6,10 +7,10 @@ from uuid import uuid4
 from typing import Dict, Tuple, List
 
 fnwikipediainput = "sample_data/leaders_20221211.txt"
-mappingfile = "sample_data/leaders_dict.json"
 fnttl = "sample_data/leaders_20221211.ttl"
 fnowl = "config/ontology_sample.owl"
 fnconfig = "config/sample_config.json"
+mappingfile = "index_enwiki-20190420.db"
 
 rdftype = rdflib.RDF["type"]
 
@@ -22,6 +23,8 @@ def links_from_cell(colval: str,
         if "|" in lt:
             lt = lt.split("|")[0]
         if exclude_lists and lt.lower().startswith("list of"):
+            continue
+        if lt.lower().startswith("file:"):
             continue
         result.append(lt.replace(" ", "_"))
     return result
@@ -86,6 +89,27 @@ class WikimarkupDynamicList:
             link_target = first + " " + last
         return "[[" + link_target + "]]"
 
+    def _proces_flag(self, a: str):
+        if "[[" in a and "]]" in a:
+            res = a[a.index("}}") + 2:].strip()
+            return res
+        a = a.replace("{{", "").replace("}}", "")
+        asp = a.split("|")
+        if len(asp) == 3 and asp[2].lower().startswith("name="):
+            res = "[[" + asp[2][5:] + "]]"
+        else:
+            res = "[[" + asp[1] + "]]"
+        print("FLAG", a, res)
+        if a.lower().startswith("dts|"):
+            res = res.replace("[","").replace("]","")
+        return res
+
+    def _colvals2dict(self, colvalues):
+        thisdict = dict()
+        for cnu, cna in enumerate(self.columns):
+            thisdict[cna] = colvalues[cna]
+        return thisdict
+
     def parse(self):
         found_list = False
         colvalues = dict()
@@ -109,16 +133,32 @@ class WikimarkupDynamicList:
                 colcounters[colname] = 0
             if srow.startswith("|-"):
                 row_length = 0
-                thisdict = dict()
-                for cnu, cna in enumerate(self.columns):
-                    thisdict[cna] = colvalues[cna]
-                self.content.append(thisdict)
+                while currcol < len(self.columns):
+                    colname = self.columns[currcol]
+                    colval = colvalues[colname]
+                    colcounters[colname] -= 1
+                    colvalues[colname] = colval
+                    currcol += 1
+                self.content.append(self._colvals2dict(colvalues))
                 currcol = 0
+                print("-")
                 continue
             colname = self.columns[currcol]
-            if colcounters[colname] > 0:
+            print(" row: ", srow)
+            while colcounters[colname] > 0:
+                colname = self.columns[currcol]
                 colval = colvalues[colname]
                 colcounters[colname] -= 1
+                colvalues[colname] = colval
+                print(" Skipping ", currcol, colname, ":", colval, "count",
+                      colcounters[colname] + 1)
+                currcol += 1
+                colname = self.columns[currcol]
+            if currcol >= len(self.columns):
+                row_length = 0
+                self.content.append(self._colvals2dict(colvalues))
+                currcol = 0
+                continue
             else:
                 colval = srow
                 if "rowspan=" in srow:
@@ -129,9 +169,12 @@ class WikimarkupDynamicList:
                 if "sortname|" in colval:
                     colval = self._process_sorname(colval)
                 if colval.startswith("|"):
-                    colval = colval[1:]
+                    colval = colval[1:].strip()
+                if (colval.lower().startswith("{{flag")
+                        or colval.lower().startswith("{{sfn")
+                        or colval.lower().startswith("{{dts")):
+                    colval = self._proces_flag(colval)
             colvalues[colname] = colval
-
             currcol += 1
 
         thisdict = dict()
@@ -150,8 +193,7 @@ class Records2RDF:
                  rowname_pattern: str,
                  entity_namespace: rdflib.namespace.Namespace,
                  labelpred: rdflib.URIRef = rdflib.RDFS["label"],
-                 urimapper=None,
-                 lang: str="en"):
+                 lang: str = "en"):
         self.record_class = record_class
         self.column_classes = column_classes
         self.row_to_oolumn_links = row_to_oolumn_links
@@ -159,13 +201,15 @@ class Records2RDF:
         self.rownamepattern = rowname_pattern
         self.entns = entity_namespace
         self.labelpred = labelpred
-        self.urimapper = urimapper
         self.lang = lang
-
+        self.urimapper = WikiMapper(mappingfile)
 
     def _get_uri(self, localname):
         origurl = self.entns[localname].n3()[1:-1]
-        newuri = self.urimapper.get(origurl, origurl)
+        wdid = self.urimapper.url_to_id(origurl)
+        if wdid is None:
+            return rdflib.URIRef(origurl)
+        newuri = "http://www.wikidata.org/entity/" + wdid
         return rdflib.URIRef(newuri)
 
     def convert(self,
@@ -234,10 +278,6 @@ class Records2RDF:
         return g
 
 
-
-with open(mappingfile) as fin2:
-    urimapper = json.loads(fin2.read())
-
 with open(fnwikipediainput) as fin:
     ontns = rdflib.namespace.Namespace("https://sample.ontolog/")
     entns = rdflib.namespace.Namespace("https://en.wikipedia.org/wiki/")
@@ -251,7 +291,7 @@ with open(fnwikipediainput) as fin:
         "Country": ontns["Place"]
     }
     row_to_column_links = {
-        "Target": ontns["hasAsVictom"],
+        "Target": ontns["hasAsVictim"],
         "Place": ontns["happenedInPlace"],
         "Assassin or other entity": ontns["hasAsPerpetrator"],
         "Date": ontns["occurredInDate"]
@@ -285,10 +325,10 @@ with open(fnwikipediainput) as fin:
         intercolumn_links=intercolumn_links,
         rowname_pattern=row_name,
         entity_namespace=entns,
-        urimapper=urimapper
+
     )
     the_kg = r2rdf.convert(wl.content)
-    #print(the_kg.serialize(format="ttl"))
+    # print(the_kg.serialize(format="ttl"))
     print("\nA total of ", len(the_kg), "triples will be written to",
           fnttl)
 
@@ -305,19 +345,18 @@ with open(fnwikipediainput) as fin:
     # First all the classes, each with a label
     ontology.add((ontns["ThingsDomain"], rdftype, owlns["Class"]))
     ontology.add((ontns["ThingsDomain"], labelpred, rdflib.Literal(
-        "Reality",lang="en")))
+        "Reality", lang="en")))
     ontology.add((row_class, rdftype, owlns["Class"]))
-    ontology.add((row_class, labelpred, rdflib.Literal("Event",lang="en")))
+    ontology.add((row_class, labelpred, rdflib.Literal("Event", lang="en")))
     ontology.add((row_class, rdfsns["subClassOf"], ontns["ThingsDomain"]))
     for k, v in column_classes.items():
         ontology.add((v, rdftype, owlns["Class"]))
-        ontology.add((v, labelpred, rdflib.Literal(localname(v),lang="en")))
+        ontology.add((v, labelpred, rdflib.Literal(localname(v), lang="en")))
         ontology.add((v, rdfsns["subClassOf"], ontns["ThingsDomain"]))
 
-
     # Now all the links
-    for k,v in row_to_column_links.items():
-        ontology.add((v, labelpred, rdflib.Literal(localname(v),lang="en")))
+    for k, v in row_to_column_links.items():
+        ontology.add((v, labelpred, rdflib.Literal(localname(v), lang="en")))
         ontology.add((v, rdfsns["domain"], row_class))
         # Object Property
         if k in column_classes.keys():
@@ -328,7 +367,7 @@ with open(fnwikipediainput) as fin:
             ontology.add((v, rdftype, rdfns["Property"]))
             ontology.add((v, rdfsns["range"], datatypes[k]))
 
-    for kk,v in intercolumn_links.items():
+    for kk, v in intercolumn_links.items():
         dom, ran = kk
         ontology.add((v, rdftype, owlns["ObjectProperty"]))
         ontology.add((v, labelpred, rdflib.Literal(localname(v), lang="en")))
@@ -341,9 +380,9 @@ with open(fnwikipediainput) as fin:
                        destination=fnowl)
 
     ents = [x.n3()[1:-1]
-            for x,_,_ in the_kg.triples((None,
-                                         rdftype,
-                                         column_classes["Target"]))][:3]
+            for x, _, _ in the_kg.triples((None,
+                                           rdftype,
+                                           column_classes["Target"]))][:3]
 
     config_dict = {
         "sparql_endpoint": "http://local_fuseki:3030/ds/query",
@@ -365,7 +404,7 @@ with open(fnwikipediainput) as fin:
         }
     }
 
-    with open(fnconfig,"w") as fout:
+    with open(fnconfig, "w") as fout:
         fout.write(json.dumps(config_dict, indent=1))
         print(f"The config was succesfully written to {fnconfig}")
 
