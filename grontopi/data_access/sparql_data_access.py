@@ -1,53 +1,55 @@
-import json
 import asyncio
-from typing import List, Dict, Set, Tuple
+import json
+from typing import Dict, List, Set, Tuple
 
 import rdflib
 import unidecode
-from SPARQLWrapper import SPARQLWrapper, JSON
-from pydantic import parse_obj_as
 from aiocache import Cache
-
-from models.api_models import EntityDescription, \
-    EntityListWithLabels, EntityNeighbourhoodSummary
-
-from models.entity_models import EntityWithLabel, LabelWithLang
-from models.ontology_models import EntityURI, ClassURI
-from models.ontology_models import RelationURI, RoleURI
-from models.entity_models import PredicateObjectTuple
 from config import conf as cfg
-from utils.rdfutils import URI, LIT
-from utils.owlreading import OntologyReader
 from data_access.abstract_data_access import GraphAccess
+from models.api_models import (
+    EntityDescription,
+    EntityListWithLabels,
+    EntityNeighbourhoodSummary,
+)
+from models.entity_models import EntityWithLabel, LabelWithLang, PredicateObjectTuple
+from models.ontology_models import ClassURI, EntityURI, RelationURI, RoleURI
+from pydantic import parse_obj_as
+from SPARQLWrapper import JSON, SPARQLWrapper
+from utils.owlreading import OntologyReader
+from utils.rdfutils import LIT, URI
 
-cache = Cache(cache_class=Cache.REDIS,
-              namespace="main",
-              endpoint=cfg.redis_cache_url,
-              port=int(cfg.redis_cache_port))
+cache = Cache(
+    cache_class=Cache.REDIS,
+    namespace="main",
+    endpoint=cfg.redis_cache_url,
+    port=int(cfg.redis_cache_port),
+)
 
-print("Trying redis at",
-      cfg.redis_cache_url,
-      cfg.redis_cache_port, "\n\n")
+print("Trying redis at", cfg.redis_cache_url, cfg.redis_cache_port, "\n\n")
 
 
 class SPARQLAccess(GraphAccess):
-    def __init__(self, query_endpoint,
-                 query_credentials=None,
-                 typepred=rdflib.namespace.RDF["type"],
-                 different_graphs=False):
+    def __init__(
+        self,
+        query_endpoint,
+        query_credentials=None,
+        typepred=rdflib.namespace.RDF["type"],
+        different_graphs=False,
+    ):
         self.query_endpoint = query_endpoint
-        user_agent = 'Grontogopi/0.1 (' \
-                     'https://github.com/cnb-angelus/grontopi; ' \
-                     'grontopi@gmail.com)'
+        user_agent = (
+            "Grontogopi/0.1 ("
+            "https://github.com/cnb-angelus/grontopi; "
+            "grontopi@gmail.com)"
+        )
 
         print(self.query_endpoint, "\t<~~~~~~~ Endpoint")
-        self.query_client = SPARQLWrapper(self.query_endpoint,
-                                          agent=user_agent)
+        self.query_client = SPARQLWrapper(self.query_endpoint, agent=user_agent)
         self.query_client.setReturnFormat(JSON)
         self.query_client.setMethod("POST")
         if query_credentials is not None and len(query_credentials) == 2:
-            self.query_client.setCredentials(query_credentials[0],
-                                             query_credentials[1])
+            self.query_client.setCredentials(query_credentials[0], query_credentials[1])
 
         self.typepred_list = [rdflib.namespace.RDF["type"]]
         if isinstance(typepred, rdflib.URIRef) or isinstance(typepred, str):
@@ -56,8 +58,9 @@ class SPARQLAccess(GraphAccess):
             self.typepred_list = [URI(x) for x in typepred]
 
         self.differentgraphs = different_graphs
-        self._varname2labelpred = {"?labvar_" + str(i): lu
-                                   for i, lu in enumerate(cfg.label_uris)}
+        self._varname2labelpred = {
+            "?labvar_" + str(i): lu for i, lu in enumerate(cfg.label_uris)
+        }
         super().__init__()
 
     async def _query(self, query, no_cache=False):
@@ -81,19 +84,19 @@ class SPARQLAccess(GraphAccess):
         print("Cache miss")
         return resp
 
-    async def fetch_entities_from_list_of_ids(self,
-                                              entitylist: List[EntityURI],
-                                              onto: OntologyReader,
-                                              lang: str = "en",
-                                              force_full=False,
-                                              ) -> List[EntityDescription]:
+    async def fetch_entities_from_list_of_ids(
+        self,
+        entitylist: List[EntityURI],
+        onto: OntologyReader,
+        lang: str = "en",
+        force_full=False,
+    ) -> List[EntityDescription]:
         print(self.query_endpoint, "<--- Different graphs\n\n")
         classgetter = self._get_classes_for_entities(
-            entitylist=entitylist,
-            onto_config=onto)
+            entitylist=entitylist, onto_config=onto
+        )
 
-        labgetter = self._get_labels_for_entities(entitylist=entitylist,
-                                                  lang=lang)
+        labgetter = self._get_labels_for_entities(entitylist=entitylist, lang=lang)
 
         ent2class, ent2labels = await asyncio.gather(classgetter, labgetter)
 
@@ -110,18 +113,17 @@ class SPARQLAccess(GraphAccess):
                 "inverse_properties": [],
             }
             if force_full or len(entitylist) == 1:
-                ewl, _missinglabs = await self._add_links_to_entity(ewl=ewl,
-                                                                    onto=onto,
-                                                                    lang=lang)
+                ewl, _missinglabs = await self._add_links_to_entity(
+                    ewl=ewl, onto=onto, lang=lang
+                )
                 _missinglabs: Set[EntityURI]
                 allmissinglabels.update(_missinglabs)
 
             entity_descriptions.append(EntityDescription.parse_obj(ewl))
 
-        newlabels = await self._get_labels_for_entities([x
-                                                         for x
-                                                         in allmissinglabels],
-                                                        lang=lang)
+        newlabels = await self._get_labels_for_entities(
+            [x for x in allmissinglabels], lang=lang
+        )
 
         for ed in entity_descriptions:
             ed: EntityDescription
@@ -132,16 +134,15 @@ class SPARQLAccess(GraphAccess):
                 op.object_labels = nl
         return entity_descriptions
 
-    async def fetch_entities_of_classes(self,
-                                        class_id: ClassURI,
-                                        start: int = 0,
-                                        per_page: int = 1000,
-                                        lang: str = "en",
-                                        prefix: str = "",
-                                        ) -> EntityListWithLabels:
-        query = self._query_entities_of_class(class_id, start,
-                                              per_page,
-                                              lang, prefix)
+    async def fetch_entities_of_classes(
+        self,
+        class_id: ClassURI,
+        start: int = 0,
+        per_page: int = 1000,
+        lang: str = "en",
+        prefix: str = "",
+    ) -> EntityListWithLabels:
+        query = self._query_entities_of_class(class_id, start, per_page, lang, prefix)
 
         rj = await self._query(query)
         ent2labels = self._collect_labels_for_entities(rj)
@@ -149,61 +150,63 @@ class SPARQLAccess(GraphAccess):
         # Now we present them as required by the output model
         entities_with_labels = []
         for entity, labels in ent2labels.items():
+            # Skip entities with no labels
+            if len(labels) == 0:
+                continue
             ewl = {
                 "entity": entity,
                 "labels": labels,
                 "longname": self._compute_long_name(labels=labels),
-                "class_id": class_id
+                "class_id": class_id,
             }
             entities_with_labels.append(EntityWithLabel.parse_obj(ewl))
         result = {"entities_with_labels": entities_with_labels}
         return EntityListWithLabels.parse_obj(result)
 
-    async def check_existence_of_entities(self,
-                                          entities: List[EntityURI],
-                                          onto_config: OntologyReader
-                                          ) -> List[EntityURI]:
+    async def check_existence_of_entities(
+        self, entities: List[EntityURI], onto_config: OntologyReader
+    ) -> List[EntityURI]:
 
         classes = await self._get_classes_for_entities(
-            entitylist=entities,
-            onto_config=onto_config)
+            entitylist=entities, onto_config=onto_config
+        )
         found = set([x for x in classes.keys()])
         origentities = set([URI(e).n3() for e in entities])
-        return [parse_obj_as(EntityURI, e)
-                for e in origentities.difference(found)]
+        return [parse_obj_as(EntityURI, e) for e in origentities.difference(found)]
 
-    async def fetch_entities_around(self,
-                                    entity_id: EntityURI,
-                                    onto_config: OntologyReader,
-                                    lang: str = "en",
-                                    ) -> EntityNeighbourhoodSummary:
+    async def fetch_entities_around(
+        self,
+        entity_id: EntityURI,
+        onto_config: OntologyReader,
+        lang: str = "en",
+    ) -> EntityNeighbourhoodSummary:
         ewl = {"uri": URI(entity_id).n3()}
-        ewl, ents = await self._add_links_to_entity(ewl, onto=onto_config,
-                                                    lang=lang)
+        ewl, ents = await self._add_links_to_entity(ewl, onto=onto_config, lang=lang)
         ents = [parse_obj_as(EntityURI, x) for x in ents]
-        descs = await self.fetch_entities_from_list_of_ids(entitylist=ents,
-                                                           lang=lang,
-                                                           onto=onto_config,
-                                                           force_full=False)
+        descs = await self.fetch_entities_from_list_of_ids(
+            entitylist=ents, lang=lang, onto=onto_config, force_full=False
+        )
         descsdict = {URI(de.uri).n3(): de for de in descs}
         linkedents = []
         linkcount = dict()
         subron3 = parse_obj_as(RoleURI, onto_config.rdf_ns["subject"].n3())
         preron3 = parse_obj_as(RoleURI, onto_config.rdf_ns["predicate"].n3())
-        for op, rol in [(x, subron3) for x in ewl["object_properties"]] + \
-                       [(x, preron3) for x in ewl["inverse_properties"]]:
+        for op, rol in [(x, subron3) for x in ewl["object_properties"]] + [
+            (x, preron3) for x in ewl["inverse_properties"]
+        ]:
             op: PredicateObjectTuple
             entn3 = URI(op.object).n3()
             entdeesc = descsdict[entn3]
             entdeesc: EntityDescription
             pn3 = URI(op.predicate).n3()
             cn3 = URI(entdeesc.class_id).n3()
-            neighbor_desct = {"link_type": op.predicate,
-                              "entity": op.object,
-                              "entity_class": entdeesc.class_id,
-                              "labels": entdeesc.label,
-                              "central_entity_role": rol
-                              }
+            neighbor_desct = {
+                "link_type": op.predicate,
+                "entity": op.object,
+                "entity_class": entdeesc.class_id,
+                "labels": entdeesc.label,
+                "central_entity_role": rol,
+            }
             linkedents.append(neighbor_desct)
             thisclass = linkcount.get(cn3, dict())
             thisclass[pn3] = 1 + thisclass.get(pn3, 0)
@@ -213,13 +216,11 @@ class SPARQLAccess(GraphAccess):
         return parse_obj_as(EntityNeighbourhoodSummary, result)
 
     # ToDo make this work for a list of entities, to make a single query
-    async def _add_links_to_entity(self,
-                                   ewl: Dict,
-                                   onto: OntologyReader,
-                                   lang: str) -> Tuple[Dict, Set]:
+    async def _add_links_to_entity(
+        self, ewl: Dict, onto: OntologyReader, lang: str
+    ) -> Tuple[Dict, Set]:
         eid = ewl["uri"]
-        query_links = self._query_entity_links(entity_id=eid,
-                                               onto_cfg=onto)
+        query_links = self._query_entity_links(entity_id=eid, onto_cfg=onto)
         rjlinks_ = await self._query(query_links)
         rjlinks = rjlinks_["results"]["bindings"]
 
@@ -235,7 +236,7 @@ class SPARQLAccess(GraphAccess):
             else:
                 if binding["o"].get("xml:lang", lang) != lang:
                     continue
-                obj = binding["o"]["value"].replace('"', '').strip()
+                obj = binding["o"]["value"].replace('"', "").strip()
 
             tup = {"predicate": parse_obj_as(RelationURI, pre)}
             if oty == "uri":
@@ -251,31 +252,36 @@ class SPARQLAccess(GraphAccess):
                 tup["literal"] = obj
                 dps.append(tup)
 
-        newdesc = {"data_properties": dps,
-                   "object_properties": ops,
-                   "inverse_properties": ips}
+        newdesc = {
+            "data_properties": dps,
+            "object_properties": ops,
+            "inverse_properties": ips,
+        }
         ewl.update(newdesc)
         return ewl, ents
 
-    async def _get_labels_for_entities(self, entitylist: List[EntityURI],
-                                       lang: str = "en"):
-        query_labels = self._query_many_entity_labels(entity_ids=entitylist,
-                                                      lang=lang)
+    async def _get_labels_for_entities(
+        self, entitylist: List[EntityURI], lang: str = "en"
+    ):
+        query_labels = self._query_many_entity_labels(entity_ids=entitylist, lang=lang)
         # Here we get the set of labels for every entity
         rjlabs = await self._query(query_labels)
         ent2labels = self._collect_labels_for_entities(rjlabs)
         return ent2labels
 
-    async def _get_classes_for_entities(self,
-                                        entitylist: List[EntityURI],
-                                        onto_config: OntologyReader):
-        query_classes = self._query_many_entity_classes(entity_ids=entitylist,
-                                                        onto_cfg=onto_config,
-                                                        )
+    async def _get_classes_for_entities(
+        self, entitylist: List[EntityURI], onto_config: OntologyReader
+    ):
+        query_classes = self._query_many_entity_classes(
+            entity_ids=entitylist,
+            onto_cfg=onto_config,
+        )
         rjcls = await self._query(query_classes)
         ent2classes = self._group_classes_by_entity(rjcls)
-        ent2class = {ent: onto_config.get_maximal_class(classes)
-                     for ent, classes in ent2classes.items()}
+        ent2class = {
+            ent: onto_config.get_maximal_class(classes)
+            for ent, classes in ent2classes.items()
+        }
         return ent2class
 
     @staticmethod
@@ -287,9 +293,7 @@ class SPARQLAccess(GraphAccess):
         return longname
 
     # ToDo get all labels in a single binding, using OPTIONAL
-    def _query_many_entity_labels(self,
-                                  entity_ids: List[EntityURI],
-                                  lang: str = "en"):
+    def _query_many_entity_labels(self, entity_ids: List[EntityURI], lang: str = "en"):
         graphextra_start = "GRAPH ?g {" if self.differentgraphs else "\n"
         graphextra_end = "}" if self.differentgraphs else "\n"
 
@@ -321,22 +325,18 @@ class SPARQLAccess(GraphAccess):
                          VALUES ?s {{ {subjvalues} }}
                     {label_optionals}
                     {graphextra_end}
-                    {filters}
                  }}
 
                  """
         return query
 
-    def _query_entity_links(self,
-                            entity_id: EntityURI,
-                            onto_cfg: OntologyReader):
+    def _query_entity_links(self, entity_id: EntityURI, onto_cfg: OntologyReader):
 
         graphextra_start = "GRAPH ?g {" if self.differentgraphs else "\n"
         graphextra_end = "}" if self.differentgraphs else "\n"
 
         allowed_classes = onto_cfg.all_study_domain_classes
-        allowed_classes = ", ".join([URI(clsuri).n3() for clsuri in
-                                     allowed_classes])
+        allowed_classes = ", ".join([URI(clsuri).n3() for clsuri in allowed_classes])
         predvalues = list(onto_cfg.allrelations) + list(onto_cfg.allproperties)
         predvalues = " ".join([URI(puri).n3() for puri in predvalues])
 
@@ -366,16 +366,15 @@ class SPARQLAccess(GraphAccess):
                  """
         return query
 
-    def _query_many_entity_classes(self,
-                                   entity_ids: List[EntityURI],
-                                   onto_cfg: OntologyReader):
+    def _query_many_entity_classes(
+        self, entity_ids: List[EntityURI], onto_cfg: OntologyReader
+    ):
 
         graphextra_start = "GRAPH ?g {" if self.differentgraphs else "\n"
         graphextra_end = "}" if self.differentgraphs else "\n"
 
         allowed_classes = onto_cfg.all_study_domain_classes
-        allowed_classes = ", ".join([URI(clsuri).n3() for clsuri in
-                                     allowed_classes])
+        allowed_classes = ", ".join([URI(clsuri).n3() for clsuri in allowed_classes])
         subjvalues = " ".join([URI(eid).n3() for eid in entity_ids])
         typepreds = " ".join([URI(x).n3() for x in self.typepred_list])
         query = f"""
@@ -391,13 +390,14 @@ class SPARQLAccess(GraphAccess):
                  """
         return query
 
-    def _query_entities_of_class(self,
-                                 class_id: ClassURI,
-                                 start: int = 0,
-                                 per_page: int = 1000,
-                                 lang: str = "en",
-                                 prefix: str = "",
-                                 ):
+    def _query_entities_of_class(
+        self,
+        class_id: ClassURI,
+        start: int = 0,
+        per_page: int = 1000,
+        lang: str = "en",
+        prefix: str = "",
+    ):
         """
         Creates a query with variables ?s ?label_pred ?label_val
         This query will return a binding for every entity,label pair
@@ -416,8 +416,9 @@ class SPARQLAccess(GraphAccess):
             filterparts.append(filter)
 
         if len(prefix) > 2:
-            stringmatcher = f" (STRSTARTS(LCASE(?labvar_0)," \
-                            f" '{prefix.lower()}'))  \n"
+            stringmatcher = (
+                f" (STRSTARTS(LCASE(?labvar_0)," f" '{prefix.lower()}'))  \n"
+            )
             filterparts.append(stringmatcher)
         filters = "FILTER(\n " + " && ".join(filterparts) + "\n)"
 
@@ -436,7 +437,6 @@ class SPARQLAccess(GraphAccess):
                         ?s  ?typepred {class_id} .
                     {label_optionals}
                     {graphextra_end}
-                    {filters}
                 }}
 
                 OFFSET {start} LIMIT {per_page}
@@ -464,11 +464,13 @@ class SPARQLAccess(GraphAccess):
                 if varname in binding.keys():
                     labpred = str(URI(pred).n3())
                     labval = LIT(binding[varname]["value"]).n3()
-                    lablang = LIT(binding[varname]["xml:lang"]).n3()
-                    labwithlang = {"label_predicate": labpred.replace('"', ''),
-                                   "label_value": labval.replace('"', ''),
-                                   "label_lang": lablang.replace('"', '')
-                                   }
+                    # lablang = LIT(binding[varname]["xml:lang"]).n3()
+                    lablang = LIT("es").n3()
+                    labwithlang = {
+                        "label_predicate": labpred.replace('"', ""),
+                        "label_value": labval.replace('"', ""),
+                        "label_lang": lablang.replace('"', ""),
+                    }
                     current_labels.append(LabelWithLang.parse_obj(labwithlang))
             ent2labels[entity] = current_labels
 
